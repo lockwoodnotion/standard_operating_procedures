@@ -133,11 +133,7 @@ Config.history.maxStates = 20;
 
 
 [[Understood|Landing page]]</tw-passagedata><tw-passagedata pid="3" name="StoryInit" tags="" position="600,350" size="100,100">&lt;&lt;widget &quot;extlink&quot;&gt;&gt;&lt;&lt;nobr&gt;&gt;
-    &lt;&lt;set _url = _args[0]&gt;&gt;
-    &lt;&lt;set _text = _args[1] ?? _url&gt;&gt;
-    &lt;&lt;if _url&gt;&gt;
-        &lt;&lt;= &#39;&lt;a href=&quot;&#39; + _url + &#39;&quot; class=&quot;external-link&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&#39; + _text + &#39;&lt;/a&gt;&#39; &gt;&gt;
-    &lt;&lt;/if&gt;&gt;
+    &lt;a @href=&quot;_args[0]&quot; class=&quot;external-link&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;&lt;= _args[1] ?? _args[0] &gt;&gt;&lt;/a&gt;
 &lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Landing page" tags="" position="475,600" size="100,100">Have I just completed the SOP?
 
 
@@ -206,7 +202,7 @@ Yes - close this file
 [[Done|Final passage]]</tw-passagedata><tw-passagedata pid="24" name="20" tags="" position="925,475" size="100,100">Select a &#39;SimilarTask&#39; entry for all the tasks where it is possible.
 
 
-[[Done|1][$similar_task_selection_complete is true]]</tw-passagedata><tw-passagedata pid="25" name="21" tags="" position="800,725" size="100,100">Does the figure for &#39;Predicted installation days&#39; seem reasonable?
+[[Done|1][$similar_task_selection_complete to true]]</tw-passagedata><tw-passagedata pid="25" name="21" tags="" position="800,725" size="100,100">Does the figure for &#39;Predicted installation days&#39; seem reasonable?
 
 
 [[Yes|5]]
