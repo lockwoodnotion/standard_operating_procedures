@@ -129,8 +129,8 @@ Config.history.maxStates = 20;
 </script><tw-passagedata pid="1" name="Start" tags="" position="800,350" size="100,100">Is desktop OR laptop on?
 
 
-[[Yes|Test9]]
-[[No|Test10]]</tw-passagedata><tw-passagedata pid="2" name="Final passage" tags="" position="475,750" size="100,100">END OF LINE
+[[Yes|Test9][$computer_is_on to true]]
+[[No|n1][$computer_is_on to false]]</tw-passagedata><tw-passagedata pid="2" name="Final passage" tags="" position="475,750" size="100,100">END OF LINE
 
 
 [[Understood|Landing page]]</tw-passagedata><tw-passagedata pid="3" name="StoryInit" tags="" position="600,350" size="100,100">&lt;&lt;widget &quot;extlink&quot;&gt;&gt;&lt;&lt;nobr&gt;&gt;
@@ -144,7 +144,7 @@ Config.history.maxStates = 20;
 		&lt;/span&gt;
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;
-</tw-passagedata><tw-passagedata pid="4" name="Landing page" tags="" position="475,600" size="100,100">Have I just completed the SOP?
+</tw-passagedata><tw-passagedata pid="4" name="Landing page" tags="" position="475,600" size="100,100">Have I just completed this SOP?
 
 
 Yes - close this file
@@ -154,10 +154,10 @@ Yes - close this file
 [[Done|n1]]</tw-passagedata><tw-passagedata pid="6" name="Test10" tags="" position="1025,825" size="100,100">Update &#39;TimeRecording&#39;.
 
 
-[[Done|n3]]</tw-passagedata><tw-passagedata pid="7" name="n1" tags="" position="737.5,600" size="100,100">Tidy up office.
+[[Done|n3]]</tw-passagedata><tw-passagedata pid="7" name="n1" tags="" position="900,475" size="100,100">Tidy up office.
 
 
-[[Done|n2]]</tw-passagedata><tw-passagedata pid="8" name="n2" tags="" position="737.5,725" size="100,100">Ensure sync has happened.
+&lt;&lt;if $computer_is_on is true&gt;&gt;[[Done|n2]]&lt;&lt;else&gt;&gt;[[Done|Test10]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="n2" tags="" position="737.5,725" size="100,100">Ensure sync has happened.
 
 
 [[Done|Test11]] </tw-passagedata><tw-passagedata pid="9" name="Test11" tags="" position="737.5,850" size="100,100">Ensure both desktop and laptop are turned off fully.
