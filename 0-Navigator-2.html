@@ -278,7 +278,7 @@ Do first RR set.
 
 
 [[Done|Test800]]
-</tw-passagedata><tw-passagedata pid="30" name="Consider placing orders from &#39;Order supplies&#39;" tags="" position="400,5400" size="100,100">Consider placing orders from &#39;Order supplies&#39;.
+</tw-passagedata><tw-passagedata pid="30" name="Consider placing orders from &#39;Order supplies&#39;" tags="" position="375,5400" size="100,100">Consider placing orders from &#39;Order supplies&#39;.
 
 
 &lt;&lt;if $installation_status is &quot;2nd_day_onwards&quot;&gt;&gt;[[Done|Installation - 2nd day onwards]]&lt;&lt;elseif $installation_status is &quot;start&quot;&gt;&gt;[[Done|T60]]&lt;&lt;else&gt;&gt;[[Done|Play piano 1]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Installation - final passage" tags="" position="600,5650" size="100,100">&lt;&lt;unset $is_driptray_required, $is_driptray_under_van, $is_laptop_required, $is_lc_84_in_van, $is_vacuuming_necessary, $is_toolboard_in_van&gt;&gt;Go have a shower.
@@ -1119,7 +1119,7 @@ Greet client (if they are there).
 &lt;&lt;if $is_driptray_required is true&gt;&gt;[[Done|T33]]&lt;&lt;else&gt;&gt;[[Done|T34]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="270" name="T59" tags="" position="900,5575" size="100,100">Start of ‘P-I-#’ - update T/T sheet.
 
 
-[[Done|T4]]</tw-passagedata><tw-passagedata pid="271" name="T60" tags="" position="600,5150" size="100,100">Start of ‘P-I-#’ - update T/T sheet.
+[[Done|T4]]</tw-passagedata><tw-passagedata pid="271" name="T60" tags="" position="750,5225" size="100,100">Start of ‘P-I-#’ - update T/T sheet.
 
 
 [[Done|Test950]]</tw-passagedata><tw-passagedata pid="272" name="T61" tags="" position="4950,5425" size="100,100">Start of ‘Site’ - mentally log for T/T sheet.
@@ -1415,27 +1415,32 @@ Transfer &#39;instruction / note&#39; into &quot;instruction&quot;.
 [[Understood|n81]]</tw-passagedata><tw-passagedata pid="356" name="n73" tags="" position="400,4550" size="100,100">Open view &#39;Firefighting&#39; in &#39;Normaliser&#39;.
 
 
-[[Done|17]]</tw-passagedata><tw-passagedata pid="357" name="n74" tags="" position="600,4850" size="100,100">Intuitively select the next task I will do.
+[[Done|17]]</tw-passagedata><tw-passagedata pid="357" name="n74" tags="" position="575,4875" size="100,100">Intuitively select the next task I will do.
 
 
-[[Done|n78]] </tw-passagedata><tw-passagedata pid="358" name="n75" tags="" position="750,5000" size="100,100">Complete the task.
+[[Done|n78]] 
+[[&#39;Clock&#39; timer has gone off|Consider placing orders from &#39;Order supplies&#39;]]</tw-passagedata><tw-passagedata pid="358" name="n75" tags="" position="900,5075" size="100,100">Complete the task.
 
 
-[[Done|n76]]</tw-passagedata><tw-passagedata pid="359" name="n76" tags="" position="400,5000" size="100,100">Is there a task on the list?
+[[Done|n76]]
+[[&#39;Clock&#39; timer has gone off|Consider placing orders from &#39;Order supplies&#39;]]</tw-passagedata><tw-passagedata pid="359" name="n76" tags="" position="400,5000" size="100,100">Is there a task on the list?
 
 
 [[Yes|n74]]
-[[No|n77]]</tw-passagedata><tw-passagedata pid="360" name="n77" tags="" position="400,5150" size="100,100">Cancel the 30-minute timer on &#39;Clock&#39;.
+[[No|n77]]
+[[&#39;Clock&#39; timer has gone off|Consider placing orders from &#39;Order supplies&#39;]]</tw-passagedata><tw-passagedata pid="360" name="n77" tags="" position="275,5150" size="100,100">Cancel the 30-minute timer on &#39;Clock&#39;.
 
 
-[[Done|Consider placing orders from &#39;Order supplies&#39;]]</tw-passagedata><tw-passagedata pid="361" name="n78" tags="" position="750,4850" size="100,100">Is the task the same &#39;Time Recording&#39; category as the previous task?
+[[Done|Consider placing orders from &#39;Order supplies&#39;]]</tw-passagedata><tw-passagedata pid="361" name="n78" tags="" position="725,4850" size="100,100">Is the task the same &#39;Time Recording&#39; category as the previous task?
 
 
 [[Yes|n75]]
-[[No|n80]]</tw-passagedata><tw-passagedata pid="362" name="n80" tags="" position="900,4850" size="100,100">Log &#39;Time Recording&#39; data now.
+[[No|n80]]
+[[&#39;Clock&#39; timer has gone off|Consider placing orders from &#39;Order supplies&#39;]]</tw-passagedata><tw-passagedata pid="362" name="n80" tags="" position="625,5075" size="100,100">Log &#39;Time Recording&#39; data now.
 
 
-[[Done|n75]] </tw-passagedata><tw-passagedata pid="363" name="n81" tags="" position="400,4850" size="100,100">Set 30-minute timer on &#39;Clock&#39;.
+[[Done|n75]] 
+[[&#39;Clock&#39; timer has gone off|Consider placing orders from &#39;Order supplies&#39;]]</tw-passagedata><tw-passagedata pid="363" name="n81" tags="" position="400,4850" size="100,100">Set 30-minute timer on &#39;Clock&#39;.
 
 (pause it if I am interrupted by breakfast)
 
@@ -1496,7 +1501,7 @@ Suffix &#39;(temp alarm)&#39; to the event.</tw-passagedata><tw-passagedata pid=
 [[No|n53]] </tw-passagedata><tw-passagedata pid="380" name="16" tags="" position="800,3700" size="100,100">Move the SOP onto a separate screen from Google Calendar.
 
 
-[[Done|14]]</tw-passagedata><tw-passagedata pid="381" name="17" tags="" position="600,4600" size="100,100">Is there a page that I can reasonably delay without breaking a commitment OR causing concrete loss?
+[[Done|14]]</tw-passagedata><tw-passagedata pid="381" name="17" tags="" position="600,4600" size="100,100">Is there a page that I can reasonably delay without breaking an express commitment OR causing concrete loss?
 
 
 [[Yes|18]]
