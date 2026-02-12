@@ -1179,7 +1179,8 @@ $installation_status - &quot;2nd_day_onwards&quot; OR &quot;start&quot;
 $is_assignment_today
 $is_run_today
 $is_long_run_today
-$stage - &quot;evolution_drain&quot;</tw-passagedata><tw-passagedata pid="288" name="n4" tags="" position="400,650" size="100,100">Open JARVIS.
+$stage - &quot;evolution_drain&quot;
+$is_andon_needs_deletion</tw-passagedata><tw-passagedata pid="288" name="n4" tags="" position="400,650" size="100,100">Open JARVIS.
 
 
 [[Done|n5]]</tw-passagedata><tw-passagedata pid="289" name="n5" tags="" position="400,800" size="100,100">Open WhatsApp.
@@ -1408,7 +1409,7 @@ Log &quot;storage_location&quot; as &#39;&quot;Define&quot; inbox&#39;.
 [[Done|n6]] </tw-passagedata><tw-passagedata pid="353" name="6" tags="" position="600,550" size="100,100">Run &#39;AutoHotKey&#39; script.
 
 
-[[Done|n4]] </tw-passagedata><tw-passagedata pid="354" name="10" tags="" position="400,6900" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
+&lt;&lt;if $is_working_day is true&gt;&gt;[[Done|n4]]&lt;&lt;else&gt;&gt;[[Done|n5]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="354" name="10" tags="" position="400,6900" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
   &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;Is there a page in the &quot;Jidoka&quot; view of the &quot;Whole&quot; database in &#39;Normaliser&#39;?
 
@@ -1487,7 +1488,7 @@ Is there a Google Calendar Task on the &#39;GoogleCalendarTask&#39; view?
 Transfer &#39;instruction / note&#39; into &quot;instruction&quot;.
 
 
-[[Done|33]]</tw-passagedata><tw-passagedata pid="373" name="32" tags="" position="400,4400" size="100,100">&#39;Define&#39; all the remaining pages.
+[[Done|33]]</tw-passagedata><tw-passagedata pid="373" name="32" tags="" position="400,4400" size="100,100">&#39;Define&#39; all the remaining pages listed in &#39;+Capture =&gt; Define&#39;.
 
 
 [[Done|27]]</tw-passagedata><tw-passagedata pid="374" name="33" tags="" position="750,4350" size="100,100">&#39;Define&#39; the page.
@@ -1518,10 +1519,10 @@ Transfer &#39;instruction / note&#39; into &quot;instruction&quot;.
 [[Done|42]]</tw-passagedata><tw-passagedata pid="382" name="41" tags="" position="625,3675" size="100,100">Ensure &#39;(Standing) Play piano for 15 minutes&#39; alarm is turned off.
 
 
-[[Done|n52]]</tw-passagedata><tw-passagedata pid="383" name="42" tags="" position="825,3800" size="100,100">Set &#39;(Standing) Play piano for 15 minutes&#39; alarm to that time, and ensure the alarm is turned on.
+&lt;&lt;if $is_working_day is true&gt;&gt;&lt;&lt;link &quot;Done&quot;&gt;&gt;&lt;&lt;goto &quot;32&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;[[Done|n52]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="383" name="42" tags="" position="825,3800" size="100,100">Set &#39;(Standing) Play piano for 15 minutes&#39; alarm to that time, and ensure the alarm is turned on.
 
 
-[[Done|n52]]</tw-passagedata><tw-passagedata pid="384" name="43" tags="" position="1050,7050" size="100,100">Remove all exercise (not blank) studs from &#39;BWF RR board&#39;.
+&lt;&lt;if $is_working_day is true&gt;&gt;&lt;&lt;link &quot;Done&quot;&gt;&gt;&lt;&lt;goto &quot;32&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;[[Done|n52]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="384" name="43" tags="" position="1050,7050" size="100,100">Remove all exercise (not blank) studs from &#39;BWF RR board&#39;.
 
 
 &lt;&lt;link &quot;Done&quot;$interruptedPassage&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="385" name="44" tags="" position="400,7500" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
@@ -1530,13 +1531,13 @@ Transfer &#39;instruction / note&#39; into &quot;instruction&quot;.
 
 
 [[Done|45]]
-</tw-passagedata><tw-passagedata pid="386" name="45" tags="" position="600,7500" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
+</tw-passagedata><tw-passagedata pid="386" name="45" tags="" position="400,7650" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
   &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt;
-&lt;&lt;/if&gt;&gt;Open &quot;Andon&quot; and start resolving issues!
+&lt;&lt;/if&gt;&gt;Open &quot;PriorityAndon&quot; and start resolving issues!
 
 
-[[There are no more pages|1]]
-[[Timer has gone off|59]]</tw-passagedata><tw-passagedata pid="387" name="47" tags="" position="400,7200" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
+[[There are no more pages|59][$is_andon_needs_deletion to true]]
+[[Timer has gone off|59][$is_andon_needs_deletion to false]]</tw-passagedata><tw-passagedata pid="387" name="47" tags="" position="400,7200" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
   &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;Set red timer for 30 minutes.
 
@@ -1551,7 +1552,7 @@ Transfer &#39;instruction / note&#39; into &quot;instruction&quot;.
 &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;N - Evolution&#39;.
 
 
-[[Understood|47]]</tw-passagedata><tw-passagedata pid="390" name="49" tags="" position="600,7350" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;When I get this far it&#39;s time to add in a new page in &quot;EvolutionCategory&quot;.
+[[Understood|47]]</tw-passagedata><tw-passagedata pid="390" name="49" tags="" position="600,7200" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;When I get this far it&#39;s time to add in a new page in &quot;EvolutionCategory&quot;.
 
 Time to do some F - System dev.!</tw-passagedata><tw-passagedata pid="391" name="50" tags="" position="400,9200" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open &quot;Inquiry&quot; view, select any page that interests you.
 
@@ -1587,10 +1588,10 @@ Time to do some F - System dev.!</tw-passagedata><tw-passagedata pid="391" name=
 
 
 [[Segment is complete|70]]
-&lt;&lt;if $is_run_today is true&gt;&gt;[[&#39;Clock&#39; timer has gone off|75]]&lt;&lt;else&gt;&gt;[[[[&#39;Clock&#39; timer has gone off|46]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="399" name="59" tags="" position="400,7650" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open &quot;AndonDeletion&quot;, delete the listed pages.
+&lt;&lt;if $is_run_today is true&gt;&gt;[[&#39;Clock&#39; timer has gone off|75]]&lt;&lt;else&gt;&gt;[[[[&#39;Clock&#39; timer has gone off|46]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="399" name="59" tags="" position="600,7600" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open &quot;AndonDeletion&quot;, &#39;select all&#39; and delete the listed pages.
 
 
-[[Done|56]]</tw-passagedata><tw-passagedata pid="400" name="60" tags="" position="400,8100" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
+&lt;&lt;if $is_andon_needs_deletion is true&gt;&gt;[[Done|1]]&lt;&lt;else&gt;&gt;[[Done|56]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="400" name="60" tags="" position="400,8100" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
   &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now whatever it says in &quot;workstream&quot;.
 
