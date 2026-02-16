@@ -185,7 +185,7 @@ Do first RR set.
     State.variables.timerElapsed = true;
     State.variables.interruptedPassage = State.passage;
     Engine.play(&quot;(Timer-driven) - Time for next RR set&quot;);
-  }, 12000)&gt;&gt;
+  }, 120000)&gt;&gt;
 &lt;&lt;/link&gt;&gt;
 
 </tw-passagedata><tw-passagedata pid="8" name="Update Domino Calendar" tags="" position="400,6750" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
@@ -214,7 +214,7 @@ Do first RR set.
 Do the next RR set.
 
 
-&lt;&lt;link &quot;Set completed, still more sets to do - will start timer until next RR set&quot;$interruptedPassage&gt;&gt;&lt;&lt;set $timerStarted to true&gt;&gt;&lt;&lt;run setTimeout(function() {State.variables.interruptedPassage = State.passage;Engine.play(&quot;(Timer-driven) - Time for next RR set&quot;);}, 12000)&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;Set completed, still more sets to do - will start timer until next RR set&quot;$interruptedPassage&gt;&gt;&lt;&lt;set $timerStarted to true&gt;&gt;&lt;&lt;run setTimeout(function() {State.variables.interruptedPassage = State.passage;Engine.play(&quot;(Timer-driven) - Time for next RR set&quot;);}, 120000)&gt;&gt;&lt;&lt;/link&gt;&gt;
 
 </tw-passagedata><tw-passagedata pid="11" name="RR warm-up routine 2" tags="" position="1050,6750" size="100,100">Do &#39;Squat Sky Reaches&#39; x 10 in three positions.
 
@@ -1177,7 +1177,9 @@ Greet client (if they are there).
 &lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;[[Done|Turn on desktop]]&lt;&lt;else&gt;&gt;[[Done|3]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="285" name="n2" tags="" position="250,50" size="100,100">Tidy away &#39;Quiet Time&#39; equipment.
 
 
-[[Done|n71]]</tw-passagedata><tw-passagedata pid="286" name="n3" tags="" position="400,500" size="100,100">Open browser.
+[[Done|n71]]
+
+[[Test|RR Warm-up routine 8]]</tw-passagedata><tw-passagedata pid="286" name="n3" tags="" position="400,500" size="100,100">Open browser.
 
 
 [[Done|6]]</tw-passagedata><tw-passagedata pid="287" name="Variables in this SOP" tags="" position="25,200" size="100,100">$is_working_day
