@@ -1593,7 +1593,7 @@ Time to do some F - System dev.!</tw-passagedata><tw-passagedata pid="389" name=
 
 
 [[Segment is complete|70][$is_subsequent_segment to true]]
-&lt;&lt;if $is_run_today is true&gt;&gt;&lt;&lt;extlink &quot;https://www.youtube.com/watch?v=4kXCxpomK5c&quot; &quot;&#39;Clock&#39; timer has gone off&quot;&gt;&gt;&lt;&lt;else&gt;&gt;[[[[&#39;Clock&#39; timer has gone off|46]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="397" name="59" tags="" position="600,7600" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open &quot;AndonDeletion&quot;, &#39;select all&#39; and delete the listed pages.
+&lt;&lt;if $is_run_today is true&gt;&gt;[[&#39;Clock&#39; timer has gone off&quot;|75]]&lt;&lt;else&gt;&gt;[[[[&#39;Clock&#39; timer has gone off|46]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="397" name="59" tags="" position="600,7600" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open &quot;AndonDeletion&quot;, &#39;select all&#39; and delete the listed pages.
 
 
 &lt;&lt;if $is_andon_needs_deletion is true&gt;&gt;[[Done|1]]&lt;&lt;else&gt;&gt;[[Done|132]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="398" name="60" tags="" position="400,8100" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
@@ -1731,7 +1731,7 @@ Set timer in &#39;Clock&#39; for this amount of time.
 [[Done|103]]</tw-passagedata><tw-passagedata pid="435" name="103" tags="" position="1800,8750" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Do Elements-inspired free-flow.
 
 
-[[Timer has gone off|104]]</tw-passagedata><tw-passagedata pid="436" name="104" tags="" position="1000,8750" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Go in and have a shower, get all sorted out.
+[[Timer has gone off|104]]</tw-passagedata><tw-passagedata pid="436" name="104" tags="" position="1000,8750" size="100,100">&lt;&lt;unset $is_run_today&gt;&gt;&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Go in and have a shower, get all sorted out.
 
 
 &lt;&lt;if $stage is &quot;evolution_drain&quot;&gt;&gt;&lt;&lt;link &quot;Done&quot;&gt;&gt;&lt;&lt;goto &quot;108&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;[[Done|46]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="437" name="Insert stud" tags="" position="1350,7050" size="100,100">Insert stud into hole for set just completed.
