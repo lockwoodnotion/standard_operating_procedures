@@ -126,13 +126,13 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.saves.autosave = true;
 Config.saves.autoload = true;
 Config.history.maxStates = 20;
-</script><tw-passagedata pid="1" name="Start" tags="" position="800,350" size="100,100">Open &#39;Navigator -2&#39;, delete the current save, restart the story and close the tab.
+</script><tw-passagedata pid="1" name="Start" tags="" position="425,100" size="100,100">Open &#39;Navigator - 2&#39;, delete the current save, restart the story and close the tab.
 
 
-[[Done|3]]</tw-passagedata><tw-passagedata pid="2" name="Final passage" tags="" position="475,750" size="100,100">END OF LINE
+[[Done|3]]</tw-passagedata><tw-passagedata pid="2" name="Final passage" tags="" position="100,500" size="100,100">END OF LINE
 
 
-[[Understood|Landing page]]</tw-passagedata><tw-passagedata pid="3" name="StoryInit" tags="" position="600,350" size="100,100">&lt;&lt;widget &quot;extlink&quot;&gt;&gt;&lt;&lt;nobr&gt;&gt;
+[[Understood|Landing page]]</tw-passagedata><tw-passagedata pid="3" name="StoryInit" tags="" position="225,100" size="100,100">&lt;&lt;widget &quot;extlink&quot;&gt;&gt;&lt;&lt;nobr&gt;&gt;
 	&lt;&lt;if _args[0]&gt;&gt;
 		&lt;a @href=&quot;_args[0]&quot; class=&quot;external-link&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
 			&lt;&lt;= _args[1] ?? _args[0] &gt;&gt;
@@ -143,39 +143,39 @@ Config.history.maxStates = 20;
 		&lt;/span&gt;
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;
-</tw-passagedata><tw-passagedata pid="4" name="Landing page" tags="" position="475,600" size="100,100">Have I just completed this SOP?
+</tw-passagedata><tw-passagedata pid="4" name="Landing page" tags="" position="100,350" size="100,100">Have I just completed this SOP?
 
 
 Yes - close this file
-[[No - I&#39;ve just opened it|Start]]</tw-passagedata><tw-passagedata pid="5" name="Test9" tags="" position="975,575" size="100,100">Close all programs on machine(s).
+[[No - I&#39;ve just opened it|Start]]</tw-passagedata><tw-passagedata pid="5" name="Test9" tags="" position="600,325" size="100,100">Close all programs on machine(s).
 
 
-[[Done|n1]]</tw-passagedata><tw-passagedata pid="6" name="Test10" tags="" position="650,575" size="100,100">Update &#39;TimeRecording&#39;.
+[[Done|n1]]</tw-passagedata><tw-passagedata pid="6" name="Test10" tags="" position="275,325" size="100,100">Update &#39;TimeRecording&#39;.
 
 
-[[Done|2]]</tw-passagedata><tw-passagedata pid="7" name="n1" tags="" position="1200,650" size="100,100">Tidy up office.
+[[Done|2]]</tw-passagedata><tw-passagedata pid="7" name="n1" tags="" position="825,400" size="100,100">Tidy up office.
 
 
-&lt;&lt;if $computer_is_on is true&gt;&gt;[[Done|n2]]&lt;&lt;else&gt;&gt;[[Done|n3]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="n2" tags="" position="737.5,725" size="100,100">Ensure sync has happened.
+&lt;&lt;if $computer_is_on is true&gt;&gt;[[Done|n2]]&lt;&lt;else&gt;&gt;[[Done|n3]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="n2" tags="" position="350,475" size="100,100">Ensure sync has happened.
 
 
-[[Done|Test11]] </tw-passagedata><tw-passagedata pid="9" name="Test11" tags="" position="737.5,850" size="100,100">Ensure both desktop and laptop are turned off fully.
+[[Done|Test11]] </tw-passagedata><tw-passagedata pid="9" name="Test11" tags="" position="350,600" size="100,100">Ensure both desktop and laptop are turned off fully.
 
 
-[[Verified|n3]]</tw-passagedata><tw-passagedata pid="10" name="n3" tags="" position="750,1025" size="100,100">Turn off lights.
+[[Verified|n3]]</tw-passagedata><tw-passagedata pid="10" name="n3" tags="" position="375,775" size="100,100">Turn off lights.
 
 Lock up office.
 
 Oikos!  :)
 
 
-[[Done|Final passage]]</tw-passagedata><tw-passagedata pid="11" name="1" tags="" position="850,475" size="100,100">Save and close JARVIS.
+[[Done|Final passage]]</tw-passagedata><tw-passagedata pid="11" name="1" tags="" position="475,225" size="100,100">Save and close JARVIS.
 
 
-[[Done|Test10]]</tw-passagedata><tw-passagedata pid="12" name="2" tags="" position="800,600" size="100,100">Ensure sync has completed.
+[[Done|Test10]]</tw-passagedata><tw-passagedata pid="12" name="2" tags="" position="425,350" size="100,100">Ensure sync has completed.
 
 
-[[Done|Test9]]</tw-passagedata><tw-passagedata pid="13" name="3" tags="" position="1000,300" size="100,100">Is desktop OR laptop on?
+[[Done|Test9]]</tw-passagedata><tw-passagedata pid="13" name="3" tags="" position="625,50" size="100,100">Is desktop OR laptop on?
 
 
 [[Yes|1][$computer_is_on to true]]

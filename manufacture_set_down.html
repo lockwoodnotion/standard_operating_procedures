@@ -180,9 +180,7 @@ Ensure lunch tote is outside of van (somewhere dry).
 Dispose of waste as appropriate.
 
 
-&lt;&lt;if (new Date()).getMonth() &gt;= 10 or (new Date()).getMonth() &lt;= 3&gt;&gt; [[Done|Test200]]&lt;&lt;else&gt;&gt;[[Done|Test5]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Test200" tags="" position="500,425" size="100,100">Test200
-
-Ensure any TaskParts potentially exposed to condensation dripping from the roof are sheeted up with blankets/dustsheets.
+&lt;&lt;if (new Date()).getMonth() &gt;= 10 or (new Date()).getMonth() &lt;= 3&gt;&gt; [[Done|Test200]]&lt;&lt;else&gt;&gt;[[Done|Test5]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Test200" tags="" position="500,425" size="100,100">Ensure any TaskParts potentially exposed to condensation dripping from the roof are sheeted up with blankets/dustsheets.
 
 
 [[Done|Test5]]</tw-passagedata><tw-passagedata pid="9" name="Test5" tags="" position="625,425" size="100,100">Unplug van.
@@ -215,7 +213,7 @@ Clip up T/T sheet.
 [[Done|Test7]]</tw-passagedata><tw-passagedata pid="14" name="Test7" tags="" position="562.5,925" size="100,100">Process contents of lunch tote as necessary.
 
 
-&lt;&lt;if $is_dry_manufacture_complete is true&gt;&gt;[[Done|Test14]]&lt;&lt;elseif $is_deferral_required is true&gt;&gt;[[Done|Test15]]&lt;&lt;else&gt;&gt;&lt;&lt;extlink &quot;https://lockwoodnotion.github.io/standard_operating_procedures/office_set_down.html&quot; &quot;Done&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="Test14" tags="" position="437.5,1050" size="100,100">Open &quot;form_ProgrammeManager&quot;.
+&lt;&lt;if $is_dry_manufacture_complete is true&gt;&gt;[[Done|Test14]]&lt;&lt;elseif $is_deferral_required is true&gt;&gt;[[Done|Test15]]&lt;&lt;else&gt;&gt;&lt;&lt;extlink &quot;https://lockwoodnotion.github.io/standard_operating_procedures/office_set_down.html&quot; &quot;Done - will go to &#39;office - set down&#39;&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="Test14" tags="" position="437.5,1050" size="100,100">Open &quot;form_ProgrammeManager&quot;.
 
 Enter today&#39;s date in &#39;Manufacture completion date&#39;.
 
@@ -225,7 +223,7 @@ Enter today&#39;s date in &#39;Manufacture completion date&#39;.
 Defer current task to tomorrow.
 
 
-[[Done|Test16]]</tw-passagedata><tw-passagedata pid="17" name="Test16" tags="" position="75,875" size="100,100">&lt;&lt;unset $is_dry_manufacture_complete, $is_deferral_required&gt;&gt;Revert to Kairos.
+[[Done|Test16]]</tw-passagedata><tw-passagedata pid="17" name="Test16" tags="" position="75,875" size="100,100">&lt;&lt;unset $is_dry_manufacture_complete, $is_deferral_required&gt;&gt;Revert to &#39;Navigator - 2&#39;.
 
 
 [[END OF LINE|Final passage]]</tw-passagedata><tw-passagedata pid="18" name="Variables in this SOP" tags="" position="25,150" size="100,100">$is_dry_manufacture_complete
