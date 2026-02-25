@@ -133,12 +133,8 @@ Config.history.maxStates = 20;
 
 
 [[Understood|Landing page]]</tw-passagedata><tw-passagedata pid="3" name="StoryInit" tags="" position="600,350" size="100,100">&lt;&lt;widget &quot;extlink&quot;&gt;&gt;&lt;&lt;nobr&gt;&gt;
-    &lt;&lt;set _url = _args[0]&gt;&gt;
-    &lt;&lt;set _text = _args[1] ?? _url&gt;&gt;
-    &lt;&lt;if _url&gt;&gt;
-        &lt;&lt;= &#39;&lt;a href=&quot;&#39; + _url + &#39;&quot; class=&quot;external-link&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&#39; + _text + &#39;&lt;/a&gt;&#39; &gt;&gt;
-    &lt;&lt;/if&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Landing page" tags="" position="475,600" size="100,100">Have I just completed the SOP?
+    &lt;a @href=&quot;_args[0]&quot; class=&quot;external-link&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;&lt;= _args[1] ?? _args[0] &gt;&gt;&lt;/a&gt;
+&lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Landing page" tags="" position="475,600" size="100,100">Have I just completed this SOP?
 
 
 Yes - close this file
@@ -184,14 +180,14 @@ Yes - close this file
 [[Done|11]]</tw-passagedata><tw-passagedata pid="15" name="11" tags="" position="1100,900" size="100,100">Is my print-out 8 weeks greater than the real-life week number?
 
 
-[[Yes|12]]
-[[No|1]]</tw-passagedata><tw-passagedata pid="16" name="12" tags="" position="1050,1500" size="100,100">Take new paper calendar print-outs inside.
+[[Yes|13]]
+[[No|1]]</tw-passagedata><tw-passagedata pid="16" name="12" tags="" position="1050,1625" size="100,100">Take new paper calendar print-outs inside.
 
 
-[[Done|13]]</tw-passagedata><tw-passagedata pid="17" name="13" tags="" position="1050,1625" size="100,100">Count the number of new paper calendar print-outs.
+[[Done|14]]</tw-passagedata><tw-passagedata pid="17" name="13" tags="" position="1050,1500" size="100,100">Count the number of new paper calendar print-outs.
 
 
-[[Done|14]]</tw-passagedata><tw-passagedata pid="18" name="14" tags="" position="1050,1750" size="100,100">Place new paper calendar print-outs at back of bottom stack.
+[[Done|12]]</tw-passagedata><tw-passagedata pid="18" name="14" tags="" position="1050,1750" size="100,100">Place new paper calendar print-outs at back of bottom stack.
 
 
 [[Done|15]]</tw-passagedata><tw-passagedata pid="19" name="15" tags="" position="1050,1875" size="100,100">Remove the same number of paper calendar print-outs from back of top stack.
