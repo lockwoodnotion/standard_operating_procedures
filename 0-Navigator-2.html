@@ -170,8 +170,8 @@ Do&lt;&lt;extlink &quot;https://www.youtube.com/watch?v=4kXCxpomK5c&quot; &quot;
 </tw-passagedata><tw-passagedata pid="5" name="Turn on desktop" tags="" position="400,200" size="100,100">Turn on desktop.
 
 
-&lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;[[Done|n3]]&lt;&lt;else&gt;&gt;[[Done|3]]&lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="6" name="Is it a working day today?" tags="" position="1000,275" size="100,100">Is it a working day today?
+[[Done|n3]]
+</tw-passagedata><tw-passagedata pid="6" name="Is it a working day today?" tags="" position="550,625" size="100,100">Is it a working day today?
 
 
 [[Yes|Is it an installation day today?][$is_working_day to true]]
@@ -1200,11 +1200,11 @@ $evening_minutes</tw-passagedata><tw-passagedata pid="285" name="n4" tags="" pos
 
 [[Yes|n7]]
 &lt;&lt;if $dayOfWeek === 7 &gt;&gt;[[No|n8]]&lt;&lt;else&gt;&gt;[[No|n10]]&lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="288" name="n7" tags="" position="600,950" size="100,100">Is there anything here that is my responsibility?
+</tw-passagedata><tw-passagedata pid="288" name="n7" tags="" position="900,1050" size="100,100">Is there anything here that is my responsibility?
 
 
 [[Yes|139]]
-[[No|n6]] </tw-passagedata><tw-passagedata pid="289" name="n9" tags="" position="600,1100" size="100,100">&#39;Capture&#39; the message.
+[[No|n6]] </tw-passagedata><tw-passagedata pid="289" name="n9" tags="" position="900,1175" size="100,100">&#39;Capture&#39; the message.
 
 
 [[Done|n6]] </tw-passagedata><tw-passagedata pid="290" name="n8" tags="" position="100,1150" size="100,100">Do I have time this morning to do GMB Elements?
@@ -1402,14 +1402,14 @@ Log &quot;storage_location&quot; as &#39;&quot;Define&quot; inbox&#39;.
 
 
 [[Done|47]]
-[[There is no page in this view|49]]</tw-passagedata><tw-passagedata pid="346" name="3" tags="" position="750,175" size="100,100">Is weather clement?
+[[There is no page in this view|49]]</tw-passagedata><tw-passagedata pid="346" name="3" tags="" position="625,875" size="100,100">Is weather clement?
 
 
 [[Yes|4]]
-[[No|n3]] </tw-passagedata><tw-passagedata pid="347" name="4" tags="" position="700,325" size="100,100">Walk outside.
+[[No|n6]] </tw-passagedata><tw-passagedata pid="347" name="4" tags="" position="775,950" size="100,100">Walk outside.
 
 
-[[Done|n3]] </tw-passagedata><tw-passagedata pid="348" name="5" tags="" position="675,750" size="100,100">Get &#39;Time Recording&#39; up-to-date.
+[[Done|n6]] </tw-passagedata><tw-passagedata pid="348" name="5" tags="" position="675,750" size="100,100">Get &#39;Time Recording&#39; up-to-date.
 
 
 &lt;&lt;if $is_working_day is true&gt;&gt;[[Done|n4]]&lt;&lt;else&gt;&gt;[[Done|119]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="349" name="6" tags="" position="400,500" size="100,100">Run &#39;AutoHotKey&#39; script.
@@ -1788,14 +1788,14 @@ Set timer in &#39;Clock&#39; for this amount of time.
 [[Done|n22]]</tw-passagedata><tw-passagedata pid="444" name="119" tags="" position="400,950" size="100,100">Place input in back pocket into &quot;&#39;Capture&#39; inbox&quot;.
 
 
-[[Done|n6]]</tw-passagedata><tw-passagedata pid="445" name="120" tags="" position="400,1750" size="100,100">Is there an starred WhatsApp message?
+&lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;[[Done|n6]]&lt;&lt;else&gt;&gt;[[Done|3]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="445" name="120" tags="" position="400,1750" size="100,100">Is there an starred WhatsApp message?
 
 
 [[Yes|n26][$is_starred_whatsapp to true]]
 [[No|124]]</tw-passagedata><tw-passagedata pid="446" name="121" tags="" position="975,1750" size="100,100">Unstar the message.
 
 
-[[Done|n14]]</tw-passagedata><tw-passagedata pid="447" name="122" tags="" position="900,1075" size="100,100">Acknowledge receipt.
+[[Done|n14]]</tw-passagedata><tw-passagedata pid="447" name="122" tags="" position="1200,1150" size="100,100">Acknowledge receipt.
 
 
 [[Done|n9]]</tw-passagedata><tw-passagedata pid="448" name="124" tags="" position="400,1900" size="100,100">Go back to &#39;All&#39;.
@@ -1849,7 +1849,7 @@ Set timer in &#39;Clock&#39; for this amount of time.
 [[No|n17]]</tw-passagedata><tw-passagedata pid="463" name="138" tags="" position="1075,1450" size="100,100">Acknowledge receipt to any external parties.
 
 
-[[Done|n17]]</tw-passagedata><tw-passagedata pid="464" name="139" tags="" position="775,950" size="100,100">Would it be helpful for me to acknowledge receipt to the external party?
+[[Done|n17]]</tw-passagedata><tw-passagedata pid="464" name="139" tags="" position="1175,1025" size="100,100">Would it be helpful for me to acknowledge receipt to the external party?
 
 
 [[Yes|122]]
