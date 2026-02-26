@@ -1522,11 +1522,11 @@ The real question when it comes to “Orchestration or Whole?” is whether I’
 [[Done|Consider placing orders from &#39;Order supplies&#39;]]</tw-passagedata><tw-passagedata pid="376" name="39" tags="" position="75,10475" size="100,100">Is anyone in the living room right now?
 
 
-[[Yes|46]]
+&lt;&lt;if $stage is &quot;evolution_drain&quot;&gt;&gt;&lt;&lt;link &quot;Yes&quot;&gt;&gt;&lt;&lt;goto &quot;108&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;[[Yes|46]]&lt;&lt;/if&gt;&gt;
 [[No|42]]</tw-passagedata><tw-passagedata pid="377" name="42" tags="" position="275,10575" size="100,100">&lt;&lt;set $is_played_piano to true&gt;&gt;Set &#39;(Standing) Play piano for 15 minutes&#39; alarm to that time, and ensure the alarm is turned on.
 
 
-&lt;&lt;if $stage is &quot;evolution_drain&quot;&gt;&gt;&lt;&lt;link &quot;Done&quot;&gt;&gt;&lt;&lt;goto &quot;108&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;[[Done|46]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="378" name="43" tags="" position="1025,9125" size="100,100">Remove all exercise (not blank) studs from &#39;BWF RR board&#39;.
+&lt;&lt;if $stage is &quot;evolution_drain&quot;&gt;&gt;&lt;&lt;link &quot;Done&quot;&gt;&gt;&lt;&lt;goto &quot;136&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;[[Done|46]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="378" name="43" tags="" position="1025,9125" size="100,100">Remove all exercise (not blank) studs from &#39;BWF RR board&#39;.
 
 
 &lt;&lt;link &quot;Done&quot;$interruptedPassage&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="379" name="44" tags="" position="75,9225" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
@@ -1740,34 +1740,34 @@ Set timer in &#39;Clock&#39; for this amount of time.
     State.variables.interruptedPassage = State.passage;
     Engine.play(&quot;(Timer-driven) - Time for next RR set&quot;);
   }, 120000)&gt;&gt;
-&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="432" name="107" tags="" position="75,11225" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Define&#39; any &#39;Undefined&#39; pages.
+&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="432" name="107" tags="" position="100,11400" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Define&#39; any &#39;Undefined&#39; pages.
 
 
-&lt;&lt;if $is_run_today is true&gt;&gt;&lt;&lt;link &quot;Done&quot;&gt;&gt;&lt;&lt;goto &quot;75&quot;&gt;&gt;&lt;&lt;else&gt;&gt;[[Done|136]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="433" name="108" tags="" position="75,11525" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
+&lt;&lt;if $is_run_today is true&gt;&gt;&lt;&lt;link &quot;Done&quot;&gt;&gt;&lt;&lt;goto &quot;75&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;else&gt;&gt;[[Done|136]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="433" name="108" tags="" position="100,11700" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
   &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;N - Evolution&#39;.
 
 
-[[Understood|109]]</tw-passagedata><tw-passagedata pid="434" name="109" tags="" position="75,11675" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
+[[Understood|109]]</tw-passagedata><tw-passagedata pid="434" name="109" tags="" position="100,11850" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
   &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;Open &#39;Evolution&#39; view, enter today&#39;s date into &quot;focus_date&quot; of the page at the top.
 
 
 [[Done|110]]
-[[There is no page in this view|114]]</tw-passagedata><tw-passagedata pid="435" name="110" tags="" position="275,11675" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
+[[There is no page in this view|114]]</tw-passagedata><tw-passagedata pid="435" name="110" tags="" position="300,11850" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
   &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;Mentally note any &quot;reference&quot; pages associated with the &#39;Top priority&#39; page in &quot;Evolution&quot;.
 
 
-[[Done|112]]</tw-passagedata><tw-passagedata pid="436" name="112" tags="" position="475,11675" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
+[[Done|112]]</tw-passagedata><tw-passagedata pid="436" name="112" tags="" position="500,11850" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
   &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;Open &quot;Andon&quot; and start resolving issues!
 
 
-[[There are no more pages|113][$andon_complete]]</tw-passagedata><tw-passagedata pid="437" name="113" tags="" position="475,11525" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open &quot;AndonDeletion&quot;, &#39;select all&#39; and delete the listed pages.
+[[There are no more pages|113][$andon_complete]]</tw-passagedata><tw-passagedata pid="437" name="113" tags="" position="500,11700" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open &quot;AndonDeletion&quot;, &#39;select all&#39; and delete the listed pages.
 
 
-[[Done|109]]</tw-passagedata><tw-passagedata pid="438" name="114" tags="" position="75,11825" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Now it&#39;s JARVIS work, direct from &quot;form_PromptGenerator&quot;, no &#39;Capture&#39; necessary... (in future there&#39;ll be SOP URLs that directly link to the SOPs from the form itself - but not with LibreOffice Base...)
+[[Done|109]]</tw-passagedata><tw-passagedata pid="438" name="114" tags="" position="100,12000" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Now it&#39;s JARVIS work, direct from &quot;form_PromptGenerator&quot;, no &#39;Capture&#39; necessary... (in future there&#39;ll be SOP URLs that directly link to the SOPs from the form itself - but not with LibreOffice Base...)
 
 
 [[Understood|144]]</tw-passagedata><tw-passagedata pid="439" name="81" tags="" position="650,3875" size="100,100">Is there any unlabelled event that does not need an alarm?
@@ -1837,10 +1837,10 @@ Set timer in &#39;Clock&#39; for this amount of time.
 [[Done|133]]</tw-passagedata><tw-passagedata pid="459" name="135" tags="" position="75,9825" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Select the next segment.
 
 
-&lt;&lt;if $is_subsequent_segment is true&gt;&gt;[[Done|72]]&lt;&lt;else&gt;&gt;[[Done|60]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="460" name="136" tags="" position="75,11375" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Update &#39;Time Recording&#39; data now.
+&lt;&lt;if $is_subsequent_segment is true&gt;&gt;[[Done|72]]&lt;&lt;else&gt;&gt;[[Done|60]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="460" name="136" tags="" position="100,11550" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Update &#39;Time Recording&#39; data now.
 
 
-&lt;&lt;if $is_played_piano is true&gt;&gt;[[Done|108]]&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Done&quot;&gt;&gt;&lt;&lt;goto &quot;39&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="461" name="Insert stud 2" tags="" position="1175,8825" size="100,100">Insert stud into hole for set just completed.
+&lt;&lt;if $is_played_piano is true&gt;&gt;[[Done|108]]&lt;&lt;else&gt;&gt;&lt;&lt;link &quot;Done&quot;&gt;&gt;&lt;&lt;goto &quot;39&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="461" name="Insert stud 2" tags="" position="1175,8825" size="100,100">Insert stud into hole for set just completed.
 
 
 &lt;&lt;link &quot;Done - will start timer until next RR set&quot;$interruptedPassage&gt;&gt;&lt;&lt;set $timerStarted to true&gt;&gt;&lt;&lt;run setTimeout(function() {State.variables.interruptedPassage = State.passage;Engine.play(&quot;(Timer-driven) - Time for next RR set&quot;);}, 120000)&gt;&gt;&lt;&lt;/link&gt;&gt;
@@ -1869,62 +1869,62 @@ Set timer in &#39;Clock&#39; for this amount of time.
 [[No|n37]]</tw-passagedata><tw-passagedata pid="468" name="143" tags="" position="725,3175" size="100,100">Acknowledge receipt.
 
 
-[[Done|n37]]</tw-passagedata><tw-passagedata pid="469" name="144" tags="" position="75,11975" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Work through all entries in &quot;form_PromptGenerator&quot;.
+[[Done|n37]]</tw-passagedata><tw-passagedata pid="469" name="144" tags="" position="100,12150" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Work through all entries in &quot;form_PromptGenerator&quot;.
 
 &#39;Time record&#39; and &#39;T/T&#39; as necessary.
 
 
-[[Done|145]]</tw-passagedata><tw-passagedata pid="470" name="145" tags="" position="75,12125" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open view &#39;Available&#39; in &#39;Normaliser&#39;.
+[[Done|145]]</tw-passagedata><tw-passagedata pid="470" name="145" tags="" position="100,12300" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open view &#39;Available&#39; in &#39;Normaliser&#39;.
 
 
 [[Done|146]]
-</tw-passagedata><tw-passagedata pid="471" name="146" tags="" position="75,12275" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is there a task on the list?
+</tw-passagedata><tw-passagedata pid="471" name="146" tags="" position="100,12450" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is there a task on the list?
 
 
 [[Yes|147]]
-[[No|148]]</tw-passagedata><tw-passagedata pid="472" name="147" tags="" position="275,12175" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Intuitively select the next task I will do.
+[[No|148]]</tw-passagedata><tw-passagedata pid="472" name="147" tags="" position="300,12350" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Intuitively select the next task I will do.
 
 
-[[Done|149]] </tw-passagedata><tw-passagedata pid="473" name="148" tags="" position="75,12425" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open &quot;SegmentPriority&quot;.
+[[Done|149]] </tw-passagedata><tw-passagedata pid="473" name="148" tags="" position="100,12600" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open &quot;SegmentPriority&quot;.
 
 
-[[Done|152]]</tw-passagedata><tw-passagedata pid="474" name="149" tags="" position="475,12175" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is the task the same &#39;Time Recording&#39; category as the previous activity?
+[[Done|152]]</tw-passagedata><tw-passagedata pid="474" name="149" tags="" position="500,12350" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is the task the same &#39;Time Recording&#39; category as the previous activity?
 
 
 [[Yes|150]]
-[[No|151]]</tw-passagedata><tw-passagedata pid="475" name="150" tags="" position="275,12325" size="100,100">Complete the task.
+[[No|151]]</tw-passagedata><tw-passagedata pid="475" name="150" tags="" position="300,12500" size="100,100">Complete the task.
 
 
-[[Done|146]]</tw-passagedata><tw-passagedata pid="476" name="151" tags="" position="475,12325" size="100,100">Update &#39;Time Recording&#39; data now.
+[[Done|146]]</tw-passagedata><tw-passagedata pid="476" name="151" tags="" position="500,12500" size="100,100">Update &#39;Time Recording&#39; data now.
 
 
-[[Done|150]] </tw-passagedata><tw-passagedata pid="477" name="152" tags="" position="75,12575" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is there a page where &quot;progress_update&quot; shows text instead of a number?
+[[Done|150]] </tw-passagedata><tw-passagedata pid="477" name="152" tags="" position="100,12750" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is there a page where &quot;progress_update&quot; shows text instead of a number?
 
 
 [[Yes|153]]
-[[No|154]]</tw-passagedata><tw-passagedata pid="478" name="153" tags="" position="650,12400" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Resolve the instruction.
+[[No|154]]</tw-passagedata><tw-passagedata pid="478" name="153" tags="" position="675,12575" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Resolve the instruction.
 
 
-[[Done|152]]</tw-passagedata><tw-passagedata pid="479" name="154" tags="" position="75,12725" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Select the next segment.
+[[Done|152]]</tw-passagedata><tw-passagedata pid="479" name="154" tags="" position="100,12900" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Select the next segment.
 
 
 &lt;&lt;if $is_subsequent_segment is true&gt;&gt;[[Done|155]]&lt;&lt;else&gt;&gt;[[Done|157]]&lt;&lt;/if&gt;&gt;
-[[There is no segment to do|191]]</tw-passagedata><tw-passagedata pid="480" name="155" tags="" position="275,12600" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is the segment the same &#39;Time Recording&#39; category as the previous segment?
+[[There is no segment to do|191]]</tw-passagedata><tw-passagedata pid="480" name="155" tags="" position="300,12775" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is the segment the same &#39;Time Recording&#39; category as the previous segment?
 
 
 [[Yes|156]]
-[[No|157]]</tw-passagedata><tw-passagedata pid="481" name="156" tags="" position="425,12600" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Update &#39;Time Recording&#39; data now.
+[[No|157]]</tw-passagedata><tw-passagedata pid="481" name="156" tags="" position="450,12775" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Update &#39;Time Recording&#39; data now.
 
 
-[[Done|157]] </tw-passagedata><tw-passagedata pid="482" name="157" tags="" position="275,12750" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
+[[Done|157]] </tw-passagedata><tw-passagedata pid="482" name="157" tags="" position="300,12925" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
   &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now whatever it says in &quot;workstream&quot;.
 
 
-[[Understood|158]]</tw-passagedata><tw-passagedata pid="483" name="158" tags="" position="550,12675" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Work on the segment.
+[[Understood|158]]</tw-passagedata><tw-passagedata pid="483" name="158" tags="" position="575,12850" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Work on the segment.
 
 
-[[Segment is complete|159][$is_subsequent_segment to true]]</tw-passagedata><tw-passagedata pid="484" name="159" tags="" position="650,12550" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Mark segment complete.
+[[Segment is complete|159][$is_subsequent_segment to true]]</tw-passagedata><tw-passagedata pid="484" name="159" tags="" position="675,12725" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Mark segment complete.
 
 
 [[Done|152]]</tw-passagedata><tw-passagedata pid="485" name="161" tags="" position="75,5775" size="100,100">&lt;&lt;set $a = 0&gt;&gt;&lt;&lt;set $b = 0&gt;&gt;&lt;&lt;set $x = 0&gt;&gt;&lt;&lt;set $evening_minutes = 90&gt;&gt;Is there a &#39;Diopheilosis&#39; page where I&#39;d be making an express deadline commitment to an external party?
@@ -2085,45 +2085,45 @@ Add &#39;Holding bay for physical items&#39;&#39; to &quot;storage_location&quot
 [[Done|190]]</tw-passagedata><tw-passagedata pid="515" name="190" tags="" position="275,5625" size="100,100">Delete the page.
 
 
-[[Done|161]] </tw-passagedata><tw-passagedata pid="516" name="191" tags="" position="75,12875" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open view &#39;NoDeadline&#39; in &#39;Normaliser&#39;.
+[[Done|161]] </tw-passagedata><tw-passagedata pid="516" name="191" tags="" position="100,13050" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open view &#39;NoDeadline&#39; in &#39;Normaliser&#39;.
 
 
-[[Done|193]]</tw-passagedata><tw-passagedata pid="517" name="193" tags="" position="275,12900" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is there a task on the list?
+[[Done|193]]</tw-passagedata><tw-passagedata pid="517" name="193" tags="" position="300,13075" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is there a task on the list?
 
 
 [[Yes|194]]
-[[No|195]]</tw-passagedata><tw-passagedata pid="518" name="194" tags="" position="450,12850" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Intuitively select the next task I will do.
+[[No|195]]</tw-passagedata><tw-passagedata pid="518" name="194" tags="" position="475,13025" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Intuitively select the next task I will do.
 
 
-[[Done|196]] </tw-passagedata><tw-passagedata pid="519" name="196" tags="" position="650,12800" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is the task the same &#39;Time Recording&#39; category as the previous activity?
+[[Done|196]] </tw-passagedata><tw-passagedata pid="519" name="196" tags="" position="675,12975" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is the task the same &#39;Time Recording&#39; category as the previous activity?
 
 
 [[Yes|197]]
-[[No|198]]</tw-passagedata><tw-passagedata pid="520" name="197" tags="" position="425,13000" size="100,100">Complete the task.
+[[No|198]]</tw-passagedata><tw-passagedata pid="520" name="197" tags="" position="450,13175" size="100,100">Complete the task.
 
 
-[[Done|193]]</tw-passagedata><tw-passagedata pid="521" name="198" tags="" position="625,12975" size="100,100">Update &#39;Time Recording&#39; data now.
+[[Done|193]]</tw-passagedata><tw-passagedata pid="521" name="198" tags="" position="650,13150" size="100,100">Update &#39;Time Recording&#39; data now.
 
 
-[[Done|197]] </tw-passagedata><tw-passagedata pid="522" name="195" tags="" position="75,13025" size="100,100">&lt;&lt;unset $is_subsequent_segment&gt;&gt;&lt;&lt;if $timerElapsed&gt;&gt;
+[[Done|197]] </tw-passagedata><tw-passagedata pid="522" name="195" tags="" position="100,13200" size="100,100">&lt;&lt;unset $is_subsequent_segment&gt;&gt;&lt;&lt;if $timerElapsed&gt;&gt;
   &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;F - Inquiry&#39;.
 
 
-[[Understood|200]]</tw-passagedata><tw-passagedata pid="523" name="200" tags="" position="75,13175" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open &quot;Inquiry&quot; view, select any page that interests you.
+[[Understood|200]]</tw-passagedata><tw-passagedata pid="523" name="200" tags="" position="100,13350" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open &quot;Inquiry&quot; view, select any page that interests you.
 
 
 [[Done|201]]
-[[There isn&#39;t a page|203]]</tw-passagedata><tw-passagedata pid="524" name="201" tags="" position="275,13175" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Inquire into that matter however you want to, no objectives have to be met it&#39;s simply learning.
+[[There isn&#39;t a page|203]]</tw-passagedata><tw-passagedata pid="524" name="201" tags="" position="300,13350" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Inquire into that matter however you want to, no objectives have to be met it&#39;s simply learning.
 
 
-[[I&#39;ve finished inquiring into that page|200]]</tw-passagedata><tw-passagedata pid="525" name="202" tags="" position="75,13475" size="100,100">&#39;Normaliser&#39; is complete.
+[[I&#39;ve finished inquiring into that page|200]]</tw-passagedata><tw-passagedata pid="525" name="202" tags="" position="100,13650" size="100,100">&#39;Normaliser&#39; is complete.
 
 Oikos!   :)
 
 
 
-(Delete the save and restart the SOP for tomorrow)</tw-passagedata><tw-passagedata pid="526" name="203" tags="" position="75,13325" size="100,100">Update &#39;Time Recording&#39; data now.
+(Delete the save and restart the SOP for tomorrow)</tw-passagedata><tw-passagedata pid="526" name="203" tags="" position="100,13500" size="100,100">Update &#39;Time Recording&#39; data now.
 
 
 [[Done|202]] </tw-passagedata></tw-storydata>
