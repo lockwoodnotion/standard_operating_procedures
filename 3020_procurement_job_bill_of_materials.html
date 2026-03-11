@@ -239,28 +239,28 @@ Ensure that it&#39;s the final design, not a sketch.
 [[No|Test149]]</tw-passagedata><tw-passagedata pid="26" name="Test148" tags="" position="2750,625" size="100,100">Mark &#39;Wet&#39; as true.
 
 
-[[Done|Test152]] </tw-passagedata><tw-passagedata pid="27" name="Test149" tags="" position="2450,750" size="100,100">Does TaskPart require any &#39;dry&#39; manufacture beyond sanding?
+[[Done|Test155][$is_taskpart_card to true]] </tw-passagedata><tw-passagedata pid="27" name="Test149" tags="" position="2400,725" size="100,100">Does TaskPart require any &#39;dry&#39; manufacture beyond sanding?
 
 
 [[Yes|Test150]]
 [[No|Test155]]</tw-passagedata><tw-passagedata pid="28" name="Test150" tags="" position="2600,675" size="100,100">Mark &#39;Card&#39; as true&#39;
 
 
-[[Done|Test152]]</tw-passagedata><tw-passagedata pid="29" name="Test152" tags="" position="2575,925" size="100,100">Write index card detailing specifics.
+[[Done|Test155][$is_taskpart_card to true]]</tw-passagedata><tw-passagedata pid="29" name="Test152" tags="" position="2425,975" size="100,100">Write index card detailing specifics.
+
+Note &#39;TP (TP#)&#39;in top-right corner of index card.
 
 
-[[Done|Test155][$is_taskpart_card to true]]</tw-passagedata><tw-passagedata pid="30" name="Test153" tags="" position="1800,1050" size="100,100">Log required tools into &quot;Tool to bring&quot;.
+[[Done|Test138]]</tw-passagedata><tw-passagedata pid="30" name="Test153" tags="" position="1800,1050" size="100,100">Log required tools into &quot;Tool to bring&quot;.
 
 
 [[Done|Test154]]</tw-passagedata><tw-passagedata pid="31" name="Test154" tags="" position="1575,900" size="100,100">Place index card &#39;card&#39; stack into programme folder in sequential order.
 
 
-[[Done|Test157]]</tw-passagedata><tw-passagedata pid="32" name="Test155" tags="" position="2400,925" size="100,100">Select &#39;Length&#39; for next TaskPart record.
-
-&lt;&lt;if $is_taskpart_card is true&gt;&gt;Note &#39;TP (TP#)&#39;in top-right corner of index card.&lt;&lt;/if&gt;&gt;
+[[Done|Test157]]</tw-passagedata><tw-passagedata pid="32" name="Test155" tags="" position="2625,900" size="100,100">Select &#39;Length&#39; for next TaskPart record.
 
 
-[[Done|Test138]]</tw-passagedata><tw-passagedata pid="33" name="Test156" tags="" position="2050,1000" size="100,100">Is the job complete?
+&lt;&lt;if $is_taskpart_card is true&gt;&gt;[[Done|Test152]]&lt;&lt;else&gt;&gt;[[Done|Test138]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Test156" tags="" position="2050,1000" size="100,100">Is the job complete?
 
 
 [[Yes|Test139]]
