@@ -135,7 +135,7 @@ Read scripture (keimenon/anagignoskomen).
 [[&#39;Quiet Time&#39; listening|Quiet Time listening]]
 [[&#39;Quiet Time&#39; pondering|Quiet Time pondering]]
 [[&#39;Quiet Time&#39; action|Quiet Time action]]
-</tw-passagedata><tw-passagedata pid="3" name="Dispose of old coffee filter" tags="" position="400,450" size="100,100">Dispose of old coffee filter.
+</tw-passagedata><tw-passagedata pid="3" name="Dispose of old coffee filter" tags="" position="400,700" size="100,100">Dispose of old coffee filter.
 
 Leave filter door open.
 
@@ -144,9 +144,11 @@ Leave filter door open.
 </tw-passagedata><tw-passagedata pid="4" name="Check boiled eggs" tags="" position="400,225" size="100,100">Are there at least 4 boiled eggs in fridge?
 
 
-&lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;[[Yes|n4]]&lt;&lt;elseif $is_no_coffee_during_lent is true&gt;&gt;[[Yes|5]]&lt;&lt;else&gt;&gt;[[Yes|Dispose of old coffee filter]]
+&lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;[[Yes|n4]]&lt;&lt;elseif $is_no_coffee_during_lent is true&gt;&gt;[[Yes|5]]&lt;&lt;else&gt;&gt;[[Yes|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;
 &lt;&lt;extlink&quot;https://lockwoodnotion.github.io/standard_operating_procedures/boil_eggs.html&quot; &quot;No - start boiling more eggs&quot;&gt;&gt;
-&lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;[[Eggs are currently being worked on|n4]]&lt;&lt;elseif $is_no_coffee_during_lent is true&gt;&gt;[[Eggs are currently being worked on|5]]&lt;&lt;else&gt;&gt;[[Eggs are currently being worked on|Dispose of old coffee filter]]</tw-passagedata><tw-passagedata pid="5" name="Boil eggs" tags="" position="1550,375" size="100,100">Pull out saucepan.
+
+
+&lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;[[Eggs are currently being worked on|n4]]&lt;&lt;elseif $is_no_coffee_during_lent is true&gt;&gt;[[Eggs are currently being worked on|5]]&lt;&lt;else&gt;&gt;[[Eggs are currently being worked on|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Boil eggs" tags="" position="1550,375" size="100,100">Pull out saucepan.
 
 Load 8 eggs.
 
@@ -264,7 +266,7 @@ Put these items on the worktop next to my &#39;extension&#39; board.
 Put mugs and coffee thermos on table.
 
 
-[[Done|Trofast to office transport 1]]</tw-passagedata><tw-passagedata pid="24" name="Put on coffee" tags="" position="400,750" size="100,100">Fill water tank as desired (&#39;2&#39; per person).
+[[Done|Trofast to office transport 1]]</tw-passagedata><tw-passagedata pid="24" name="Put on coffee" tags="" position="400,1000" size="100,100">Fill water tank as desired (&#39;2&#39; per person).
 
 Fit filter.
 
@@ -338,30 +340,21 @@ Pull out blue seat.
 
 
 
-
-
-
-
-
-&lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;elseif $dayOfWeek === 7 &gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;elseif $month &gt;= 2 &amp;&amp; $month &lt;= 4&gt;&gt;[[Done|10]]&lt;&lt;else&gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;/if&gt;&gt;
-
-
-
-</tw-passagedata><tw-passagedata pid="40" name="n4" tags="" position="875,325" size="100,100">Is weather clement?
+</tw-passagedata><tw-passagedata pid="40" name="n4" tags="" position="550,550" size="100,100">Is weather clement?
 
 
 [[Yes|n5]]
-&lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[No|5]]&lt;&lt;else&gt;&gt;[[No|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="n5" tags="" position="650,450" size="100,100">Walk outside.
+&lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[No|5]]&lt;&lt;else&gt;&gt;[[No|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="n5" tags="" position="625,875" size="100,100">Walk outside.
 
 
 &lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[Done|5]]&lt;&lt;else&gt;&gt;[[Done|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Trofast to office transport 1" tags="" position="775,2900" size="100,100">&lt;&lt;unset $is_no_coffee_during_lent&gt;&gt;Are there any items in Trofast?
 
 
 [[Yes|Trofast to office transport 2]]
-[[No|Office set-up]]</tw-passagedata><tw-passagedata pid="43" name="1" tags="" position="400,600" size="100,100">Ensure coffe pot is empty.
+[[No|Office set-up]]</tw-passagedata><tw-passagedata pid="43" name="1" tags="" position="400,850" size="100,100">Ensure coffe pot is empty.
 
 
-[[Done|Put on coffee]]</tw-passagedata><tw-passagedata pid="44" name="2" tags="" position="400,900" size="100,100">Add coffee (1 scoop per &#39;2&#39; in water tank).
+[[Done|Put on coffee]]</tw-passagedata><tw-passagedata pid="44" name="2" tags="" position="400,1150" size="100,100">Add coffee (1 scoop per &#39;2&#39; in water tank).
 
 Turn on machine.
 
@@ -372,7 +365,7 @@ Turn on machine.
 Plug in phone under desk.
 
 
-[[Done|Scripture reading]]</tw-passagedata><tw-passagedata pid="46" name="5" tags="" position="600,900" size="100,100">&lt;&lt;if $dayOfWeek === 7 &gt;&gt;Ensure radiator in living is 2 (due to Elements) and radiator in dining room is 3.5.&lt;&lt;else&gt;&gt;Ensure radiators in living room and dining room are at least 3.5.&lt;&lt;/if&gt;&gt;
+[[Done|Scripture reading]]</tw-passagedata><tw-passagedata pid="46" name="5" tags="" position="875,1000" size="100,100">&lt;&lt;if $dayOfWeek === 7 &gt;&gt;Ensure radiator in living is 2 (due to Elements) and radiator in dining room is 3.5.&lt;&lt;else&gt;&gt;Ensure radiators in living room and dining room are at least 3.5.&lt;&lt;/if&gt;&gt;
 
 
 [[Done|Prepare Aidan&#39;s breakfast items]]</tw-passagedata><tw-passagedata pid="47" name="Variables in this SOP" tags="" position="50,250" size="100,100">$is_no_coffee_during_lent</tw-passagedata><tw-passagedata pid="48" name="3" tags="" position="600,1900" size="100,100">Plug in tablet to charge.
@@ -381,7 +374,7 @@ Plug in phone under desk.
 [[Done|Weather review]]</tw-passagedata><tw-passagedata pid="49" name="10" tags="" position="750,0" size="100,100">Is it currently Lent?
 
 
-[[Yes|Check boiled eggs][$is_no_coffee_during_lent to true]]&lt;&lt;/if&gt;&gt;
+[[Yes|Check boiled eggs][$is_no_coffee_during_lent to true]]
 [[No|Check boiled eggs]]</tw-passagedata><tw-passagedata pid="50" name="50" tags="" position="250,300" size="100,100">Am I away from the house on holiday?
 
 
