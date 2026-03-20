@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="4015_manufacture" startnode="42" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="b400b605-4fe2-4d44-9ef8-635656af8c1c" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage > p {
+	<tw-storydata name="4015_manufacture" startnode="31" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="b400b605-4fe2-4d44-9ef8-635656af8c1c" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage > p {
     margin-bottom: 1em;
 }
 .passage > p:last-of-type {
@@ -150,135 +150,87 @@ Config.history.maxStates = 20;</script><tw-passagedata pid="1" name="StoryInit" 
 		&lt;/span&gt;
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;
-</tw-passagedata><tw-passagedata pid="2" name="Manufacture" tags="" position="550,75" size="100,100">Is weather wet today?
-
-
-[[Yes|Test720]]
-[[No|Test722]]</tw-passagedata><tw-passagedata pid="3" name="Test701" tags="" position="800,300" size="100,100">Run &quot;report_FittingList.
-
-Check that sequencing is correct.
-
-
-[[Sequencing is correct|Test723]]
-[[Sequencing is not correct|Test703]]</tw-passagedata><tw-passagedata pid="4" name="Test702" tags="" position="950,475" size="100,100">Print off &quot;report_WetManufacturingList&quot; (single side printing).
-
-Apply green highlighter where task # changes.
-
-Place report in ‘Programme folder’.
-
-
-[[Done|Test704]]</tw-passagedata><tw-passagedata pid="5" name="Test703" tags="" position="700,500" size="100,100">Resolve sequencing issues in &quot;report_FittingList&quot;.
-
-
-[[Done|Test701]]</tw-passagedata><tw-passagedata pid="6" name="Test704" tags="" position="1175,500" size="100,100">Sync up computer(s).
-
-Open &lt;&lt;extlink &quot;https://www.bbc.co.uk/weather/2640729&quot; &quot;BBC weather in Oxford for today&quot;&gt;&gt;
-
-
-[[Done|1]]</tw-passagedata><tw-passagedata pid="7" name="Test705" tags="" position="825,900" size="100,100">Is phone battery low?
+</tw-passagedata><tw-passagedata pid="2" name="Test705" tags="" position="825,900" size="100,100">Is phone battery low?
 
 
 [[Yes|Test707][$is_phone_battery_low to true]]
-[[No|Test706]] </tw-passagedata><tw-passagedata pid="8" name="Test706" tags="" position="825,1050" size="100,100">Put programme folder in lunch tote.
+[[No|Test706]] </tw-passagedata><tw-passagedata pid="3" name="Test706" tags="" position="825,1050" size="100,100">Put programme folder in lunch tote.
 
 
 [[Done|Test708]]
 
-</tw-passagedata><tw-passagedata pid="9" name="Test707" tags="" position="675,975" size="100,100">Put phone charger in lunch tote.
+</tw-passagedata><tw-passagedata pid="4" name="Test707" tags="" position="675,975" size="100,100">Put phone charger in lunch tote.
 
 
-[[Done|Test706]]</tw-passagedata><tw-passagedata pid="10" name="Test708" tags="" position="600,1150" size="100,100">Put T/T sheet in lunch tote.
+[[Done|Test706]]</tw-passagedata><tw-passagedata pid="5" name="Test708" tags="" position="600,1150" size="100,100">Put T/T sheet in lunch tote.
 
 
-[[Done|Test709]]</tw-passagedata><tw-passagedata pid="11" name="Test709" tags="" position="400,850" size="100,100">Ensure laptop is in lunch tote.
+[[Done|Test709]]</tw-passagedata><tw-passagedata pid="6" name="Test709" tags="" position="400,850" size="100,100">Ensure laptop is in lunch tote.
 
 
-[[Done|Test710]]</tw-passagedata><tw-passagedata pid="12" name="Test710" tags="" position="400,1000" size="100,100">Ensure laptop charger is in lunch tote.
+[[Done|Test710]]</tw-passagedata><tw-passagedata pid="7" name="Test710" tags="" position="400,1000" size="100,100">Ensure laptop charger is in lunch tote.
 
 
-[[Done|Test711]]</tw-passagedata><tw-passagedata pid="13" name="Test711" tags="" position="400,1150" size="100,100">Ensure laptop mouse is in lunch tote.
+[[Done|Test711]]</tw-passagedata><tw-passagedata pid="8" name="Test711" tags="" position="400,1150" size="100,100">Ensure laptop mouse is in lunch tote.
 
 
-[[Done|Test712]]</tw-passagedata><tw-passagedata pid="14" name="Test712" tags="" position="425,1300" size="100,100">Take lunch tote and &#39;floor&#39; items to back door.
+[[Done|Test712]]</tw-passagedata><tw-passagedata pid="9" name="Test712" tags="" position="425,1300" size="100,100">Take lunch tote and &#39;floor&#39; items to back door.
 
 
-[[Done|Test713]]</tw-passagedata><tw-passagedata pid="15" name="Test713" tags="" position="1175,1375" size="100,100">Retrieve earbuds.
+[[Done|Test713]]</tw-passagedata><tw-passagedata pid="10" name="Test713" tags="" position="1175,1375" size="100,100">Retrieve earbuds.
 
 Retrieve van keys.
 
 Go upstairs to get changed.
 
 
-&lt;&lt;if $type_of_manufacture is &quot;wet&quot;&gt;&gt;[[Done|Test714]]&lt;&lt;else&gt;&gt;[[Done|Test741]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Test714" tags="" position="1175,1525" size="100,100">Is there an &#39;Optimalon&#39; sheet to be resolved?
+&lt;&lt;if $type_of_manufacture is &quot;wet&quot;&gt;&gt;[[Done|Test714]]&lt;&lt;else&gt;&gt;[[Done|Test741]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Test714" tags="" position="1175,1525" size="100,100">Is there an &#39;Optimalon&#39; sheet to be resolved?
 
 
 [[Yes|Test715]]
-[[No|Test716]]</tw-passagedata><tw-passagedata pid="17" name="Test715" tags="" position="1175,1675" size="100,100">Dimension next ‘Optimalon&#39; sheet.
+[[No|Test716]]</tw-passagedata><tw-passagedata pid="12" name="Test715" tags="" position="1175,1675" size="100,100">Dimension next ‘Optimalon&#39; sheet.
 
 T/T as relevant ‘T - R - (task #).
 
 
-[[Done|Test717]]</tw-passagedata><tw-passagedata pid="18" name="Test716" tags="" position="1175,1825" size="100,100">Is there an &#39;Opticutter&#39; sheet to be resolved?
+[[Done|Test717]]</tw-passagedata><tw-passagedata pid="13" name="Test716" tags="" position="1175,1825" size="100,100">Is there an &#39;Opticutter&#39; sheet to be resolved?
 
 
 [[Yes|Test724]] 
-[[No|Test725]]</tw-passagedata><tw-passagedata pid="19" name="Test717" tags="" position="975,1450" size="100,100">Place TaskPart(s) ad-hoc in van/shed.
+[[No|Test725]]</tw-passagedata><tw-passagedata pid="14" name="Test717" tags="" position="975,1450" size="100,100">Place TaskPart(s) ad-hoc in van/shed.
 
 Consider updating TaskPart(s) location on “report_VanLoadingList”.
 
 
-[[Done|Test714]] </tw-passagedata><tw-passagedata pid="20" name="Test719" tags="" position="1075,50" size="100,100">Have I already started &lt;&lt;if $type_of_manufacture is &quot;wet&quot;&gt;&gt;&#39;wet&#39;&lt;&lt;else&gt;&gt;&#39;dry&#39;&lt;&lt;/if&gt;&gt; manufacture for this programme?
-
-
-[[Yes|Test704]]
-&lt;&lt;if $type_of_manufacture is &quot;wet&quot;&gt;&gt;[[No|Test701]]&lt;&lt;else&gt;&gt;[[No|Test740]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="Test720" tags="" position="500,300" size="100,100">Is &lt;&lt;if $type_of_manufacture is &quot;wet&quot;&gt;&gt;&#39;wet&#39;&lt;&lt;else&gt;&gt;&#39;dry&#39;&lt;&lt;/if&gt;&gt; manufacture urgent?
-
-
-[[Yes|Test722]]
-[[No|Test721]]</tw-passagedata><tw-passagedata pid="22" name="Test721" tags="" position="300,600" size="100,100">Enter a deferral to tomorrow for this record on &quot;form_PromptGenerator&quot;.
-
-
-[[Done|Final passage]] </tw-passagedata><tw-passagedata pid="23" name="Test722" tags="" position="675,225" size="100,100">Set T/T to &#39;P-R-(programme#)&#39;.
-
-Turn on &#39;Manufacture - set down&#39; alarm.
-
-
-[[Done|Test719]] </tw-passagedata><tw-passagedata pid="24" name="Test723" tags="" position="850,650" size="100,100">Print off &quot;report_VanLoadingList&quot; (single side printing).
-
-Apply green highlighter where task # changes.
-
-Place report in ‘Programme folder’.
-
-
-&lt;&lt;if $type_of_manufacture is &quot;wet&quot;&gt;&gt;[[Done|Test702]]&lt;&lt;else&gt;&gt;[[Done|Test704]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Test724" tags="" position="975,1775" size="100,100">Dimension next ‘Opticutter&#39; sheet.
+[[Done|Test714]] </tw-passagedata><tw-passagedata pid="15" name="Test724" tags="" position="975,1775" size="100,100">Dimension next ‘Opticutter&#39; sheet.
 
 T/T as relevant ‘T - R - (task #).
 
 
-[[Done|Test726]]</tw-passagedata><tw-passagedata pid="26" name="Test725" tags="" position="1175,1975" size="100,100">Review “report_WetManufacturingList”.
+[[Done|Test726]]</tw-passagedata><tw-passagedata pid="16" name="Test725" tags="" position="1175,1975" size="100,100">Review “report_WetManufacturingList”.
 
 Find the TaskPart with the longest drying time for its next &#39;wet&#39; manufacturing step.
 
 [[Selected|Test727]]
 [[No TaskPart that can be currently worked on|Test729]]
 
-</tw-passagedata><tw-passagedata pid="27" name="Test726" tags="" position="975,1625" size="100,100">Place TaskPart(s) ad-hoc in van/shed.
+</tw-passagedata><tw-passagedata pid="17" name="Test726" tags="" position="975,1625" size="100,100">Place TaskPart(s) ad-hoc in van/shed.
 
 Update TaskPart(s) location on “report_VanLoadingList”.
 
 
-[[Done|Test716]]</tw-passagedata><tw-passagedata pid="28" name="Test727" tags="" position="1175,2125" size="100,100">T/T as relevant ‘T - R - (task #).
+[[Done|Test716]]</tw-passagedata><tw-passagedata pid="18" name="Test727" tags="" position="1175,2125" size="100,100">T/T as relevant ‘T - R - (task #).
 
 Complete the &#39;wet&#39; manufacturing step.
 
 
 [[Done|Test728]]
-</tw-passagedata><tw-passagedata pid="29" name="Test728" tags="" position="1025,2050" size="100,100">Place TaskPart(s) ad-hoc in van/shed.
+</tw-passagedata><tw-passagedata pid="19" name="Test728" tags="" position="1025,2050" size="100,100">Place TaskPart(s) ad-hoc in van/shed.
 
 Update TaskPart(s) location on “report_VanLoadingList”.
 
 
-[[Done|Test725]]</tw-passagedata><tw-passagedata pid="30" name="Test729" tags="" position="900,1925" size="100,100">Is all the &#39;wet&#39; manufacturing complete?
+[[Done|Test725]]</tw-passagedata><tw-passagedata pid="20" name="Test729" tags="" position="900,1925" size="100,100">Is all the &#39;wet&#39; manufacturing complete?
 
 
 [[Yes|Test730]]
@@ -287,57 +239,52 @@ Update TaskPart(s) location on “report_VanLoadingList”.
 
 
 
-</tw-passagedata><tw-passagedata pid="31" name="Test730" tags="" position="50,1900" size="100,100">Go to office.
+</tw-passagedata><tw-passagedata pid="21" name="Test730" tags="" position="50,1900" size="100,100">Go to office.
 
 Open &quot;Programme&quot;, enter today&#39;s date in &quot;wet_manufacture_completion_date&quot; column.
 
 
-[[Done|Final passage]] </tw-passagedata><tw-passagedata pid="32" name="Test740" tags="" position="1025,325" size="100,100">Did this programme have &#39;wet&#39; manufacture?
-
-
-[[Yes|Test704]]
-[[No|Test701]]</tw-passagedata><tw-passagedata pid="33" name="Test741" tags="" position="775,1375" size="100,100">Is the next entry on &quot;report_VanLoadingList&quot; still &#39;wet&#39; from &#39;wet manufacture&#39;?
+[[Done|Final passage]] </tw-passagedata><tw-passagedata pid="22" name="Test741" tags="" position="775,1375" size="100,100">Is the next entry on &quot;report_VanLoadingList&quot; still &#39;wet&#39; from &#39;wet manufacture&#39;?
 
 
 [[Yes|Test745]]
 [[No|Test742]]
-[[The list is complete|Test745][$is_dry_manufacture_complete to true]]</tw-passagedata><tw-passagedata pid="34" name="Test742" tags="" position="450,1475" size="100,100">T/T as relevant ‘T - R - (task #).
+[[The list is complete|Test745][$is_dry_manufacture_complete to true]]</tw-passagedata><tw-passagedata pid="23" name="Test742" tags="" position="450,1475" size="100,100">T/T as relevant ‘T - R - (task #).
 
 Complete the necessary &#39;dry manufacture&#39; task(s).
 
 
-[[Done|Test743]]</tw-passagedata><tw-passagedata pid="35" name="Test743" tags="" position="575,1625" size="100,100">Deliver the TaskPart to its destination.
+[[Done|Test743]]</tw-passagedata><tw-passagedata pid="24" name="Test743" tags="" position="575,1625" size="100,100">Deliver the TaskPart to its destination.
 
 
-[[Done|Test744]]</tw-passagedata><tw-passagedata pid="36" name="Test744" tags="" position="650,1500" size="100,100">Circle &#39;Destination&#39; to sign off the TaskPart.
+[[Done|Test744]]</tw-passagedata><tw-passagedata pid="25" name="Test744" tags="" position="650,1500" size="100,100">Circle &#39;Destination&#39; to sign off the TaskPart.
 
 
-[[Done|Test741]]</tw-passagedata><tw-passagedata pid="37" name="Test745" tags="" position="725,1725" size="100,100">&lt;&lt;if $is_dry_manufacture_complete is true&gt;&gt;&#39;Dry&#39; manufacture is complete.&lt;&lt;/if&gt;&gt;
+[[Done|Test741]]</tw-passagedata><tw-passagedata pid="26" name="Test745" tags="" position="725,1725" size="100,100">&lt;&lt;if $is_dry_manufacture_complete is true&gt;&gt;&#39;Dry&#39; manufacture is complete.&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;extlink &quot;https://lockwoodnotion.github.io/standard_operating_procedures/manufacture_set_down.html&quot; &quot;Run &#39;manufacture - set down&#39;&quot;&gt;&gt;
 
 
-[[I have been returned from &#39;Kronos&#39;|Test300]]</tw-passagedata><tw-passagedata pid="38" name="Test300" tags="" position="350,1775" size="100,100">Is it later than 16:30?
+[[I have been returned from &#39;Kronos&#39;|Test300]]</tw-passagedata><tw-passagedata pid="27" name="Test300" tags="" position="350,1775" size="100,100">Is it later than 16:30?
 
 
 [[Yes|Test301]]
-[[No|Test302]]</tw-passagedata><tw-passagedata pid="39" name="Test301" tags="" position="200,1725" size="100,100">Don&#39;t have a shower, you&#39;ll continue working in the office until 17:30.
+[[No|Test302]]</tw-passagedata><tw-passagedata pid="28" name="Test301" tags="" position="200,1725" size="100,100">Don&#39;t have a shower, you&#39;ll continue working in the office until 17:30.
 
 
-[[Understood|Final passage]]</tw-passagedata><tw-passagedata pid="40" name="Test302" tags="" position="350,1600" size="100,100">Go have a shower and get changed.
+[[Understood|Final passage]]</tw-passagedata><tw-passagedata pid="29" name="Test302" tags="" position="350,1600" size="100,100">Go have a shower and get changed.
 
 
-[[Done|Final passage]]</tw-passagedata><tw-passagedata pid="41" name="Final passage" tags="" position="25,500" size="100,100">END OF LINE
+[[Done|Final passage]]</tw-passagedata><tw-passagedata pid="30" name="Final passage" tags="" position="25,500" size="100,100">END OF LINE
 
 
-[[Understood|Landing page]]</tw-passagedata><tw-passagedata pid="42" name="Landing page" tags="" position="200,250" size="100,100">Have I just completed this SOP?
+[[Understood|Landing page]]</tw-passagedata><tw-passagedata pid="31" name="Landing page" tags="" position="200,250" size="100,100">Have I just completed this SOP?
 
 
 Yes - close this file
-[[No - I&#39;ve just opened it|Start]]</tw-passagedata><tw-passagedata pid="43" name="Start" tags="" position="350,75" size="100,100">[[&#39;Wet&#39; manufacture|Manufacture][$type_of_manufacture to &quot;wet&quot;]]
-[[&#39;Dry&#39; manufacture|Manufacture][$type_of_manufacture to &quot;dry&quot;]]</tw-passagedata><tw-passagedata pid="44" name="Variables in this SOP" tags="" position="50,175" size="100,100">$type_of_manufacture - &quot;dry&quot; OR &quot;wet&quot;
+[[No - I&#39;ve just opened it|1]]</tw-passagedata><tw-passagedata pid="32" name="Variables in this SOP" tags="" position="50,175" size="100,100">$type_of_manufacture - &quot;dry&quot; OR &quot;wet&quot;
 $is_phone_battery_low
-$is_dry_manufacture_complete</tw-passagedata><tw-passagedata pid="45" name="1" tags="" position="1075,800" size="100,100">Turn off computer(s).
+$is_dry_manufacture_complete</tw-passagedata><tw-passagedata pid="33" name="1" tags="" position="425,575" size="100,100">Turn off computer(s).
 
 
 [[Done|Test705]]</tw-passagedata></tw-storydata>
