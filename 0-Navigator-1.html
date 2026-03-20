@@ -141,13 +141,12 @@ Leave filter door open.
 
 
 [[Done|1]]
-</tw-passagedata><tw-passagedata pid="4" name="Check boiled eggs" tags="" position="400,300" size="100,100">Are there at least 4 boiled eggs in fridge?
+</tw-passagedata><tw-passagedata pid="4" name="Check boiled eggs" tags="" position="400,225" size="100,100">Are there at least 4 boiled eggs in fridge?
 
 
-&lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[Yes|5]]&lt;&lt;else&gt;&gt;[[Yes|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;[[Yes|n4]]&lt;&lt;elseif $is_no_coffee_during_lent is true&gt;&gt;[[Yes|5]]&lt;&lt;else&gt;&gt;[[Yes|Dispose of old coffee filter]]
 &lt;&lt;extlink&quot;https://lockwoodnotion.github.io/standard_operating_procedures/boil_eggs.html&quot; &quot;No - start boiling more eggs&quot;&gt;&gt;
-
-&lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[Eggs are currently being worked on|5]]&lt;&lt;else&gt;&gt;[[Eggs are currently being worked on|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Boil eggs" tags="" position="600,400" size="100,100">Pull out saucepan.
+&lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;[[Eggs are currently being worked on|n4]]&lt;&lt;elseif $is_no_coffee_during_lent is true&gt;&gt;[[Eggs are currently being worked on|5]]&lt;&lt;else&gt;&gt;[[Eggs are currently being worked on|Dispose of old coffee filter]]</tw-passagedata><tw-passagedata pid="5" name="Boil eggs" tags="" position="1550,375" size="100,100">Pull out saucepan.
 
 Load 8 eggs.
 
@@ -157,15 +156,15 @@ Empty kettle into saucepan until eggs are covered.
 
 [[Eggs are covered|Empty kettle]]
 [[Eggs are not covered|Top up water]]
-</tw-passagedata><tw-passagedata pid="6" name="Heat water" tags="" position="750,400" size="100,100">Set saucepan to &#39;9&#39;.
+</tw-passagedata><tw-passagedata pid="6" name="Heat water" tags="" position="1700,375" size="100,100">Set saucepan to &#39;9&#39;.
 
 Put on saucepan lid.
 
 
-[[Done|Prep mixing bowl]]</tw-passagedata><tw-passagedata pid="7" name="Top up water" tags="" position="750,550" size="100,100">Cover eggs with water from tap.
+[[Done|Prep mixing bowl]]</tw-passagedata><tw-passagedata pid="7" name="Top up water" tags="" position="1700,525" size="100,100">Cover eggs with water from tap.
 
 
-[[Done|Heat water]]</tw-passagedata><tw-passagedata pid="8" name="22" tags="" position="1225,525" size="100,100">Wait until eggs are at a roiling boil.
+[[Done|Heat water]]</tw-passagedata><tw-passagedata pid="8" name="22" tags="" position="2175,500" size="100,100">Wait until eggs are at a roiling boil.
 
 (Go back to &#39;Navigator-1&#39; in the meantime)
 
@@ -173,15 +172,15 @@ Put on saucepan lid.
 [[Eggs are intact|Saucepan lid on]]
 [[Egg white has emerged|Saucepan lid off]]
 
-</tw-passagedata><tw-passagedata pid="9" name="Saucepan lid on" tags="" position="1375,625" size="100,100">Set saucepan to &#39;4&#39;.
+</tw-passagedata><tw-passagedata pid="9" name="Saucepan lid on" tags="" position="2325,600" size="100,100">Set saucepan to &#39;4&#39;.
 
 
-[[Done|Set egg timer]]</tw-passagedata><tw-passagedata pid="10" name="Saucepan lid off" tags="" position="950,550" size="100,100">Remove saucepan lid.
+[[Done|Set egg timer]]</tw-passagedata><tw-passagedata pid="10" name="Saucepan lid off" tags="" position="1900,525" size="100,100">Remove saucepan lid.
 
 Set saucepan to &#39;5&#39;.
 
 
-[[Done|Set egg timer]]</tw-passagedata><tw-passagedata pid="11" name="Prep mixing bowl" tags="" position="1000,400" size="100,100">Pull out mixing bowl and fill to 60%.
+[[Done|Set egg timer]]</tw-passagedata><tw-passagedata pid="11" name="Prep mixing bowl" tags="" position="1950,375" size="100,100">Pull out mixing bowl and fill to 60%.
 
 Empty one tray of ice-cubes into the mixing bowl.
 
@@ -240,7 +239,7 @@ Put these items on the worktop next to my &#39;extension&#39; board.
 [[Done|Office set-up]]</tw-passagedata><tw-passagedata pid="18" name="Trofast to office transport 3" tags="" position="400,2650" size="100,100">Store the items that have dedicated storage spaces (laptop, bank statements etc.).
 
 
-[[Done|Trofast to office transport 4]]</tw-passagedata><tw-passagedata pid="19" name="Empty kettle" tags="" position="875,275" size="100,100">Put kettle back.
+[[Done|Trofast to office transport 4]]</tw-passagedata><tw-passagedata pid="19" name="Empty kettle" tags="" position="1825,250" size="100,100">Put kettle back.
 
 
 [[Done|Heat water]]</tw-passagedata><tw-passagedata pid="20" name="Ensure &#39;wake-up&#39; alarm is on" tags="" position="400,1750" size="100,100">Ensure &#39;wake-up&#39; alarm is on.
@@ -255,7 +254,7 @@ Put these items on the worktop next to my &#39;extension&#39; board.
 
 * My cereal
 * Egg x 2
-*
+* Fish-oil capsule x 2
 &lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;* Vitamin D tablet x 1&lt;&lt;else&gt;&gt;* Vitamin D tablet x 3 (one is for Sofus)&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $dayOfWeek &gt;= 2 and $dayOfWeek &lt;= 5&gt;&gt;* Devotional book&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;
 
@@ -288,7 +287,7 @@ Fit filter.
 * Juice.
 
 
-[[Done|Prepare my cereal]]</tw-passagedata><tw-passagedata pid="27" name="Set egg timer" tags="" position="850,750" size="100,100">Set timer on phone for 5 minutes 30 seconds.
+[[Done|Prepare my cereal]]</tw-passagedata><tw-passagedata pid="27" name="Set egg timer" tags="" position="1800,725" size="100,100">Set timer on phone for 5 minutes 30 seconds.
 
 (Go back to &#39;Navigator-1&#39; in the meantime)
 
@@ -335,18 +334,27 @@ Pull out blue seat.
 [[Done|4]]</tw-passagedata><tw-passagedata pid="39" name="n1" tags="" position="400,0" size="100,100">Wash face to wake up.
 
 
-&lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;[[Done|n4]]&lt;&lt;elseif $dayOfWeek === 7 &gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;elseif $month &gt;= 2 &amp;&amp; $month &lt;= 4&gt;&gt;[[Done|10]]&lt;&lt;else&gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $dayOfWeek === 7 &gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;elseif $month &gt;= 2 &amp;&amp; $month &lt;= 4&gt;&gt;[[Done|10]]&lt;&lt;else&gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;/if&gt;&gt;
 
 
 
-</tw-passagedata><tw-passagedata pid="40" name="n4" tags="" position="1150,175" size="100,100">Is weather clement?
+
+
+
+
+
+&lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;elseif $dayOfWeek === 7 &gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;elseif $month &gt;= 2 &amp;&amp; $month &lt;= 4&gt;&gt;[[Done|10]]&lt;&lt;else&gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;/if&gt;&gt;
+
+
+
+</tw-passagedata><tw-passagedata pid="40" name="n4" tags="" position="875,325" size="100,100">Is weather clement?
 
 
 [[Yes|n5]]
-&lt;&lt;if $dayOfWeek === 7 &gt;&gt;[[No|Check boiled eggs]]&lt;&lt;elseif $month &gt;= 2 &amp;&amp; $month &lt;= 4&gt;&gt;[[No|10]]&lt;&lt;else&gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="n5" tags="" position="675,125" size="100,100">Walk outside.
+&lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[No|5]]&lt;&lt;else&gt;&gt;[[No|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="n5" tags="" position="650,450" size="100,100">Walk outside.
 
 
-&lt;&lt;if $dayOfWeek === 7 &gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;elseif $month &gt;= 2 &amp;&amp; $month &lt;= 4&gt;&gt;[[Done|10]]&lt;&lt;else&gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Trofast to office transport 1" tags="" position="775,2900" size="100,100">&lt;&lt;unset $is_no_coffee_during_lent&gt;&gt;Are there any items in Trofast?
+&lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[Done|5]]&lt;&lt;else&gt;&gt;[[Done|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Trofast to office transport 1" tags="" position="775,2900" size="100,100">&lt;&lt;unset $is_no_coffee_during_lent&gt;&gt;Are there any items in Trofast?
 
 
 [[Yes|Trofast to office transport 2]]
@@ -370,10 +378,10 @@ Plug in phone under desk.
 [[Done|Prepare Aidan&#39;s breakfast items]]</tw-passagedata><tw-passagedata pid="47" name="Variables in this SOP" tags="" position="50,250" size="100,100">$is_no_coffee_during_lent</tw-passagedata><tw-passagedata pid="48" name="3" tags="" position="600,1900" size="100,100">Plug in tablet to charge.
 
 
-[[Done|Weather review]]</tw-passagedata><tw-passagedata pid="49" name="10" tags="" position="525,75" size="100,100">Is it currently Lent?
+[[Done|Weather review]]</tw-passagedata><tw-passagedata pid="49" name="10" tags="" position="750,0" size="100,100">Is it currently Lent?
 
 
-&lt;&lt;if $dayOfWeek === 7 &gt;&gt;[[Yes|Check boiled eggs]]&lt;&lt;else&gt;&gt;[[Yes|Check boiled eggs][$is_no_coffee_during_lent to true]]&lt;&lt;/if&gt;&gt;
+[[Yes|Check boiled eggs][$is_no_coffee_during_lent to true]]&lt;&lt;/if&gt;&gt;
 [[No|Check boiled eggs]]</tw-passagedata><tw-passagedata pid="50" name="50" tags="" position="250,300" size="100,100">Am I away from the house on holiday?
 
 
