@@ -145,7 +145,9 @@ Leave filter door open.
 
 
 &lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[Yes|5]]&lt;&lt;else&gt;&gt;[[Yes|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;
-[[No|Boil eggs]]</tw-passagedata><tw-passagedata pid="5" name="Boil eggs" tags="" position="600,400" size="100,100">Pull out saucepan.
+&lt;&lt;extlink&quot;https://lockwoodnotion.github.io/standard_operating_procedures/boil_eggs.html&quot; &quot;No - start boiling more eggs&quot;&gt;&gt;
+
+&lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[Eggs are currently being worked on|5]]&lt;&lt;else&gt;&gt;[[Eggs are currently being worked on|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Boil eggs" tags="" position="600,400" size="100,100">Pull out saucepan.
 
 Load 8 eggs.
 
@@ -163,7 +165,9 @@ Put on saucepan lid.
 [[Done|Prep mixing bowl]]</tw-passagedata><tw-passagedata pid="7" name="Top up water" tags="" position="750,550" size="100,100">Cover eggs with water from tap.
 
 
-[[Done|Heat water]]</tw-passagedata><tw-passagedata pid="8" name="22" tags="" position="1225,525" size="100,100">Wait until eggs are at a roiling boil..
+[[Done|Heat water]]</tw-passagedata><tw-passagedata pid="8" name="22" tags="" position="1225,525" size="100,100">Wait until eggs are at a roiling boil.
+
+(Go back to &#39;Navigator-1&#39; in the meantime)
 
 
 [[Eggs are intact|Saucepan lid on]]
@@ -249,9 +253,9 @@ Put these items on the worktop next to my &#39;extension&#39; board.
 
 [[Morning routine|50]]</tw-passagedata><tw-passagedata pid="22" name="Prepare breakfast table" tags="" position="400,1600" size="100,100">Put out my breakfast.
 
-
 * My cereal
 * Egg x 2
+*
 &lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;* Vitamin D tablet x 1&lt;&lt;else&gt;&gt;* Vitamin D tablet x 3 (one is for Sofus)&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $dayOfWeek &gt;= 2 and $dayOfWeek &lt;= 5&gt;&gt;* Devotional book&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;
 
@@ -269,7 +273,7 @@ Fit filter.
 [[Done|2]]</tw-passagedata><tw-passagedata pid="25" name="Prepare my cereal" tags="" position="400,1450" size="100,100">Prepare my cereal.
 
 50g oats
-20g seed mix
+10g seed mix
 40g Greek yoghurt
 1 sliced banana
 
@@ -285,6 +289,8 @@ Fit filter.
 
 
 [[Done|Prepare my cereal]]</tw-passagedata><tw-passagedata pid="27" name="Set egg timer" tags="" position="850,750" size="100,100">Set timer on phone for 5 minutes 30 seconds.
+
+(Go back to &#39;Navigator-1&#39; in the meantime)
 
 
 &lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[Done|5]]&lt;&lt;else&gt;&gt;[[Done|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Scripture reminder" tags="" position="775,3250" size="100,100">Anagignoskomen is whatever you&#39;re currently interested in reading.
