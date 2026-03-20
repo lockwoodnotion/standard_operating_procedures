@@ -163,7 +163,7 @@ Yes - close this file
 
 
 [[Yes|Test12]]
-[[No|Test13]]</tw-passagedata><tw-passagedata pid="5" name="Test12" tags="" position="562.5,175" size="100,100">Set T/T to ‘P-R-(programme #).
+[[No|Test13]]</tw-passagedata><tw-passagedata pid="5" name="Test12" tags="" position="425,200" size="100,100">Set T/T to ‘P-R-(programme #).
 
 Place ‘Programme folder’ in lunch tote.
 
@@ -172,19 +172,19 @@ Place T/T sheet in lunch tote.
 Ensure lunch tote is outside of van (somewhere dry).
 
 
-[[Done|Test1]]</tw-passagedata><tw-passagedata pid="6" name="Test13" tags="" position="687.5,175" size="100,100">Did I just complete &#39;dry&#39; manufacture?
+[[Done|Test1]]</tw-passagedata><tw-passagedata pid="6" name="Test13" tags="" position="625,350" size="100,100">Did I just complete &#39;dry&#39; manufacture?
 
 
 [[Yes|Test12][$is_dry_manufacture_complete to true]]
 [[No|Test12][$is_deferral_required to true]]
-</tw-passagedata><tw-passagedata pid="7" name="Test1" tags="" position="562.5,300" size="100,100">Tidy up van.
+</tw-passagedata><tw-passagedata pid="7" name="Test1" tags="" position="450,325" size="100,100">Tidy up van.
 Dispose of waste as appropriate.
 
 
-&lt;&lt;if (new Date()).getMonth() &gt;= 10 or (new Date()).getMonth() &lt;= 3&gt;&gt; [[Done|1]]&lt;&lt;else&gt;&gt;[[Done|Test5]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Test200" tags="" position="400,550" size="100,100">Ensure any TaskParts potentially exposed to condensation dripping from the roof are sheeted up with blankets/dustsheets.
+&lt;&lt;if (new Date()).getMonth() &gt;= 10 or (new Date()).getMonth() &lt;= 3&gt;&gt; [[Done|1]]&lt;&lt;else&gt;&gt;[[Done|Test5]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Test200" tags="" position="250,625" size="100,100">Ensure any TaskParts potentially exposed to condensation dripping from the roof are sheeted up with blankets/dustsheets.
 
 
-[[Done|Test5]]</tw-passagedata><tw-passagedata pid="9" name="Test5" tags="" position="625,425" size="100,100">Unplug van.
+[[Done|Test5]]</tw-passagedata><tw-passagedata pid="9" name="Test5" tags="" position="450,500" size="100,100">Unplug van.
 
 
 [[Done|Test2]]</tw-passagedata><tw-passagedata pid="10" name="Test2" tags="" position="625,550" size="100,100">As a best guess, will my next work requiring my tool-vest be an installation or manufacture?
@@ -211,10 +211,11 @@ Close fan.
 Clip up T/T sheet.
 
 
-[[Done|Test7]]</tw-passagedata><tw-passagedata pid="14" name="Test7" tags="" position="562.5,925" size="100,100">Process contents of lunch tote as necessary.
+[[Done|Test7]]</tw-passagedata><tw-passagedata pid="14" name="Test7" tags="" position="875,1000" size="100,100">Process contents of lunch tote as necessary.
 
 
-&lt;&lt;if $is_dry_manufacture_complete is true&gt;&gt;[[Done|Test14]]&lt;&lt;elseif $is_deferral_required is true&gt;&gt;[[Done|Test15]]&lt;&lt;else&gt;&gt;&lt;&lt;extlink &quot;https://lockwoodnotion.github.io/standard_operating_procedures/6010_office_set_down.html&quot; &quot;Done - will go to &#39;office - set down&#39;&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="Test14" tags="" position="437.5,1050" size="100,100">Open &quot;form_ProgrammeManager&quot;.
+&lt;&lt;if $is_dry_manufacture_complete is true&gt;&gt;[[Done|Test14]]&lt;&lt;elseif $is_deferral_required is true&gt;&gt;[[Done|Test15]]&lt;&lt;else&gt;&gt;&lt;&lt;extlink &quot;https://lockwoodnotion.github.io/standard_operating_procedures/6010_office_set_down.html&quot; &quot;Done - will go to &#39;office - set down&#39;&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
+[[I&#39;ve just opened the SOP|3]]</tw-passagedata><tw-passagedata pid="15" name="Test14" tags="" position="437.5,1050" size="100,100">Open &quot;form_ProgrammeManager&quot;.
 
 Enter today&#39;s date in &#39;Manufacture completion date&#39;.
 
@@ -228,7 +229,7 @@ Defer current task to tomorrow.
 
 
 [[END OF LINE|Landing page]]</tw-passagedata><tw-passagedata pid="18" name="Variables in this SOP" tags="" position="25,150" size="100,100">$is_dry_manufacture_complete
-$is_deferral_required</tw-passagedata><tw-passagedata pid="19" name="1" tags="" position="375,375" size="100,100">Is there a risk of condensation in the van?
+$is_deferral_required</tw-passagedata><tw-passagedata pid="19" name="1" tags="" position="225,450" size="100,100">Is there a risk of condensation in the van?
 
 
 [[Yes|Test200]] 
