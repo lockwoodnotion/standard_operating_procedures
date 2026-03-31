@@ -158,7 +158,7 @@ Config.history.maxStates = 20;
 
 
 Yes - close this file
-[[No - I&#39;ve just opened it|1]]</tw-passagedata><tw-passagedata pid="4" name="Variables in this SOP" tags="" position="25,150" size="100,100"></tw-passagedata><tw-passagedata pid="5" name="1" tags="" position="300,50" size="100,100">Using the information from Joanie compose a new letter.
+[[No - I&#39;ve just opened it|1]]</tw-passagedata><tw-passagedata pid="4" name="Variables in this SOP" tags="" position="25,150" size="100,100">$is_uniform</tw-passagedata><tw-passagedata pid="5" name="1" tags="" position="300,50" size="100,100">Using the information from Joanie compose a new letter.
 
 
 [[Done|2]]</tw-passagedata><tw-passagedata pid="6" name="2" tags="" position="300,175" size="100,100">Does the letter need to be adapted for different audiences?
@@ -171,7 +171,7 @@ Recipients are:
 
 
 [[Yes|3]]
-[[No|7]]</tw-passagedata><tw-passagedata pid="7" name="3" tags="" position="525,175" size="100,100">Make the necessary adaptations.
+[[No|7][$is_uniform to true]]</tw-passagedata><tw-passagedata pid="7" name="3" tags="" position="525,175" size="100,100">Make the necessary adaptations.
 
 Save a copy for each recipient as per prior naming convention.
 
@@ -179,7 +179,7 @@ Save a copy for each recipient as per prior naming convention.
 [[Done|8]]</tw-passagedata><tw-passagedata pid="8" name="4" tags="" position="300,425" size="100,100">Print off one copy of the letter (they&#39;re all the same).
 
 
-[[Done|5]]</tw-passagedata><tw-passagedata pid="9" name="5" tags="" position="300,550" size="100,100">Label the top of the letter(s) - &#39;Is this OK?&#39;
+[[Done|5]]</tw-passagedata><tw-passagedata pid="9" name="5" tags="" position="300,550" size="100,100">Label the top of the letter(s) - &#39;Is this OK?&lt;&lt;if $is_uniform is true&gt;&gt; (same for all recipients)&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;&#39;
 
 
 [[Done|6]]</tw-passagedata><tw-passagedata pid="10" name="6" tags="" position="300,675" size="100,100">Put the letter(s) on Joanie&#39;s laptop.
@@ -188,7 +188,7 @@ Save a copy for each recipient as per prior naming convention.
 [[Done|Final passage]]</tw-passagedata><tw-passagedata pid="11" name="7" tags="" position="300,300" size="100,100">Save a copy for each recipient as per prior naming convention.
 
 
-[[Done|4]]</tw-passagedata><tw-passagedata pid="12" name="8" tags="" position="525,300" size="100,100">Print off one copy of each variant of the letter.
+[[Done|4]]</tw-passagedata><tw-passagedata pid="12" name="8" tags="" position="525,425" size="100,100">Print off one copy of each variant of the letter.
 
 
 [[Done|5]]</tw-passagedata></tw-storydata>
