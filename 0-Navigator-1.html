@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="0-Navigator-1" startnode="21" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="041ba890-2d54-4e14-9e6a-4a711e1507b7" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage > p {
+	<tw-storydata name="0-Navigator-1" startnode="13" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="041ba890-2d54-4e14-9e6a-4a711e1507b7" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage > p {
     margin-bottom: 1em;
 }
 .passage > p:last-of-type {
@@ -148,48 +148,7 @@ Leave filter door open.
 &lt;&lt;extlink&quot;https://lockwoodnotion.github.io/standard_operating_procedures/boil_eggs.html&quot; &quot;No - start boiling more eggs&quot;&gt;&gt;
 
 
-&lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;[[Eggs are currently being worked on|n4]]&lt;&lt;elseif $is_no_coffee_during_lent is true&gt;&gt;[[Eggs are currently being worked on|5]]&lt;&lt;else&gt;&gt;[[Eggs are currently being worked on|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Boil eggs" tags="" position="1550,375" size="100,100">Pull out saucepan.
-
-Load 8 eggs.
-
-Empty kettle into saucepan until eggs are covered.
-
-
-
-[[Eggs are covered|Empty kettle]]
-[[Eggs are not covered|Top up water]]
-</tw-passagedata><tw-passagedata pid="6" name="Heat water" tags="" position="1700,375" size="100,100">Set saucepan to &#39;9&#39;.
-
-Put on saucepan lid.
-
-
-[[Done|Prep mixing bowl]]</tw-passagedata><tw-passagedata pid="7" name="Top up water" tags="" position="1700,525" size="100,100">Cover eggs with water from tap.
-
-
-[[Done|Heat water]]</tw-passagedata><tw-passagedata pid="8" name="22" tags="" position="2175,500" size="100,100">Wait until eggs are at a roiling boil.
-
-(Go back to &#39;Navigator-1&#39; in the meantime)
-
-
-[[Eggs are intact|Saucepan lid on]]
-[[Egg white has emerged|Saucepan lid off]]
-
-</tw-passagedata><tw-passagedata pid="9" name="Saucepan lid on" tags="" position="2325,600" size="100,100">Set saucepan to &#39;4&#39;.
-
-
-[[Done|Set egg timer]]</tw-passagedata><tw-passagedata pid="10" name="Saucepan lid off" tags="" position="1900,525" size="100,100">Remove saucepan lid.
-
-Set saucepan to &#39;5&#39;.
-
-
-[[Done|Set egg timer]]</tw-passagedata><tw-passagedata pid="11" name="Prep mixing bowl" tags="" position="1950,375" size="100,100">Pull out mixing bowl and fill to 60%.
-
-Empty one tray of ice-cubes into the mixing bowl.
-
-Place mixing bowl on induction hob.
-
-
-[[Done|22]]</tw-passagedata><tw-passagedata pid="12" name="StoryInit" tags="" position="75,25" size="100,100">&lt;!-- Human-friendly day of the week: Monday=1 ... Sunday=7 --&gt;
+&lt;&lt;if $month &gt;= 3 &amp;&amp; $month &lt;= 9&gt;&gt;[[Eggs are currently being worked on|n4]]&lt;&lt;elseif $is_no_coffee_during_lent is true&gt;&gt;[[Eggs are currently being worked on|5]]&lt;&lt;else&gt;&gt;[[Eggs are currently being worked on|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="StoryInit" tags="" position="75,25" size="100,100">&lt;!-- Human-friendly day of the week: Monday=1 ... Sunday=7 --&gt;
     &lt;&lt;set $dayOfWeek to ((new Date()).getDay() + 6) % 7 + 1&gt;&gt;
 
     &lt;!-- Human-friendly month: January=1 ... December=12 --&gt;
@@ -214,45 +173,42 @@ Place mixing bowl on induction hob.
 		&lt;/span&gt;
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;
-</tw-passagedata><tw-passagedata pid="13" name="Paper Calendar review" tags="" position="400,2200" size="100,100">Check paper calendar for today.
+</tw-passagedata><tw-passagedata pid="6" name="Paper Calendar review" tags="" position="400,2200" size="100,100">Check paper calendar for today.
 
 Ensure any urgent requirements are in hand.
 
 &#39;Capture&#39; as necessary.
 
 
-&lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[Done|14]]&lt;&lt;else&gt;&gt;[[Done|Put coffee on table]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="Weather review" tags="" position="400,2050" size="100,100">Check&lt;&lt;extlink &quot;https://www.bbc.co.uk/weather/2640729&quot; &quot;BBC weather in Oxford for today&quot;&gt;&gt;.
+&lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[Done|15]]&lt;&lt;else&gt;&gt;[[Done|Put coffee on table]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Weather review" tags="" position="400,2050" size="100,100">Check&lt;&lt;extlink &quot;https://www.bbc.co.uk/weather/2640729&quot; &quot;BBC weather in Oxford for today&quot;&gt;&gt;.
 
 Then close any tabs other than &#39;Navigator - 1&#39;.
 
 
-[[Done|Paper Calendar review]]</tw-passagedata><tw-passagedata pid="15" name="Trofast to office transport 2" tags="" position="400,2500" size="100,100">Collect all the items in Trofast.
+[[Done|Paper Calendar review]]</tw-passagedata><tw-passagedata pid="8" name="Trofast to office transport 2" tags="" position="400,2500" size="100,100">Collect all the items in Trofast.
 
 Put these items on the worktop next to my &#39;extension&#39; board.
 
 
-[[Done|Trofast to office transport 3]]</tw-passagedata><tw-passagedata pid="16" name="Trofast to office transport 4" tags="" position="400,2800" size="100,100">Try to put any remaining items into the &#39;Capture&#39; inbox.
+[[Done|Trofast to office transport 3]]</tw-passagedata><tw-passagedata pid="9" name="Trofast to office transport 4" tags="" position="400,2800" size="100,100">Try to put any remaining items into the &#39;Capture&#39; inbox.
 
 
 [[Done|Office set-up]]
-[[At least one item is too big|Trofast to office transport 5]]</tw-passagedata><tw-passagedata pid="17" name="Trofast to office transport 5" tags="" position="550,2800" size="100,100">Leave these items on the worktop next to my &#39;extension&#39; board.
+[[At least one item is too big|Trofast to office transport 5]]</tw-passagedata><tw-passagedata pid="10" name="Trofast to office transport 5" tags="" position="550,2800" size="100,100">Leave these items on the worktop next to my &#39;extension&#39; board.
 
 
-[[Done|Office set-up]]</tw-passagedata><tw-passagedata pid="18" name="Trofast to office transport 3" tags="" position="400,2650" size="100,100">Store the items that have dedicated storage spaces (laptop, bank statements etc.).
+[[Done|Office set-up]]</tw-passagedata><tw-passagedata pid="11" name="Trofast to office transport 3" tags="" position="400,2650" size="100,100">Store the items that have dedicated storage spaces (laptop, bank statements etc.).
 
 
-[[Done|Trofast to office transport 4]]</tw-passagedata><tw-passagedata pid="19" name="Empty kettle" tags="" position="1825,250" size="100,100">Put kettle back.
+[[Done|Trofast to office transport 4]]</tw-passagedata><tw-passagedata pid="12" name="Ensure &#39;wake-up&#39; alarm is on" tags="" position="400,1750" size="100,100">Ensure &#39;wake-up&#39; alarm is on.
 
 
-[[Done|Heat water]]</tw-passagedata><tw-passagedata pid="20" name="Ensure &#39;wake-up&#39; alarm is on" tags="" position="400,1750" size="100,100">Ensure &#39;wake-up&#39; alarm is on.
-
-
-&lt;&lt;if $dayOfWeek === 6 &gt;&gt;[[Done|3]]&lt;&lt;else&gt;&gt;[[Done|Weather review]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="Starting passage" tags="" position="200,150" size="100,100">This is the first passage of &#39;Navigator - 1&#39;.
+&lt;&lt;if $dayOfWeek === 6 &gt;&gt;[[Done|3]]&lt;&lt;else&gt;&gt;[[Done|Weather review]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="Starting passage" tags="" position="200,150" size="100,100">This is the first passage of &#39;Navigator - 1&#39;.
 
 (Items in a &#39;*&#39; list can be done in any sequence.)
 
 
-[[Morning routine|50]]</tw-passagedata><tw-passagedata pid="22" name="Prepare breakfast table" tags="" position="400,1600" size="100,100">Put out my breakfast.
+[[Morning routine|50]]</tw-passagedata><tw-passagedata pid="14" name="Prepare breakfast table" tags="" position="400,1600" size="100,100">Put out my breakfast.
 
 * My cereal
 * Egg x 1
@@ -263,17 +219,17 @@ Put these items on the worktop next to my &#39;extension&#39; board.
 &lt;&lt;if $dayOfWeek &gt;= 2 and $dayOfWeek &lt;= 5&gt;&gt;* Devotional book&lt;&lt;else&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 
-[[Done|Ensure &#39;wake-up&#39; alarm is on]]</tw-passagedata><tw-passagedata pid="23" name="Put coffee on table" tags="" position="400,2350" size="100,100">Pull out two mugs.
+[[Done|Ensure &#39;wake-up&#39; alarm is on]]</tw-passagedata><tw-passagedata pid="15" name="Put coffee on table" tags="" position="400,2350" size="100,100">Pull out two mugs.
 
 Put mugs and coffee thermos on table.
 
 
-[[Done|14]]</tw-passagedata><tw-passagedata pid="24" name="Put on coffee" tags="" position="400,1000" size="100,100">Fill water tank as desired (&#39;2&#39; per person).
+[[Done|15]]</tw-passagedata><tw-passagedata pid="16" name="Put on coffee" tags="" position="400,1000" size="100,100">Fill water tank as desired (&#39;2&#39; per person).
 
 Fit filter.
 
 
-[[Done|2]]</tw-passagedata><tw-passagedata pid="25" name="Prepare my cereal" tags="" position="400,1450" size="100,100">Prepare my cereal.
+[[Done|2]]</tw-passagedata><tw-passagedata pid="17" name="Prepare my cereal" tags="" position="400,1450" size="100,100">Prepare my cereal.
 
 50g oats
 10g seed mix
@@ -281,7 +237,7 @@ Fit filter.
 1 sliced banana
 
 
-[[Done|Prepare breakfast table]]</tw-passagedata><tw-passagedata pid="26" name="Prepare Aidan&#39;s breakfast items" tags="" position="400,1300" size="100,100">Ensure Aidan&#39;s breakfast items are on the side ready for him to take in.
+[[Done|Prepare breakfast table]]</tw-passagedata><tw-passagedata pid="18" name="Prepare Aidan&#39;s breakfast items" tags="" position="400,1300" size="100,100">Ensure Aidan&#39;s breakfast items are on the side ready for him to take in.
 
 * His cereal.
 * His bowl.
@@ -291,12 +247,7 @@ Fit filter.
 * Juice.
 
 
-[[Done|Prepare my cereal]]</tw-passagedata><tw-passagedata pid="27" name="Set egg timer" tags="" position="1800,725" size="100,100">Set timer on phone for 5 minutes 30 seconds.
-
-(Go back to &#39;Navigator-1&#39; in the meantime)
-
-
-&lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[Done|5]]&lt;&lt;else&gt;&gt;[[Done|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Scripture reminder" tags="" position="775,3250" size="100,100">Anagignoskomen is whatever you&#39;re currently interested in reading.
+[[Done|Prepare my cereal]]</tw-passagedata><tw-passagedata pid="19" name="Scripture reminder" tags="" position="775,3250" size="100,100">Anagignoskomen is whatever you&#39;re currently interested in reading.
 
 Scripture is what you think is spiritually valuable enough to return to for regular instruction.
 
@@ -305,28 +256,28 @@ Scripture is what you think is spiritually valuable enough to return to for regu
 [[Trito-keimenon|Trito-keimenon]]
 [[Tetarto-keimenon|Tetarto-keimenon]]
 [[Anagignoskomena|Anagignoskomena]]
-</tw-passagedata><tw-passagedata pid="29" name="Proto-keimenon" tags="" position="775,3425" size="100,100">* James
+</tw-passagedata><tw-passagedata pid="20" name="Proto-keimenon" tags="" position="775,3425" size="100,100">* James
 
-* Sermon on the Mount</tw-passagedata><tw-passagedata pid="30" name="Deutero-keimenon" tags="" position="900,3400" size="100,100">* Galatians
+* Sermon on the Mount</tw-passagedata><tw-passagedata pid="21" name="Deutero-keimenon" tags="" position="900,3400" size="100,100">* Galatians
 
-* Proverbs</tw-passagedata><tw-passagedata pid="31" name="Trito-keimenon" tags="" position="1025,3375" size="100,100">* Twelve Steps and Twelve Traditions
-* Alcoholics Anonymous - &#39;The Big Book&#39;</tw-passagedata><tw-passagedata pid="32" name="Tetarto-keimenon" tags="" position="1050,3250" size="100,100"></tw-passagedata><tw-passagedata pid="33" name="Anagignoskomena" tags="" position="1000,3125" size="100,100"></tw-passagedata><tw-passagedata pid="34" name="Quiet Time grounding" tags="" position="450,3650" size="100,100">* Breathe
+* Proverbs</tw-passagedata><tw-passagedata pid="22" name="Trito-keimenon" tags="" position="1025,3375" size="100,100">* Twelve Steps and Twelve Traditions
+* Alcoholics Anonymous - &#39;The Big Book&#39;</tw-passagedata><tw-passagedata pid="23" name="Tetarto-keimenon" tags="" position="1050,3250" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Anagignoskomena" tags="" position="1000,3125" size="100,100"></tw-passagedata><tw-passagedata pid="25" name="Quiet Time grounding" tags="" position="450,3650" size="100,100">* Breathe
 * Mantra
 * Sing
 
-[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="35" name="Quiet Time action" tags="" position="900,3650" size="100,100">* Pray for Joanie
+[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="26" name="Quiet Time action" tags="" position="900,3650" size="100,100">* Pray for Joanie
 * Pray for Sofus
 * Pray for Aidan
 
-[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="36" name="Quiet Time pondering" tags="" position="750,3650" size="100,100">* Observation
+[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="27" name="Quiet Time pondering" tags="" position="750,3650" size="100,100">* Observation
 * Review &#39;two-way prayer&#39;
 * Review &#39;guidance&#39;
 * Read scripture (keimenon)
 
-[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="37" name="Quiet Time listening" tags="" position="600,3650" size="100,100">* &#39;Two-way prayer&#39;
+[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="28" name="Quiet Time listening" tags="" position="600,3650" size="100,100">* &#39;Two-way prayer&#39;
 * &#39;Guidance&#39;
 
-[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="38" name="Office set-up" tags="" position="400,2950" size="100,100">(In office)
+[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="29" name="Office set-up" tags="" position="400,2950" size="100,100">(In office)
 
 Hang up keys.
 
@@ -335,62 +286,68 @@ Put red timer on floor.
 Pull out blue seat.
 
 
-[[Done|4]]</tw-passagedata><tw-passagedata pid="39" name="n1" tags="" position="400,0" size="100,100">Wash face to wake up.
+[[Done|4]]</tw-passagedata><tw-passagedata pid="30" name="n1" tags="" position="400,0" size="100,100">Wash face to wake up.
 
 
 &lt;&lt;if $dayOfWeek === 7 &gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;elseif $month &gt;= 2 &amp;&amp; $month &lt;= 4&gt;&gt;[[Done|10]]&lt;&lt;else&gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;/if&gt;&gt;
 
 
 
-</tw-passagedata><tw-passagedata pid="40" name="n4" tags="" position="550,550" size="100,100">Is weather clement?
+</tw-passagedata><tw-passagedata pid="31" name="n4" tags="" position="550,550" size="100,100">Is weather clement?
 
 
 [[Yes|n5]]
-&lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[No|5]]&lt;&lt;else&gt;&gt;[[No|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="n5" tags="" position="625,875" size="100,100">Walk outside.
+&lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[No|5]]&lt;&lt;else&gt;&gt;[[No|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="n5" tags="" position="625,875" size="100,100">Walk outside.
 
 
-&lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[Done|5]]&lt;&lt;else&gt;&gt;[[Done|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Trofast to office transport 1" tags="" position="775,2900" size="100,100">&lt;&lt;unset $is_no_coffee_during_lent&gt;&gt;Are there any items in Trofast?
+&lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[Done|5]]&lt;&lt;else&gt;&gt;[[Done|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Trofast to office transport 1" tags="" position="775,2900" size="100,100">&lt;&lt;unset $is_no_coffee_during_lent&gt;&gt;Are there any items in Trofast?
 
 
 [[Yes|Trofast to office transport 2]]
-[[No|Office set-up]]</tw-passagedata><tw-passagedata pid="43" name="1" tags="" position="400,850" size="100,100">Ensure coffe pot is empty.
+[[No|Office set-up]]</tw-passagedata><tw-passagedata pid="34" name="1" tags="" position="400,850" size="100,100">Ensure coffe pot is empty.
 
 
-[[Done|Put on coffee]]</tw-passagedata><tw-passagedata pid="44" name="2" tags="" position="400,1150" size="100,100">Add coffee (1 scoop per &#39;2&#39; in water tank).
+[[Done|Put on coffee]]</tw-passagedata><tw-passagedata pid="35" name="2" tags="" position="400,1150" size="100,100">Add coffee (1 scoop per &#39;2&#39; in water tank).
 
 Turn on machine.
 
 
 &lt;&lt;if $month &gt;= 5 and $month &lt;= 9&gt;&gt;[[Done|12]]&lt;&lt;else&gt;&gt;[[Done|5]]&lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="45" name="4" tags="" position="400,3100" size="100,100">Set phone to &#39;audible&#39;.
+</tw-passagedata><tw-passagedata pid="36" name="4" tags="" position="400,3100" size="100,100">Set phone to &#39;audible&#39;.
 
 Plug in phone under desk.
 
 
-[[Done|Scripture reading]]</tw-passagedata><tw-passagedata pid="46" name="5" tags="" position="875,1000" size="100,100">Unless I know better, &lt;&lt;if $dayOfWeek === 7 &gt;&gt;ensure radiator in living is 2 (due to Elements) and radiator in dining room is 3.5.&lt;&lt;else&gt;&gt;ensure radiators in living room and dining room are at least 3.5.&lt;&lt;/if&gt;&gt;
+[[Done|Scripture reading]]</tw-passagedata><tw-passagedata pid="37" name="5" tags="" position="875,1000" size="100,100">Unless I know better, &lt;&lt;if $dayOfWeek === 7 &gt;&gt;ensure radiator in living is 2 (due to Elements) and radiator in dining room is 3.5.&lt;&lt;else&gt;&gt;ensure radiators in living room and dining room are at least 3.5.&lt;&lt;/if&gt;&gt;
 
 
-[[Done|12]]</tw-passagedata><tw-passagedata pid="47" name="Variables in this SOP" tags="" position="50,250" size="100,100">$is_no_coffee_during_lent</tw-passagedata><tw-passagedata pid="48" name="3" tags="" position="600,1900" size="100,100">Plug in tablet to charge.
+[[Done|12]]</tw-passagedata><tw-passagedata pid="38" name="Variables in this SOP" tags="" position="50,250" size="100,100">$is_no_coffee_during_lent</tw-passagedata><tw-passagedata pid="39" name="3" tags="" position="600,1900" size="100,100">Plug in tablet to charge.
 
 
-[[Done|Weather review]]</tw-passagedata><tw-passagedata pid="49" name="10" tags="" position="750,0" size="100,100">Is it currently Lent?
+[[Done|Weather review]]</tw-passagedata><tw-passagedata pid="40" name="10" tags="" position="750,0" size="100,100">Is it currently Lent?
 
 
 [[Yes|Check boiled eggs][$is_no_coffee_during_lent to true]]
-[[No|Check boiled eggs]]</tw-passagedata><tw-passagedata pid="50" name="50" tags="" position="250,300" size="100,100">Am I away from the house on holiday?
+[[No|Check boiled eggs]]</tw-passagedata><tw-passagedata pid="41" name="50" tags="" position="250,300" size="100,100">Am I away from the house on holiday?
 
 
 [[Yes|51]]
-[[No|n1]]</tw-passagedata><tw-passagedata pid="51" name="51" tags="" position="200,450" size="100,100">Implement &lt;&lt;extlink &quot;https://lockwoodnotion.github.io/standard_operating_procedures/holiday_navigator.html&quot; &quot;Holiday - Navigator&quot;&gt;&gt;.</tw-passagedata><tw-passagedata pid="52" name="11" tags="" position="675,1325" size="100,100">&lt;&lt;extlink &quot;&quot;https://lockwoodnotion.github.io/standard_operating_procedures/daytime_meal.html&quot; &quot;Prepare my daytime meals.&quot;&gt;&gt;
+[[No|n1]]</tw-passagedata><tw-passagedata pid="42" name="51" tags="" position="200,450" size="100,100">Implement &lt;&lt;extlink &quot;https://lockwoodnotion.github.io/standard_operating_procedures/holiday_navigator.html&quot; &quot;Holiday - Navigator&quot;&gt;&gt;.</tw-passagedata><tw-passagedata pid="43" name="11" tags="" position="675,1325" size="100,100">&lt;&lt;extlink &quot;https://lockwoodnotion.github.io/standard_operating_procedures/daytime_meal.html&quot; &quot;Prepare my daytime meals.&quot;&gt;&gt;
 
 
-[[Done|Prepare Aidan&#39;s breakfast items]]</tw-passagedata><tw-passagedata pid="53" name="12" tags="" position="650,1200" size="100,100">Clear drying rack.
+[[Done|Prepare Aidan&#39;s breakfast items]]</tw-passagedata><tw-passagedata pid="44" name="12" tags="" position="650,1200" size="100,100">Clear drying rack.
 
 
-[[Done|13]]</tw-passagedata><tw-passagedata pid="54" name="13" tags="" position="925,1225" size="100,100">Do washing up.
+[[Done|13]]</tw-passagedata><tw-passagedata pid="45" name="13" tags="" position="925,1225" size="100,100">Do washing up.
 
 
-[[Done|11]]</tw-passagedata><tw-passagedata pid="55" name="14" tags="" position="675,2475" size="100,100">Do washing up.
+[[Done|11]]</tw-passagedata><tw-passagedata pid="46" name="14" tags="" position="675,2475" size="100,100">Do washing up.
+
+
+[[Done|16]]</tw-passagedata><tw-passagedata pid="47" name="15" tags="" position="675,2325" size="100,100">Clear the drying rack.
+
+
+[[Done|14]] </tw-passagedata><tw-passagedata pid="48" name="16" tags="" position="675,2600" size="100,100">Dry the washing up I just did and put it away.
 
 
 [[Done|Trofast to office transport 1]]</tw-passagedata></tw-storydata>
