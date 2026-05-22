@@ -324,7 +324,7 @@ Note as required:
 [[No|14]] </tw-passagedata><tw-passagedata pid="43" name="48" tags="" position="325,1150" size="100,100">Will the message definitely NOT spawn another action?
 
 
-&lt;&lt;if $current_stage is &quot;physical&quot;&gt;&gt;[[Yes|32]]&lt;&lt;if $current_stage is &quot;text_message&quot;&gt;&gt;[[Yes|5]]&lt;&lt;else&gt;&gt;[[Yes|22]]&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $current_stage is &quot;physical&quot;&gt;&gt;[[Yes|32]]&lt;&lt;elseif $current_stage is &quot;text_message&quot;&gt;&gt;[[Yes|5]]&lt;&lt;else&gt;&gt;[[Yes|22]]&lt;&lt;/if&gt;&gt;
 [[No|41]] </tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
