@@ -208,7 +208,10 @@ $is_email_for_physical_item</tw-passagedata><tw-passagedata pid="5" name="1" tag
     ▪ The action does not generate future obligations, promises, or dependency chains. 
     
 ◦ Hard Boundary 
-    ▪ The moment complexity, ambiguity, emotional activation, or “just one more thing” appears:      →     immediately stop and move on to the next message.</tw-passagedata><tw-passagedata pid="14" name="18" tags="" position="900,875" size="100,100">Acknowledge the message.
+    ▪ The moment complexity, ambiguity, emotional activation, or “just one more thing” appears:      →     immediately stop and move on to the next message.
+    
+    
+[[Understood|14]] </tw-passagedata><tw-passagedata pid="14" name="18" tags="" position="900,875" size="100,100">Acknowledge the message.
 
 DO NOT archive the message!
 
@@ -287,7 +290,7 @@ DO NOT archive the message!
 
 
 [[Yes|25][$current_stage to &quot;email&quot;]]
-[[No|Final passage]]</tw-passagedata><tw-passagedata pid="35" name="40" tags="" position="450,1000" size="100,100">Beyond reading the message, will the message DEFINITELY spawn another action?
+[[No|Final passage]]</tw-passagedata><tw-passagedata pid="35" name="40" tags="" position="450,1025" size="100,100">Beyond reading the message, will the message DEFINITELY spawn another action?
 
 
 [[Yes|47]]
@@ -318,7 +321,7 @@ Note as required:
 *Sender
 
 
-&lt;&lt;if $current_stage is &quot;text_message&quot;&gt;&gt;[[Done|5]]&lt;&lt;elseif $current_stage is &quot;whatsapp&quot;&gt;&gt;[[Done|22]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="47" tags="" position="150,1175" size="100,100">Is the action generated a response to someone I know personally, who has sent me something informational but doesn&#39;t need an urgent response?
+&lt;&lt;if $current_stage is &quot;text_message&quot;&gt;&gt;[[Done|5]]&lt;&lt;elseif $current_stage is &quot;whatsapp&quot;&gt;&gt;[[Done|22]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="47" tags="" position="150,1175" size="100,100">Is the action generated a response to someone I know personally, who has sent me something informational (a video etc.) but doesn&#39;t need an urgent response?
 
 
 &lt;&lt;if $current_stage is &quot;email&quot;&gt;&gt;[[Yes|42]]&lt;&lt;elseif $current_stage is &quot;physical&quot;&gt;&gt;[[Yes|32][$is_email_for_physical_item to true]]&lt;&lt;else&gt;&gt;[[Yes|46]]&lt;&lt;/if&gt;&gt;
