@@ -180,11 +180,11 @@ $is_email_for_physical_item</tw-passagedata><tw-passagedata pid="5" name="1" tag
 
 
 [[Yes|25][$current_stage to &quot;email&quot;]]
-[[No|39]]</tw-passagedata><tw-passagedata pid="10" name="14" tags="" position="675,800" size="100,100">Is the message a &#39;sealed action&#39;? (i.e. does it NOT create &#39;ACE&#39;?      (adhesion/commitment/expansion))
+[[No|39]]</tw-passagedata><tw-passagedata pid="10" name="14" tags="" position="675,800" size="100,100">Is the generated action a &#39;sealed action&#39;? (i.e. does it NOT create &#39;ACE&#39;?      (adhesion/commitment/expansion))
 
 
 [[Yes|16]]
-[[No|35]]
+[[No|47]]
 
 
 [[Fuller explanation|17]]</tw-passagedata><tw-passagedata pid="11" name="15" tags="" position="750,950" size="100,100">Would it be a kindness to the other party to send an acknowledgment?
@@ -293,7 +293,7 @@ DO NOT archive the message!
 [[No|Final passage]]</tw-passagedata><tw-passagedata pid="35" name="40" tags="" position="450,1025" size="100,100">Beyond reading the message, will the message DEFINITELY spawn another action?
 
 
-[[Yes|47]]
+[[Yes|14]]
 [[No|48]]
 </tw-passagedata><tw-passagedata pid="36" name="41" tags="" position="400,1275" size="100,100">Intuitively, will reading/watching this message be likely to generate any actions that will need to be taken within seven days?
 
@@ -325,7 +325,7 @@ Note as required:
 
 
 &lt;&lt;if $current_stage is &quot;email&quot;&gt;&gt;[[Yes|42]]&lt;&lt;elseif $current_stage is &quot;physical&quot;&gt;&gt;[[Yes|32][$is_email_for_physical_item to true]]&lt;&lt;else&gt;&gt;[[Yes|46]]&lt;&lt;/if&gt;&gt;
-[[No|14]] </tw-passagedata><tw-passagedata pid="43" name="48" tags="" position="325,1150" size="100,100">Will the message definitely NOT spawn another action?
+[[No|35]] </tw-passagedata><tw-passagedata pid="43" name="48" tags="" position="325,1150" size="100,100">Will the message definitely NOT spawn another action?
 
 
 &lt;&lt;if $current_stage is &quot;physical&quot;&gt;&gt;[[Yes|32]]&lt;&lt;elseif $current_stage is &quot;text_message&quot;&gt;&gt;[[Yes|5]]&lt;&lt;else&gt;&gt;[[Yes|22]]&lt;&lt;/if&gt;&gt;
