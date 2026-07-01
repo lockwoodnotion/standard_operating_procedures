@@ -1802,7 +1802,7 @@ WhatsApp these three things.
 
 
 [[Yes|751]]
-[[No|815]]</tw-passagedata><tw-passagedata pid="445" name="751" tags="" position="75,325" size="100,100">Implement &lt;&lt;extlink &quot;https://lockwoodnotion.github.io/standard_operating_procedures/holiday_navigator.html&quot; &quot;Holiday - Navigator&quot;&gt;&gt;.</tw-passagedata><tw-passagedata pid="446" name="7n1" tags="" position="75,450" size="100,100">Wash face to wake up.
+&lt;&lt;if $dayOfWeek === 3 &gt;&gt;[[No|761]]&lt;&lt;else&gt;&gt;[[No|763]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="445" name="751" tags="" position="75,325" size="100,100">Implement &lt;&lt;extlink &quot;https://lockwoodnotion.github.io/standard_operating_procedures/holiday_navigator.html&quot; &quot;Holiday - Navigator&quot;&gt;&gt;.</tw-passagedata><tw-passagedata pid="446" name="7n1" tags="" position="75,450" size="100,100">Wash face to wake up.
 
 
 &lt;&lt;if $dayOfWeek === 7 &gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;elseif $month &gt;= 2 &amp;&amp; $month &lt;= 4&gt;&gt;[[Done|710]]&lt;&lt;else&gt;&gt;[[Done|Check boiled eggs]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="447" name="Check boiled eggs" tags="" position="75,575" size="100,100">Are there at least 6 boiled eggs in fridge?
@@ -2025,7 +2025,7 @@ Then close any tabs other than &#39;Navigator - Morning&#39;.
 [[Done|762]]</tw-passagedata><tw-passagedata pid="499" name="762" tags="" position="575,175" size="100,100">Note figure in &#39;Weight&#39;.
 
 
-[[Done|763]]</tw-passagedata><tw-passagedata pid="500" name="763" tags="" position="400,275" size="100,100">Restart and close &#39;Navigator - Evening&#39; tab.
+[[Done|763]]</tw-passagedata><tw-passagedata pid="500" name="763" tags="" position="400,275" size="100,100">Restart and close &#39;Navigator - Evening&#39; tab if it&#39;s open.
 
 
 &lt;&lt;if $dayOfWeek === 6 &gt;&gt;[[Done|753]]&lt;&lt;else&gt;&gt;[[Done|7n1]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="501" name="764" tags="" position="1175,3625" size="100,100">Find all emails that are &#39;noise&#39;.
@@ -2478,17 +2478,14 @@ Update &#39;Felix&#39;s Bane&#39;.
 [[Done|854]]</tw-passagedata><tw-passagedata pid="596" name="854" tags="" position="875,12425" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Update &#39;Time Recording&#39; data now.
 
 
-[[Done|848]]</tw-passagedata><tw-passagedata pid="597" name="815" tags="" position="225,250" size="100,100">Reset Aidan&#39;s Gro-Clock.
-
-
-&lt;&lt;if $dayOfWeek === 3 &gt;&gt;[[Done|761]]&lt;&lt;else&gt;&gt;[[Done|763]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="598" name="993" tags="" position="5125,5800" size="100,100">Is there a cable trailing from the van?
+[[Done|848]]</tw-passagedata><tw-passagedata pid="597" name="993" tags="" position="5125,5800" size="100,100">Is there a cable trailing from the van?
 
 
 [[Yes|Test980]] 
-[[No|Test994]] </tw-passagedata><tw-passagedata pid="599" name="576" tags="" position="975,3525" size="100,100">Report back to action partners what happened the previous day.
+[[No|Test994]] </tw-passagedata><tw-passagedata pid="598" name="576" tags="" position="975,3525" size="100,100">Report back to action partners what happened the previous day.
 
 
-[[Done|577]] </tw-passagedata><tw-passagedata pid="600" name="577" tags="" position="800,3525" size="100,100">Decide on three items to send to &#39;Action partners&#39; WhatsApp chat.
+[[Done|577]] </tw-passagedata><tw-passagedata pid="599" name="577" tags="" position="800,3525" size="100,100">Decide on three items to send to &#39;Action partners&#39; WhatsApp chat.
 
 Sources:
 *JARVIS &quot;form_PromptGenerator&quot;.
@@ -2498,38 +2495,38 @@ Sources:
 WhatsApp these three things.
 
 
-[[Done|902]]</tw-passagedata><tw-passagedata pid="601" name="872" tags="" position="900,11200" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;B - Navigator&#39;.
+[[Done|902]]</tw-passagedata><tw-passagedata pid="600" name="872" tags="" position="900,11200" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;B - Navigator&#39;.
 
 
-[[Understood|310]]</tw-passagedata><tw-passagedata pid="602" name="869" tags="" position="750,6525" size="100,100">RR is complete.
+[[Understood|310]]</tw-passagedata><tw-passagedata pid="601" name="869" tags="" position="750,6525" size="100,100">RR is complete.
 
 
-&lt;&lt;link &quot;Understood&quot;$interruptedPassage&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="603" name="267" tags="" position="1200,7325" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is there a page in &#39;+Capture =&gt; Define&#39;?
+&lt;&lt;link &quot;Understood&quot;$interruptedPassage&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="602" name="267" tags="" position="1200,7325" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is there a page in &#39;+Capture =&gt; Define&#39;?
 
 
 [[Yes|268]] 
 &lt;&lt;link &quot;There are no pages at all&quot;&gt;&gt;&lt;&lt;goto &quot;270&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-</tw-passagedata><tw-passagedata pid="604" name="268" tags="" position="1300,7575" size="100,100">Are there only non-ACE tasks in &#39;+Capture =&gt; Define&#39;?
+</tw-passagedata><tw-passagedata pid="603" name="268" tags="" position="1300,7575" size="100,100">Are there only non-ACE tasks in &#39;+Capture =&gt; Define&#39;?
 
 
 [[Yes|269]]
-[[No|211]]</tw-passagedata><tw-passagedata pid="605" name="269" tags="" position="1050,7650" size="100,100">Complete all the tasks.
+[[No|211]]</tw-passagedata><tw-passagedata pid="604" name="269" tags="" position="1050,7650" size="100,100">Complete all the tasks.
 
 Time record as &#39;B - Little Tasks&#39;.
 
 
-&lt;&lt;link &quot;Done&quot;&gt;&gt;&lt;&lt;goto &quot;270&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="606" name="270" tags="" position="775,10975" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;B - Navigator&#39;.
+&lt;&lt;link &quot;Done&quot;&gt;&gt;&lt;&lt;goto &quot;270&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="605" name="270" tags="" position="775,10975" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;B - Navigator&#39;.
 
 
-[[Understood|310]]</tw-passagedata><tw-passagedata pid="607" name="271" tags="" position="675,11850" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open view &#39;Urgent task&#39; in &#39;Normaliser&#39;.
+[[Understood|310]]</tw-passagedata><tw-passagedata pid="606" name="271" tags="" position="675,11850" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open view &#39;Urgent task&#39; in &#39;Normaliser&#39;.
 
 
-[[Done|272]]</tw-passagedata><tw-passagedata pid="608" name="272" tags="" position="875,11850" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete the next task.
+[[Done|272]]</tw-passagedata><tw-passagedata pid="607" name="272" tags="" position="875,11850" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete the next task.
 
 Time record as listed.
 
 
-[[There are no tasks left|n76]]</tw-passagedata><tw-passagedata pid="609" name="176" tags="" position="200,11800" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open JARVIS &quot;form_PromptGenerator&quot;.
+[[There are no tasks left|n76]]</tw-passagedata><tw-passagedata pid="608" name="176" tags="" position="200,11800" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open JARVIS &quot;form_PromptGenerator&quot;.
 
 
 [[Done|301]] </tw-passagedata></tw-storydata>
