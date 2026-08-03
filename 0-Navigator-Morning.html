@@ -2506,16 +2506,16 @@ WhatsApp these three things.
 
 [[Yes|268]] 
 &lt;&lt;link &quot;There are no pages at all&quot;&gt;&gt;&lt;&lt;goto &quot;270&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-</tw-passagedata><tw-passagedata pid="603" name="268" tags="" position="1300,7575" size="100,100">Are there only non-ACE tasks in &#39;+Capture =&gt; Define&#39;?
+</tw-passagedata><tw-passagedata pid="603" name="268" tags="" position="1300,7575" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Are there any non-ACE tasks in &#39;+Capture =&gt; Define&#39;?
 
 
 [[Yes|269]]
-[[No|211]]</tw-passagedata><tw-passagedata pid="604" name="269" tags="" position="1050,7650" size="100,100">Complete all the tasks.
+[[No|211]]</tw-passagedata><tw-passagedata pid="604" name="269" tags="" position="1050,7650" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete all the non-ACE tasks.
 
 Time record as &#39;B - Little Tasks&#39;.
 
 
-&lt;&lt;link &quot;Done&quot;&gt;&gt;&lt;&lt;goto &quot;270&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="605" name="270" tags="" position="775,10975" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;B - Navigator&#39;.
+[[Done|267]]</tw-passagedata><tw-passagedata pid="605" name="270" tags="" position="775,10975" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;B - Navigator&#39;.
 
 
 [[Understood|310]]</tw-passagedata><tw-passagedata pid="606" name="271" tags="" position="675,11850" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open view &#39;Urgent task&#39; in &#39;Normaliser&#39;.
