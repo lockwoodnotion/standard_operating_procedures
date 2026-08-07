@@ -177,38 +177,40 @@ Config.history.maxStates = 20;</script><tw-passagedata pid="1" name="StoryInit" 
 [[Done|Test712]]</tw-passagedata><tw-passagedata pid="9" name="Test712" tags="" position="425,1300" size="100,100">Take lunch tote and &#39;floor&#39; items to back door.
 
 
-[[Done|Test713]]</tw-passagedata><tw-passagedata pid="10" name="Test713" tags="" position="875,1225" size="100,100">Retrieve earbuds.
+[[Done|Test713]]</tw-passagedata><tw-passagedata pid="10" name="Test713" tags="" position="875,1175" size="100,100">Retrieve earbuds.
 
 Retrieve van keys.
 
 Go upstairs to get changed.
 
 
-[[Done|Test714]]
+[[Done|Test716]]
 
 
 
 
 
-</tw-passagedata><tw-passagedata pid="11" name="Test714" tags="" position="1125,1525" size="100,100">Is there an &#39;Optimalon&#39; sheet to be resolved?
+</tw-passagedata><tw-passagedata pid="11" name="Test714" tags="" position="925,1400" size="100,100">Is the MaterialSource detailed on an Optimalon sheet?
 
 
 [[Yes|Test715]]
-[[No|Test716]]</tw-passagedata><tw-passagedata pid="12" name="Test715" tags="" position="1275,1325" size="100,100">Dimension next ‘Optimalon&#39; sheet.
+[[No|Test742]]</tw-passagedata><tw-passagedata pid="12" name="Test715" tags="" position="775,1300" size="100,100">Dimension next ‘Optimalon&#39; sheet.
 
-T/T as relevant ‘T - R - (task #).
+T/T entire sheet breakdown as the stated task for this TaskPart.
 
 
-[[Done|Test717]]</tw-passagedata><tw-passagedata pid="13" name="Test716" tags="" position="1175,1825" size="100,100">Is there an &#39;Opticutter&#39; sheet to be resolved?
+[[Done|Test717]]</tw-passagedata><tw-passagedata pid="13" name="Test716" tags="" position="1200,1750" size="100,100">Is there an &#39;Opticutter&#39; sheet to be resolved?
 
 
 [[Yes|Test724]] 
-&lt;&lt;if $type_of_manufacture is &quot;wet&quot;&gt;&gt;[[No|Test725]]&lt;&lt;else&gt;&gt;[[No|Test741]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="Test717" tags="" position="1075,1250" size="100,100">Place TaskPart(s) ad-hoc in van/shed.
+&lt;&lt;if $type_of_manufacture is &quot;wet&quot;&gt;&gt;[[No|Test725]]&lt;&lt;else&gt;&gt;[[No|Test741]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="Test717" tags="" position="625,1300" size="100,100">Place TaskPart(s) ad-hoc in van/shed.
 
-Consider updating TaskPart(s) location on “report_VanLoadingList”.
+Cross out TaskPart(s) &#39;Source&#39; on “report_VanLoadingList”.
+
+Update TaskPart(s) &#39;Location&#39; on “report_VanLoadingList”.
 
 
-[[Done|Test714]] </tw-passagedata><tw-passagedata pid="15" name="Test724" tags="" position="1000,1800" size="100,100">Dimension next ‘Opticutter&#39; sheet.
+[[Done|Test742]] </tw-passagedata><tw-passagedata pid="15" name="Test724" tags="" position="1575,1750" size="100,100">Dimension next ‘Opticutter&#39; sheet.
 
 T/T as relevant ‘T - R - (task #).
 
@@ -220,7 +222,7 @@ Find the TaskPart with the longest drying time for its next &#39;wet&#39; manufa
 [[Selected|Test727]]
 [[No TaskPart that can be currently worked on|Test729]]
 
-</tw-passagedata><tw-passagedata pid="17" name="Test726" tags="" position="975,1650" size="100,100">Place TaskPart(s) ad-hoc in van/shed.
+</tw-passagedata><tw-passagedata pid="17" name="Test726" tags="" position="1550,1600" size="100,100">Place TaskPart(s) ad-hoc in van/shed.
 
 Update TaskPart(s) location on “report_VanLoadingList”.
 
@@ -236,7 +238,7 @@ Complete the &#39;wet&#39; manufacturing step.
 Update TaskPart(s) location on “report_VanLoadingList”.
 
 
-[[Done|Test725]]</tw-passagedata><tw-passagedata pid="20" name="Test729" tags="" position="900,1925" size="100,100">Is all the &#39;wet&#39; manufacturing complete?
+[[Done|Test725]]</tw-passagedata><tw-passagedata pid="20" name="Test729" tags="" position="1050,1850" size="100,100">Is all the &#39;wet&#39; manufacturing complete?
 
 
 [[Yes|Test730]]
@@ -245,25 +247,25 @@ Update TaskPart(s) location on “report_VanLoadingList”.
 
 
 
-</tw-passagedata><tw-passagedata pid="21" name="Test730" tags="" position="775,1700" size="100,100">Go to office.
+</tw-passagedata><tw-passagedata pid="21" name="Test730" tags="" position="875,1875" size="100,100">Go to office.
 
 Open &quot;Programme&quot;, enter today&#39;s date in &quot;Programme&quot;.&quot;wet_manufacture_completion_date&quot; column.
 
 
-[[Done|Test741]] </tw-passagedata><tw-passagedata pid="22" name="Test741" tags="" position="775,1375" size="100,100">Is the next entry on &quot;report_VanLoadingList&quot; still &#39;wet&#39; from &#39;wet manufacture&#39;?
+[[Done|Test741]] </tw-passagedata><tw-passagedata pid="22" name="Test741" tags="" position="975,1550" size="100,100">Is the next entry on &quot;report_VanLoadingList&quot; still &#39;wet&#39; from &#39;wet manufacture&#39;?
 
 
 [[Yes|6]]
-[[No|Test742]]
-[[The list is complete|7][$is_dry_manufacture_complete to true]]</tw-passagedata><tw-passagedata pid="23" name="Test742" tags="" position="425,1425" size="100,100">T/T as relevant ‘T - R - (task #).
+[[No|Test714]]
+[[The list is complete|7][$is_dry_manufacture_complete to true]]</tw-passagedata><tw-passagedata pid="23" name="Test742" tags="" position="425,1425" size="100,100">Complete the necessary &#39;dry manufacture&#39; task(s) for the next uncompleted entry of &quot;report_VanLoadingList&quot;.
 
-Complete the necessary &#39;dry manufacture&#39; task(s).
-
-
-[[Done|Test743]]</tw-passagedata><tw-passagedata pid="24" name="Test743" tags="" position="375,1575" size="100,100">Deliver the TaskPart to its destination.
+T/T as stated task.
 
 
-[[Done|Test744]]</tw-passagedata><tw-passagedata pid="25" name="Test744" tags="" position="600,1450" size="100,100">Circle &#39;Destination&#39; to sign off the TaskPart.
+[[Done|Test743]]</tw-passagedata><tw-passagedata pid="24" name="Test743" tags="" position="450,1575" size="100,100">Deliver the TaskPart to its destination.
+
+
+[[Done|Test744]]</tw-passagedata><tw-passagedata pid="25" name="Test744" tags="" position="725,1475" size="100,100">Circle &#39;Destination&#39; to sign off the TaskPart.
 
 
 [[Done|Test741]]</tw-passagedata><tw-passagedata pid="26" name="Test745" tags="" position="150,1825" size="100,100">I don&#39;t want to work on the TaskParts out of sequence, so instead -&lt;&lt;extlink&quot;https://lockwoodnotion.github.io/standard_operating_procedures/4020_manufacture_set_down.html&quot; &quot;run &#39;manufacture - set down&#39;&quot;&gt;&gt;
