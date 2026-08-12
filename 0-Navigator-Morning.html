@@ -1816,7 +1816,7 @@ Leave filter door open.
 &lt;&lt;if $is_no_coffee_during_lent is true&gt;&gt;[[Done|755]]&lt;&lt;else&gt;&gt;[[Done|Dispose of old coffee filter]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="443" name="1" tags="" position="600,850" size="100,100">Ensure coffe pot is empty.
 
 
-[[Done|Put on coffee]]</tw-passagedata><tw-passagedata pid="444" name="712" tags="" position="75,1000" size="100,100">Clear drying rack of non-cutlery items.
+[[Done|Put on coffee]]</tw-passagedata><tw-passagedata pid="444" name="712" tags="" position="75,1000" size="100,100">Clear drying rack of items that are neither cutlery nor recycling.
 
 
 [[Done|713]]</tw-passagedata><tw-passagedata pid="445" name="Put on coffee" tags="" position="475,900" size="100,100">Fill water tank as desired (&#39;2&#39; per person).
@@ -1829,7 +1829,7 @@ Fit filter.
 Turn on machine.
 
 
-&lt;&lt;if $month &gt;= 5 and $month &lt;= 9&gt;&gt;[[Done|712]]&lt;&lt;else&gt;&gt;[[Done|755]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="447" name="713" tags="" position="400,1025" size="100,100">Is dishwasher clean?.
+&lt;&lt;if $month &gt;= 5 and $month &lt;= 9&gt;&gt;[[Done|712]]&lt;&lt;else&gt;&gt;[[Done|755]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="447" name="713" tags="" position="400,1025" size="100,100">Is dishwasher clean?
 
 
 [[Yes|150]]
@@ -1896,45 +1896,42 @@ Put mugs and coffee thermos on table.
 [[Done|15]]</tw-passagedata><tw-passagedata pid="459" name="714" tags="" position="975,1700" size="100,100">Do washing up.
 
 
-[[Done|716]]</tw-passagedata><tw-passagedata pid="460" name="716" tags="" position="975,1825" size="100,100">Dry the washing up I just did and put it away.
-
-
-[[Done|Trofast to office transport 1]]</tw-passagedata><tw-passagedata pid="461" name="Trofast to office transport 1" tags="" position="825,1925" size="100,100">&lt;&lt;unset $is_no_coffee_during_lent&gt;&gt;Are there any items in Trofast?
+[[Done|Trofast to office transport 1]]</tw-passagedata><tw-passagedata pid="460" name="Trofast to office transport 1" tags="" position="825,1925" size="100,100">&lt;&lt;unset $is_no_coffee_during_lent&gt;&gt;Are there any items in Trofast?
 
 
 [[Yes|Trofast to office transport 2]]
-[[No|Office set-up]]</tw-passagedata><tw-passagedata pid="462" name="Trofast to office transport 2" tags="" position="800,1700" size="100,100">Take Trofast tub to office.
+[[No|Office set-up]]</tw-passagedata><tw-passagedata pid="461" name="Trofast to office transport 2" tags="" position="800,1700" size="100,100">Take Trofast tub to office.
 
 
 [[Done|Trofast to office transport 3]]
-</tw-passagedata><tw-passagedata pid="463" name="Office set-up" tags="" position="650,1750" size="100,100">&#39;Time Recording&#39; category is now &#39;B - Quiet-Time&#39;.
+</tw-passagedata><tw-passagedata pid="462" name="Office set-up" tags="" position="650,1750" size="100,100">&#39;Time Recording&#39; category is now &#39;B - Quiet-Time&#39;.
 
 Put red timer on floor.
 
 Pull out blue seat.
 
 
-[[Done|754]]</tw-passagedata><tw-passagedata pid="464" name="Trofast to office transport 3" tags="" position="850,1550" size="100,100">Store the items that have dedicated storage spaces (laptop, bank statements etc.).
+[[Done|754]]</tw-passagedata><tw-passagedata pid="463" name="Trofast to office transport 3" tags="" position="850,1550" size="100,100">Store the items that have dedicated storage spaces (laptop, bank statements etc.).
 
 
-[[Done|Trofast to office transport 4]]</tw-passagedata><tw-passagedata pid="465" name="Trofast to office transport 4" tags="" position="825,1400" size="100,100">Try to put any remaining items into the &#39;Physical inbox&#39;.
-
-
-[[Done|Office set-up]]
-[[At least one item is too big|Trofast to office transport 5]]</tw-passagedata><tw-passagedata pid="466" name="Trofast to office transport 5" tags="" position="650,1375" size="100,100">Leave these items on the worktop next to my &#39;extension&#39; board.
+[[Done|Trofast to office transport 4]]</tw-passagedata><tw-passagedata pid="464" name="Trofast to office transport 4" tags="" position="825,1400" size="100,100">Try to put any remaining items into the &#39;Physical inbox&#39;.
 
 
 [[Done|Office set-up]]
-</tw-passagedata><tw-passagedata pid="467" name="754" tags="" position="575,1600" size="100,100">Set phone to &#39;audible&#39;.
+[[At least one item is too big|Trofast to office transport 5]]</tw-passagedata><tw-passagedata pid="465" name="Trofast to office transport 5" tags="" position="650,1375" size="100,100">Leave these items on the worktop next to my &#39;extension&#39; board.
 
 
-[[Done|Scripture reading]]</tw-passagedata><tw-passagedata pid="468" name="Scripture reading" tags="" position="425,1575" size="100,100">Set red timer to 10 minutes.
+[[Done|Office set-up]]
+</tw-passagedata><tw-passagedata pid="466" name="754" tags="" position="575,1600" size="100,100">Set phone to &#39;audible&#39;.
+
+
+[[Done|Scripture reading]]</tw-passagedata><tw-passagedata pid="467" name="Scripture reading" tags="" position="425,1575" size="100,100">Set red timer to 10 minutes.
 
 Read scripture (keimenon/anagignoskomen).
 
 
 [[Alarm has gone off|Quiet Time (QT)]]
-[[I need a reminder of the scripture I use|Scripture reminder]]</tw-passagedata><tw-passagedata pid="469" name="Quiet Time (QT)" tags="" position="300,1725" size="100,100">Set red timer to 10 minutes.
+[[I need a reminder of the scripture I use|Scripture reminder]]</tw-passagedata><tw-passagedata pid="468" name="Quiet Time (QT)" tags="" position="300,1725" size="100,100">Set red timer to 10 minutes.
 
 
 [[Red timer has gone off|n71]]
@@ -1942,7 +1939,7 @@ Read scripture (keimenon/anagignoskomen).
 [[&#39;Quiet Time&#39; grounding|Quiet Time grounding]]
 [[&#39;Quiet Time&#39; listening|Quiet Time listening]]
 [[&#39;Quiet Time&#39; pondering|Quiet Time pondering]]
-[[&#39;Quiet Time&#39; action|Quiet Time action]]</tw-passagedata><tw-passagedata pid="470" name="Scripture reminder" tags="" position="250,1550" size="100,100">Anagignoskomen is whatever you&#39;re currently interested in reading.
+[[&#39;Quiet Time&#39; action|Quiet Time action]]</tw-passagedata><tw-passagedata pid="469" name="Scripture reminder" tags="" position="250,1550" size="100,100">Anagignoskomen is whatever you&#39;re currently interested in reading.
 
 Scripture is what you think is spiritually valuable enough to return to for regular instruction.
 
@@ -1950,72 +1947,72 @@ Scripture is what you think is spiritually valuable enough to return to for regu
 [[Deutero-keimenon|Deutero-keimenon]]
 [[Trito-keimenon|Trito-keimenon]]
 [[Tetarto-keimenon|Tetarto-keimenon]]
-[[Anagignoskomena|Anagignoskomena]]</tw-passagedata><tw-passagedata pid="471" name="Quiet Time grounding" tags="" position="275,1950" size="100,100">* Breathe
+[[Anagignoskomena|Anagignoskomena]]</tw-passagedata><tw-passagedata pid="470" name="Quiet Time grounding" tags="" position="275,1950" size="100,100">* Breathe
 * Mantra
 * Sing
 
-[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="472" name="Quiet Time listening" tags="" position="400,1950" size="100,100">* &#39;Two-way prayer&#39;
+[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="471" name="Quiet Time listening" tags="" position="400,1950" size="100,100">* &#39;Two-way prayer&#39;
 * &#39;Guidance&#39;
 
-[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="473" name="Quiet Time pondering" tags="" position="525,1950" size="100,100">* Observation
+[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="472" name="Quiet Time pondering" tags="" position="525,1950" size="100,100">* Observation
 * Review &#39;two-way prayer&#39;
 * Review &#39;guidance&#39;
 * Read scripture (keimenon)
 
-[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="474" name="Quiet Time action" tags="" position="650,1950" size="100,100">* Pray for Joanie
+[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="473" name="Quiet Time action" tags="" position="650,1950" size="100,100">* Pray for Joanie
 * Pray for Sofus
 * Pray for Aidan
 
-[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="475" name="Proto-keimenon" tags="" position="25,1375" size="100,100">* James
+[[Return to &#39;Quiet Time&#39; menu|Quiet Time (QT)]]</tw-passagedata><tw-passagedata pid="474" name="Proto-keimenon" tags="" position="25,1375" size="100,100">* James
 
-* Sermon on the Mount</tw-passagedata><tw-passagedata pid="476" name="Deutero-keimenon" tags="" position="150,1375" size="100,100">* Galatians
+* Sermon on the Mount</tw-passagedata><tw-passagedata pid="475" name="Deutero-keimenon" tags="" position="150,1375" size="100,100">* Galatians
 
-* Proverbs</tw-passagedata><tw-passagedata pid="477" name="Trito-keimenon" tags="" position="275,1375" size="100,100">* Twelve Steps and Twelve Traditions
-* Alcoholics Anonymous - &#39;The Big Book&#39;</tw-passagedata><tw-passagedata pid="478" name="Tetarto-keimenon" tags="" position="400,1375" size="100,100"></tw-passagedata><tw-passagedata pid="479" name="Anagignoskomena" tags="" position="525,1375" size="100,100"></tw-passagedata><tw-passagedata pid="480" name="302" tags="" position="1125,2125" size="100,100">Review &#39;Urgent task&#39; for existing obligations.
+* Proverbs</tw-passagedata><tw-passagedata pid="476" name="Trito-keimenon" tags="" position="275,1375" size="100,100">* Twelve Steps and Twelve Traditions
+* Alcoholics Anonymous - &#39;The Big Book&#39;</tw-passagedata><tw-passagedata pid="477" name="Tetarto-keimenon" tags="" position="400,1375" size="100,100"></tw-passagedata><tw-passagedata pid="478" name="Anagignoskomena" tags="" position="525,1375" size="100,100"></tw-passagedata><tw-passagedata pid="479" name="302" tags="" position="1125,2125" size="100,100">Review &#39;Urgent task&#39; for existing obligations.
 
 
-[[Done|303]]</tw-passagedata><tw-passagedata pid="481" name="303" tags="" position="1000,2375" size="100,100">Is there a page that I can delete because it is complete (AND not recurring) OR is now irrelevant?
+[[Done|303]]</tw-passagedata><tw-passagedata pid="480" name="303" tags="" position="1000,2375" size="100,100">Is there a page that I can delete because it is complete (AND not recurring) OR is now irrelevant?
 
 
 [[Yes|304]]
-[[No|305]]</tw-passagedata><tw-passagedata pid="482" name="304" tags="" position="937.5,2500" size="100,100">Delete that page.
+[[No|305]]</tw-passagedata><tw-passagedata pid="481" name="304" tags="" position="937.5,2500" size="100,100">Delete that page.
 
 
-[[Done|305]]</tw-passagedata><tw-passagedata pid="483" name="305" tags="" position="1062.5,2500" size="100,100">Is there a page which I can reasonably delay without breaking an express commitment OR causing concrete loss?
+[[Done|305]]</tw-passagedata><tw-passagedata pid="482" name="305" tags="" position="1062.5,2500" size="100,100">Is there a page which I can reasonably delay without breaking an express commitment OR causing concrete loss?
 
 
 [[Yes|306]]
-[[No|768]]</tw-passagedata><tw-passagedata pid="484" name="306" tags="" position="1150,2325" size="100,100">Amend the &quot;deadline&quot; of that page.
+[[No|768]]</tw-passagedata><tw-passagedata pid="483" name="306" tags="" position="1150,2325" size="100,100">Amend the &quot;deadline&quot; of that page.
 
 
-[[Done|768]]</tw-passagedata><tw-passagedata pid="485" name="551" tags="" position="525,11700" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Review &quot;Working hours capacity&quot; and &quot;Personal capacity (perception)&quot; to see if my schedule is levelled.
+[[Done|768]]</tw-passagedata><tw-passagedata pid="484" name="551" tags="" position="525,11700" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Review &quot;Working hours capacity&quot; and &quot;Personal capacity (perception)&quot; to see if my schedule is levelled.
 
 
 [[Both are within capacity level|176]]
-[[There is a capacity problem|17]]</tw-passagedata><tw-passagedata pid="486" name="552" tags="" position="1450,11550" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Define&#39; each page.
+[[There is a capacity problem|17]]</tw-passagedata><tw-passagedata pid="485" name="552" tags="" position="1450,11550" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Define&#39; each page.
 
 
-[[Done|872]] </tw-passagedata><tw-passagedata pid="487" name="760" tags="" position="1250,1225" size="100,100">&lt;&lt;extlink &quot;https://www.bbc.co.uk/weather/2640729&quot; &quot;Check BBC weather for today.&quot;&gt;&gt;.
+[[Done|872]] </tw-passagedata><tw-passagedata pid="486" name="760" tags="" position="1250,1225" size="100,100">&lt;&lt;extlink &quot;https://www.bbc.co.uk/weather/2640729&quot; &quot;Check BBC weather for today.&quot;&gt;&gt;.
 
 Then close any tabs other than &#39;Navigator - Morning&#39;.
 
 
-[[Done|Notion Calendar review]] </tw-passagedata><tw-passagedata pid="488" name="761" tags="" position="375,150" size="100,100">Weigh myself.
+[[Done|Notion Calendar review]] </tw-passagedata><tw-passagedata pid="487" name="761" tags="" position="375,150" size="100,100">Weigh myself.
 
 
-[[Done|762]]</tw-passagedata><tw-passagedata pid="489" name="762" tags="" position="575,175" size="100,100">Note figure in &#39;Weight&#39;.
+[[Done|762]]</tw-passagedata><tw-passagedata pid="488" name="762" tags="" position="575,175" size="100,100">Note figure in &#39;Weight&#39;.
 
 
-[[Done|763]]</tw-passagedata><tw-passagedata pid="490" name="763" tags="" position="400,275" size="100,100">Restart and close &#39;Navigator - Evening&#39; tab if it&#39;s open.
+[[Done|763]]</tw-passagedata><tw-passagedata pid="489" name="763" tags="" position="400,275" size="100,100">Restart and close &#39;Navigator - Evening&#39; tab if it&#39;s open.
 
 
-&lt;&lt;if $dayOfWeek === 6 &gt;&gt;[[Done|753]]&lt;&lt;else&gt;&gt;[[Done|7n1]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="491" name="764" tags="" position="1175,3625" size="100,100">Find all emails that are &#39;noise&#39;.
+&lt;&lt;if $dayOfWeek === 6 &gt;&gt;[[Done|753]]&lt;&lt;else&gt;&gt;[[Done|7n1]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="490" name="764" tags="" position="1175,3625" size="100,100">Find all emails that are &#39;noise&#39;.
 
 &#39;Interrupt&#39; the flow and then delete them.
 
 
 [[Done|771]]
-[[There are no emails|900]]</tw-passagedata><tw-passagedata pid="492" name="768" tags="" position="1375,2450" size="100,100">&#39;Physical inbox&#39;:
+[[There are no emails|900]]</tw-passagedata><tw-passagedata pid="491" name="768" tags="" position="1375,2450" size="100,100">&#39;Physical inbox&#39;:
 
 Find all &#39;Archive only - non-ACE&#39; items and archive/store them.
 
@@ -2028,19 +2025,19 @@ Archive item(s) in:
 
 
 [[Done|772]] 
-[[There are no items remaining|773]]</tw-passagedata><tw-passagedata pid="493" name="770" tags="" position="1050,3275" size="100,100">&#39;WhatsApp&#39;:
+[[There are no items remaining|773]]</tw-passagedata><tw-passagedata pid="492" name="770" tags="" position="1050,3275" size="100,100">&#39;WhatsApp&#39;:
 
 Find all &#39;Archive only - non-ACE&#39; messages and archive them.
 
 
 [[Done|779]]
-[[There are no messages remaining|764]]</tw-passagedata><tw-passagedata pid="494" name="771" tags="" position="1175,3775" size="100,100">&#39;Gmail&#39;:
+[[There are no messages remaining|764]]</tw-passagedata><tw-passagedata pid="493" name="771" tags="" position="1175,3775" size="100,100">&#39;Gmail&#39;:
 
 Find all &#39;Archive only - non-ACE&#39; messages and archive them.
 
 
 [[Done|901]]
-[[There are no messages remaining|900]]</tw-passagedata><tw-passagedata pid="495" name="772" tags="" position="1500,2425" size="100,100">&#39;Physical inbox&#39;:
+[[There are no messages remaining|900]]</tw-passagedata><tw-passagedata pid="494" name="772" tags="" position="1500,2425" size="100,100">&#39;Physical inbox&#39;:
 
 (&#39;Urgent&#39; definition - &quot;Not doing it today will cause me to:
 1) Break an express commitment OR 
@@ -2050,7 +2047,7 @@ Find all &#39;Urgent action - non-ACE&#39; items and action them.
 
 
 [[Done|777]]
-[[There are no items remaining|773]]</tw-passagedata><tw-passagedata pid="496" name="773" tags="" position="1525,2775" size="100,100">&#39;Text message&#39;:
+[[There are no items remaining|773]]</tw-passagedata><tw-passagedata pid="495" name="773" tags="" position="1525,2775" size="100,100">&#39;Text message&#39;:
 
 Open the next unread text message.
 
@@ -2058,10 +2055,10 @@ Open the next unread text message.
 [[Non-ACE|775]]
 [[ACE|774]]
 [[&#39;Noise&#39;|778]]
-[[There is no unread text message remaining|776]]</tw-passagedata><tw-passagedata pid="497" name="775" tags="" position="1725,2675" size="100,100">Action the text message.
+[[There is no unread text message remaining|776]]</tw-passagedata><tw-passagedata pid="496" name="775" tags="" position="1725,2675" size="100,100">Action the text message.
 
 
-[[Done|773]]</tw-passagedata><tw-passagedata pid="498" name="776" tags="" position="1575,3225" size="100,100">&#39;JARVIS&#39;:
+[[Done|773]]</tw-passagedata><tw-passagedata pid="497" name="776" tags="" position="1575,3225" size="100,100">&#39;JARVIS&#39;:
 
 Open &quot;form_PromptGenerator&quot;.
 
@@ -2069,17 +2066,17 @@ Is there an entry that needs to be done today?
 
 
 [[Yes|780]]
-[[No|770]]</tw-passagedata><tw-passagedata pid="499" name="774" tags="" position="1750,2800" size="100,100">&#39;Capture&#39; the text message.
+[[No|770]]</tw-passagedata><tw-passagedata pid="498" name="774" tags="" position="1750,2800" size="100,100">&#39;Capture&#39; the text message.
 
 
-[[Done|773]] </tw-passagedata><tw-passagedata pid="500" name="900" tags="" position="1000,3700" size="100,100">(&#39;Urgent&#39; definition - &quot;Not doing it today will cause me to:
+[[Done|773]] </tw-passagedata><tw-passagedata pid="499" name="900" tags="" position="1000,3700" size="100,100">(&#39;Urgent&#39; definition - &quot;Not doing it today will cause me to:
 1) Break an express commitment OR 
 2) Experience concrete loss&quot;)
 
 Go to &#39;+Capture ⇒ Define&#39;, define ONLY items that are urgent.
 
 
-[[Done|576]]</tw-passagedata><tw-passagedata pid="501" name="777" tags="" position="1650,2425" size="100,100">&#39;Physical inbox&#39;:
+[[Done|576]]</tw-passagedata><tw-passagedata pid="500" name="777" tags="" position="1650,2425" size="100,100">&#39;Physical inbox&#39;:
 
 (&#39;Urgent&#39; definition - &quot;Not doing it today will cause me to:
 1) Break an express commitment OR 
@@ -2091,7 +2088,7 @@ Place the item in &#39;Capture&#39; =&gt; &#39;Define&#39;.
 
 
 [[Done|773]]
-[[There are no items remaining|773]]</tw-passagedata><tw-passagedata pid="502" name="901" tags="" position="1175,3950" size="100,100">&#39;Gmail&#39;:
+[[There are no items remaining|773]]</tw-passagedata><tw-passagedata pid="501" name="901" tags="" position="1175,3950" size="100,100">&#39;Gmail&#39;:
 
 (&#39;Urgent&#39; definition - &quot;Not doing it today will cause me to:
 1) Break an express commitment OR 
@@ -2101,20 +2098,20 @@ Find all &#39;Urgent action - non-ACE&#39; messages and action them.
 
 
 [[Done|787]]
-[[There are no messages remaining|900]]</tw-passagedata><tw-passagedata pid="503" name="778" tags="" position="1650,2925" size="100,100">Leave it read.
+[[There are no messages remaining|900]]</tw-passagedata><tw-passagedata pid="502" name="778" tags="" position="1650,2925" size="100,100">Leave it read.
 
 
-[[Done|773]] </tw-passagedata><tw-passagedata pid="504" name="780" tags="" position="1925,3350" size="100,100">Is it ACE?
+[[Done|773]] </tw-passagedata><tw-passagedata pid="503" name="780" tags="" position="1925,3350" size="100,100">Is it ACE?
 
 
 [[Yes|783]]
-[[No|782]]</tw-passagedata><tw-passagedata pid="505" name="782" tags="" position="1925,3200" size="100,100">Action the entry.
+[[No|782]]</tw-passagedata><tw-passagedata pid="504" name="782" tags="" position="1925,3200" size="100,100">Action the entry.
 
 
-[[Done|785]]</tw-passagedata><tw-passagedata pid="506" name="783" tags="" position="1750,3350" size="100,100">&#39;Capture&#39; the entry.
+[[Done|785]]</tw-passagedata><tw-passagedata pid="505" name="783" tags="" position="1750,3350" size="100,100">&#39;Capture&#39; the entry.
 
 
-[[Done|784]]</tw-passagedata><tw-passagedata pid="507" name="779" tags="" position="1200,3325" size="100,100">&#39;WhatsApp&#39;:
+[[Done|784]]</tw-passagedata><tw-passagedata pid="506" name="779" tags="" position="1200,3325" size="100,100">&#39;WhatsApp&#39;:
 
 (&#39;Urgent&#39; definition - &quot;Not doing it today will cause me to:
 1) Break an express commitment OR 
@@ -2124,13 +2121,13 @@ Find all &#39;Urgent action - non-ACE&#39; messages and action them.
 
 
 [[Done|786]]
-[[There are no messages remaining|764]]</tw-passagedata><tw-passagedata pid="508" name="784" tags="" position="1575,3350" size="100,100">Defer the entry until tomorrow.
+[[There are no messages remaining|764]]</tw-passagedata><tw-passagedata pid="507" name="784" tags="" position="1575,3350" size="100,100">Defer the entry until tomorrow.
 
 
-[[Done|776]] </tw-passagedata><tw-passagedata pid="509" name="785" tags="" position="1775,3150" size="100,100">Defer the entry until tomorrow.
+[[Done|776]] </tw-passagedata><tw-passagedata pid="508" name="785" tags="" position="1775,3150" size="100,100">Defer the entry until tomorrow.
 
 
-[[Done|776]] </tw-passagedata><tw-passagedata pid="510" name="786" tags="" position="1325,3400" size="100,100">&#39;WhatsApp&#39;:
+[[Done|776]] </tw-passagedata><tw-passagedata pid="509" name="786" tags="" position="1325,3400" size="100,100">&#39;WhatsApp&#39;:
 
 (&#39;Urgent&#39; definition - &quot;Not doing it today will cause me to:
 1) Break an express commitment OR 
@@ -2140,7 +2137,7 @@ Find all &#39;Urgent action - ACE&#39; messages and &#39;capture&#39; them.
 
 
 [[Done|764]]
-[[There are no items remaining|764]]</tw-passagedata><tw-passagedata pid="511" name="787" tags="" position="1000,3875" size="100,100">&#39;Gmail&#39;:
+[[There are no items remaining|764]]</tw-passagedata><tw-passagedata pid="510" name="787" tags="" position="1000,3875" size="100,100">&#39;Gmail&#39;:
 
 (&#39;Urgent&#39; definition - &quot;Not doing it today will cause me to:
 1) Break an express commitment OR 
@@ -2150,32 +2147,32 @@ Find all &#39;Urgent action - ACE&#39; messages and &#39;capture&#39; them.
 
 
 [[Done|900]]
-[[There are no items remaining|900]]</tw-passagedata><tw-passagedata pid="512" name="902" tags="" position="700,3975" size="100,100">Review &#39;Urgent task&#39;.
+[[There are no items remaining|900]]</tw-passagedata><tw-passagedata pid="511" name="902" tags="" position="700,3975" size="100,100">Review &#39;Urgent task&#39;.
 
 Is there a task that can&#39;t be done during my breaks?
 
 
 [[Yes|905]]
-[[No|906]]</tw-passagedata><tw-passagedata pid="513" name="904" tags="" position="650,3700" size="100,100">Update &#39;Felix&#39;s Bane&#39;.
+[[No|906]]</tw-passagedata><tw-passagedata pid="512" name="904" tags="" position="650,3700" size="100,100">Update &#39;Felix&#39;s Bane&#39;.
 
 
-[[Done|908]] </tw-passagedata><tw-passagedata pid="514" name="905" tags="" position="550,3850" size="100,100">Time-recording category is now different.
+[[Done|908]] </tw-passagedata><tw-passagedata pid="513" name="905" tags="" position="550,3850" size="100,100">Time-recording category is now different.
 
 Complete the next task.
 
 
 [[Done|904]] 
 
-</tw-passagedata><tw-passagedata pid="515" name="908" tags="" position="875,3925" size="100,100">Review &#39;Urgent task&#39;.
+</tw-passagedata><tw-passagedata pid="514" name="908" tags="" position="875,3925" size="100,100">Review &#39;Urgent task&#39;.
 
 Are there any tasks at all?
 
 
 &lt;&lt;if $installation_status is &quot;office&quot;&gt;&gt;[[Yes|905]]&lt;&lt;else&gt;&gt;[[Yes|902]]&lt;&lt;/if&gt;&gt;
-[[No|414]]</tw-passagedata><tw-passagedata pid="516" name="906" tags="" position="575,4075" size="100,100">Set an alarm labelled &#39;(Temp)&#39; on my phone to remind me to do the task(s) during my break(s).
+[[No|414]]</tw-passagedata><tw-passagedata pid="515" name="906" tags="" position="575,4075" size="100,100">Set an alarm labelled &#39;(Temp)&#39; on my phone to remind me to do the task(s) during my break(s).
 
 
-[[Done|414]] </tw-passagedata><tw-passagedata pid="517" name="950" tags="" position="100,6575" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Physical inbox&#39;:
+[[Done|414]] </tw-passagedata><tw-passagedata pid="516" name="950" tags="" position="100,6575" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Physical inbox&#39;:
 
 What is the next item?
 
@@ -2184,26 +2181,26 @@ What is the next item?
 [[Non-ACE action|1804]]
 [[ACE action|1805]]
 [[There are no items remaining|400]]
-</tw-passagedata><tw-passagedata pid="518" name="1803" tags="" position="325,6475" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Archive item(s) in:
+</tw-passagedata><tw-passagedata pid="517" name="1803" tags="" position="325,6475" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Archive item(s) in:
 
 *Dedicated binder (high frequency paperwork)
 *Filing system (medium frequency paperwork)
 *‘A4 – Light’ binder (low frequency paperwork)
 
 
-[[Done|950]] </tw-passagedata><tw-passagedata pid="519" name="1804" tags="" position="125,6800" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete the action.
+[[Done|950]] </tw-passagedata><tw-passagedata pid="518" name="1804" tags="" position="125,6800" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete the action.
 
 Should the item be disposed of?
 
 
 [[Yes|882]]
-[[No|883]]</tw-passagedata><tw-passagedata pid="520" name="1805" tags="" position="425,6925" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Capture&#39; the item (or add it to an existing page).
+[[No|883]]</tw-passagedata><tw-passagedata pid="519" name="1805" tags="" position="425,6925" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Capture&#39; the item (or add it to an existing page).
 
 Should the item be disposed of?
 
 
 [[Yes|882]]
-[[No|883]]</tw-passagedata><tw-passagedata pid="521" name="1802" tags="" position="600,6800" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;WhatsApp&#39;:
+[[No|883]]</tw-passagedata><tw-passagedata pid="520" name="1802" tags="" position="600,6800" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;WhatsApp&#39;:
 
 What is the next item?
 
@@ -2211,28 +2208,28 @@ What is the next item?
 [[Archive only|884]]
 [[Non-ACE action|885]]
 [[ACE action|886]]
-[[There are no items remaining|887]]</tw-passagedata><tw-passagedata pid="522" name="882" tags="" position="37.5,6950" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Dispose of the item.
+[[There are no items remaining|887]]</tw-passagedata><tw-passagedata pid="521" name="882" tags="" position="37.5,6950" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Dispose of the item.
 
 
-[[Done|950]] </tw-passagedata><tw-passagedata pid="523" name="883" tags="" position="250,6825" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Consider carefully where to put the item - then put it there. Log its location (if necessary).
+[[Done|950]] </tw-passagedata><tw-passagedata pid="522" name="883" tags="" position="250,6825" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Consider carefully where to put the item - then put it there. Log its location (if necessary).
 
 
-[[Done|950]] </tw-passagedata><tw-passagedata pid="524" name="884" tags="" position="575,7000" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Archive the message.
+[[Done|950]] </tw-passagedata><tw-passagedata pid="523" name="884" tags="" position="575,7000" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Archive the message.
 
 
-[[Done|1802]] </tw-passagedata><tw-passagedata pid="525" name="885" tags="" position="725,6900" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete the action.
+[[Done|1802]] </tw-passagedata><tw-passagedata pid="524" name="885" tags="" position="725,6900" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete the action.
 
 Archive the message.
 
 
-[[Done|1802]] </tw-passagedata><tw-passagedata pid="526" name="886" tags="" position="875,6725" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Capture&#39; the item.
+[[Done|1802]] </tw-passagedata><tw-passagedata pid="525" name="886" tags="" position="875,6725" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Capture&#39; the item.
 
 Consider sending an acknowledgement.
 
 Archive the message.
 
 
-[[Done|1802]] </tw-passagedata><tw-passagedata pid="527" name="887" tags="" position="1025,6900" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Gmail&#39;:
+[[Done|1802]] </tw-passagedata><tw-passagedata pid="526" name="887" tags="" position="1025,6900" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Gmail&#39;:
 
 What is the next item?
 
@@ -2241,35 +2238,35 @@ What is the next item?
 [[Archive only|889]]
 [[Non-ACE action|8810]]
 [[ACE action|8811]]
-[[There are no items remaining|267]]</tw-passagedata><tw-passagedata pid="528" name="888" tags="" position="725,7050" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Interrupt&#39; the flow and then delete the message.
+[[There are no items remaining|267]]</tw-passagedata><tw-passagedata pid="527" name="888" tags="" position="725,7050" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Interrupt&#39; the flow and then delete the message.
 
 
-[[Done|887]]</tw-passagedata><tw-passagedata pid="529" name="889" tags="" position="1250,7000" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Archive the message.
+[[Done|887]]</tw-passagedata><tw-passagedata pid="528" name="889" tags="" position="1250,7000" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Archive the message.
 
 
-[[Done|887]] </tw-passagedata><tw-passagedata pid="530" name="8810" tags="" position="825,7200" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete the action.
+[[Done|887]] </tw-passagedata><tw-passagedata pid="529" name="8810" tags="" position="825,7200" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete the action.
 
 Archive the message.
 
 
-[[Done|887]] </tw-passagedata><tw-passagedata pid="531" name="8811" tags="" position="975,7175" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Capture&#39; the item.
+[[Done|887]] </tw-passagedata><tw-passagedata pid="530" name="8811" tags="" position="975,7175" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Capture&#39; the item.
 
 Consider sending an acknowledgement.
 
 Archive the message.
 
 
-[[Done|887]] </tw-passagedata><tw-passagedata pid="532" name="848" tags="" position="750,12225" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete all tasks in JARVIS &quot;form_PromptGenerator&quot;.
+[[Done|887]] </tw-passagedata><tw-passagedata pid="531" name="848" tags="" position="750,12225" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete all tasks in JARVIS &quot;form_PromptGenerator&quot;.
 
 Time-track and time-record as appropriate.
 
 Refresh form after completing each entry.
 
 
-&lt;&lt;if $dayOfWeek === 1 &gt;&gt;[[Done|204]]&lt;&lt;else&gt;&gt;[[Done|48]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="533" name="856" tags="" position="400,12575" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete all tasks in &quot;Working hours&quot;.
+&lt;&lt;if $dayOfWeek === 1 &gt;&gt;[[Done|204]]&lt;&lt;else&gt;&gt;[[Done|48]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="532" name="856" tags="" position="400,12575" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete all tasks in &quot;Working hours&quot;.
 
 
-[[Done|56]] </tw-passagedata><tw-passagedata pid="534" name="400" tags="" position="350,6625" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Text message&#39;:
+[[Done|56]] </tw-passagedata><tw-passagedata pid="533" name="400" tags="" position="350,6625" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Text message&#39;:
 
 Open the next unread text message.
 
@@ -2277,33 +2274,33 @@ Open the next unread text message.
 [[Non-ACE|475]]
 [[ACE|474]]
 [[&#39;Noise&#39;|478]]
-[[There is no unread text message remaining|1802]]</tw-passagedata><tw-passagedata pid="535" name="475" tags="" position="450,6775" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Action the text message.
+[[There is no unread text message remaining|1802]]</tw-passagedata><tw-passagedata pid="534" name="475" tags="" position="450,6775" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Action the text message.
 
 
-[[Done|400]]</tw-passagedata><tw-passagedata pid="536" name="474" tags="" position="600,6650" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Capture&#39; the text message.
+[[Done|400]]</tw-passagedata><tw-passagedata pid="535" name="474" tags="" position="600,6650" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Capture&#39; the text message.
 
 
-[[Done|400]] </tw-passagedata><tw-passagedata pid="537" name="478" tags="" position="525,6525" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Leave it read.
+[[Done|400]] </tw-passagedata><tw-passagedata pid="536" name="478" tags="" position="525,6525" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Leave it read.
 
 
-[[Done|400]] </tw-passagedata><tw-passagedata pid="538" name="402" tags="" position="800,2625" size="100,100">Am I squeezed for time today?
+[[Done|400]] </tw-passagedata><tw-passagedata pid="537" name="402" tags="" position="800,2625" size="100,100">Am I squeezed for time today?
 
 
 [[Yes|415]]
-&lt;&lt;if $dayOfWeek === 1 &gt;&gt;[[No|410]]&lt;&lt;else&gt;&gt;[[No|411]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="539" name="Summary" tags="" position="1000,250" size="100,100">Start.
+&lt;&lt;if $dayOfWeek === 1 &gt;&gt;[[No|410]]&lt;&lt;else&gt;&gt;[[No|411]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="538" name="Summary" tags="" position="1000,250" size="100,100">Start.
 
 
-[[Done|S1]]</tw-passagedata><tw-passagedata pid="540" name="S1" tags="" position="1000,375" size="100,100">Inside prep. (drain)
+[[Done|S1]]</tw-passagedata><tw-passagedata pid="539" name="S1" tags="" position="1000,375" size="100,100">Inside prep. (drain)
 
 
-[[Done|S2]]</tw-passagedata><tw-passagedata pid="541" name="S2" tags="" position="1000,500" size="100,100">Quiet-Time. (time-box)
+[[Done|S2]]</tw-passagedata><tw-passagedata pid="540" name="S2" tags="" position="1000,500" size="100,100">Quiet-Time. (time-box)
 
 
-[[Done|S6]]</tw-passagedata><tw-passagedata pid="542" name="S3" tags="" position="1000,750" size="100,100">Am I squeezed for time today? (drain)
+[[Done|S6]]</tw-passagedata><tw-passagedata pid="541" name="S3" tags="" position="1000,750" size="100,100">Am I squeezed for time today? (drain)
 
 
 [[Yes|S4]]
-[[No|S5]]</tw-passagedata><tw-passagedata pid="543" name="S4" tags="" position="875,800" size="100,100">Urgent task(s)/event(s) - triage, define, complete. (selective by criteria)
+[[No|S5]]</tw-passagedata><tw-passagedata pid="542" name="S4" tags="" position="875,800" size="100,100">Urgent task(s)/event(s) - triage, define, complete. (selective by criteria)
 
 *Physical inbox
 *Text message
@@ -2312,31 +2309,31 @@ Open the next unread text message.
 *Email
 
 
-[[Done|S5]]</tw-passagedata><tw-passagedata pid="544" name="S5" tags="" position="1000,875" size="100,100">Action partners. (drain)
+[[Done|S5]]</tw-passagedata><tw-passagedata pid="543" name="S5" tags="" position="1000,875" size="100,100">Action partners. (drain)
 
 
 [[Mondays|S14]]
-[[Non-Mondays|S7]]</tw-passagedata><tw-passagedata pid="545" name="S6" tags="" position="1000,625" size="100,100">Notion Calendar alarm setting. (today only)
+[[Non-Mondays|S7]]</tw-passagedata><tw-passagedata pid="544" name="S6" tags="" position="1000,625" size="100,100">Notion Calendar alarm setting. (today only)
 
 
 [[Mondays|S15]]
-[[Non-Mondays|S3]]</tw-passagedata><tw-passagedata pid="546" name="S7" tags="" position="1000,1000" size="100,100">Consider placing orders from &#39;Order supplies&#39;. (intuitive)
+[[Non-Mondays|S3]]</tw-passagedata><tw-passagedata pid="545" name="S7" tags="" position="1000,1000" size="100,100">Consider placing orders from &#39;Order supplies&#39;. (intuitive)
 
 
-[[Done|S8]]</tw-passagedata><tw-passagedata pid="547" name="S8" tags="" position="1250,1000" size="100,100">Installation day? (drain)
+[[Done|S8]]</tw-passagedata><tw-passagedata pid="546" name="S8" tags="" position="1250,1000" size="100,100">Installation day? (drain)
 
 
 [[Yes|S9]]
-[[No|S10]]</tw-passagedata><tw-passagedata pid="548" name="S9" tags="" position="1125,925" size="100,100">Installation. (drain)
+[[No|S10]]</tw-passagedata><tw-passagedata pid="547" name="S9" tags="" position="1125,925" size="100,100">Installation. (drain)
 
 
-(End of line)</tw-passagedata><tw-passagedata pid="549" name="S10" tags="" position="1250,875" size="100,100">Warm-up decision. (drain)
+(End of line)</tw-passagedata><tw-passagedata pid="548" name="S10" tags="" position="1250,875" size="100,100">Warm-up decision. (drain)
 
 
-[[Done|S11]]</tw-passagedata><tw-passagedata pid="550" name="S11" tags="" position="1250,750" size="100,100">Update Domino Calendar. (drain)
+[[Done|S11]]</tw-passagedata><tw-passagedata pid="549" name="S11" tags="" position="1250,750" size="100,100">Update Domino Calendar. (drain)
 
 
-[[Done|S12]]</tw-passagedata><tw-passagedata pid="551" name="S12" tags="" position="1250,625" size="100,100">Inbox processing. (drain)
+[[Done|S12]]</tw-passagedata><tw-passagedata pid="550" name="S12" tags="" position="1250,625" size="100,100">Inbox processing. (drain)
 
 *Physical inbox
 *Text message
@@ -2344,128 +2341,128 @@ Open the next unread text message.
 *Email
 
 
-[[Done|S13]]</tw-passagedata><tw-passagedata pid="552" name="S13" tags="" position="1250,500" size="100,100">Define. (drain)
+[[Done|S13]]</tw-passagedata><tw-passagedata pid="551" name="S13" tags="" position="1250,500" size="100,100">Define. (drain)
 
 
-[[Done|S16]]</tw-passagedata><tw-passagedata pid="553" name="409" tags="" position="350,4325" size="100,100">Decrease pace by 0.01.
+[[Done|S16]]</tw-passagedata><tw-passagedata pid="552" name="409" tags="" position="350,4325" size="100,100">Decrease pace by 0.01.
 
 To do this, increase (&quot;Coefficient&quot;.&quot;name&quot;=Domino Multiplier) by 0.01.
 
 
-[[Done|411]]</tw-passagedata><tw-passagedata pid="554" name="S14" tags="" position="875,950" size="100,100">Decrease pace by 0.01. (drain)
+[[Done|411]]</tw-passagedata><tw-passagedata pid="553" name="S14" tags="" position="875,950" size="100,100">Decrease pace by 0.01. (drain)
 
 (Increase (&quot;Coefficient&quot;.&quot;name&quot;=Domino Multiplier) by 0.01, if not already at 2.00)
 
 
-[[Done|S7]] </tw-passagedata><tw-passagedata pid="555" name="410" tags="" position="500,4300" size="100,100">Is (&quot;Coefficient&quot;.&quot;name&quot;=Domino Multiplier) already at 2.00?
+[[Done|S7]] </tw-passagedata><tw-passagedata pid="554" name="410" tags="" position="500,4300" size="100,100">Is (&quot;Coefficient&quot;.&quot;name&quot;=Domino Multiplier) already at 2.00?
 
 
 [[Yes|411]] 
-[[No|409]] </tw-passagedata><tw-passagedata pid="556" name="S15" tags="" position="875,650" size="100,100">JBBC Notion workspace processing. (drain)
+[[No|409]] </tw-passagedata><tw-passagedata pid="555" name="S15" tags="" position="875,650" size="100,100">JBBC Notion workspace processing. (drain)
 
 
-[[Done|S3]]</tw-passagedata><tw-passagedata pid="557" name="S16" tags="" position="1250,375" size="100,100">Jidoka. (drain)
+[[Done|S3]]</tw-passagedata><tw-passagedata pid="556" name="S16" tags="" position="1250,375" size="100,100">Jidoka. (drain)
 
 
-[[Done|S17]]</tw-passagedata><tw-passagedata pid="558" name="S17" tags="" position="1250,250" size="100,100">Unrelated reference. (drain)
+[[Done|S17]]</tw-passagedata><tw-passagedata pid="557" name="S17" tags="" position="1250,250" size="100,100">Unrelated reference. (drain)
 
 
-[[Done|S18]]</tw-passagedata><tw-passagedata pid="559" name="S18" tags="" position="1500,250" size="100,100">Urgent task. (drain)
+[[Done|S18]]</tw-passagedata><tw-passagedata pid="558" name="S18" tags="" position="1500,250" size="100,100">Urgent task. (drain)
 
 
-[[Done|S19]]</tw-passagedata><tw-passagedata pid="560" name="S19" tags="" position="1500,375" size="100,100">Schedule levelling. (drain)
+[[Done|S19]]</tw-passagedata><tw-passagedata pid="559" name="S19" tags="" position="1500,375" size="100,100">Schedule levelling. (drain)
 
 
-[[Done|S20]]</tw-passagedata><tw-passagedata pid="561" name="S20" tags="" position="1500,500" size="100,100">Working hours capacity. (today only)
+[[Done|S20]]</tw-passagedata><tw-passagedata pid="560" name="S20" tags="" position="1500,500" size="100,100">Working hours capacity. (today only)
 
 
-[[Done|S21]]</tw-passagedata><tw-passagedata pid="562" name="S21" tags="" position="1500,625" size="100,100">JARVIS. (drain)
+[[Done|S21]]</tw-passagedata><tw-passagedata pid="561" name="S21" tags="" position="1500,625" size="100,100">JARVIS. (drain)
 
 
-[[Done|S22]]</tw-passagedata><tw-passagedata pid="563" name="S22" tags="" position="1500,750" size="100,100">Evolution. (drain)
+[[Done|S22]]</tw-passagedata><tw-passagedata pid="562" name="S22" tags="" position="1500,750" size="100,100">Evolution. (drain)
 
 
-[[Done|S23]]</tw-passagedata><tw-passagedata pid="564" name="S23" tags="" position="1500,875" size="100,100">Working hours. (drain)
+[[Done|S23]]</tw-passagedata><tw-passagedata pid="563" name="S23" tags="" position="1500,875" size="100,100">Working hours. (drain)
 
 
-[[Done|S24]]</tw-passagedata><tw-passagedata pid="565" name="S24" tags="" position="1500,1000" size="100,100">Orchestration. (time-box)
+[[Done|S24]]</tw-passagedata><tw-passagedata pid="564" name="S24" tags="" position="1500,1000" size="100,100">Orchestration. (time-box)
 
 
 [[RR completed yesterday|S27]]
-[[RR not completed yesterday|S25]]</tw-passagedata><tw-passagedata pid="566" name="S25" tags="" position="1750,1000" size="100,100">Inquiry. (time-box)
+[[RR not completed yesterday|S25]]</tw-passagedata><tw-passagedata pid="565" name="S25" tags="" position="1750,1000" size="100,100">Inquiry. (time-box)
 
 
-[[Done|S26]]</tw-passagedata><tw-passagedata pid="567" name="S26" tags="" position="1750,875" size="100,100">Increase pace by 0.01. (drain)
+[[Done|S26]]</tw-passagedata><tw-passagedata pid="566" name="S26" tags="" position="1750,875" size="100,100">Increase pace by 0.01. (drain)
 
 (Decrease (&quot;Coefficient&quot;.&quot;name&quot;=Domino Multiplier) by 0.01)
 
 
-[[Done|S28]] </tw-passagedata><tw-passagedata pid="568" name="S27" tags="" position="1625,900" size="100,100">Run. (drain)
+[[Done|S28]] </tw-passagedata><tw-passagedata pid="567" name="S27" tags="" position="1625,900" size="100,100">Run. (drain)
 
 
-[[Done|S26]]</tw-passagedata><tw-passagedata pid="569" name="S28" tags="" position="1750,750" size="100,100">Evolution. (drain)
+[[Done|S26]]</tw-passagedata><tw-passagedata pid="568" name="S28" tags="" position="1750,750" size="100,100">Evolution. (drain)
 
 
-[[Done|S29]]</tw-passagedata><tw-passagedata pid="570" name="S29" tags="" position="1750,625" size="100,100">Piano. (time-box)
+[[Done|S29]]</tw-passagedata><tw-passagedata pid="569" name="S29" tags="" position="1750,625" size="100,100">Piano. (time-box)
 
 
-[[Done|S30]]</tw-passagedata><tw-passagedata pid="571" name="S30" tags="" position="1750,500" size="100,100">NoDeadline. (drain)
+[[Done|S30]]</tw-passagedata><tw-passagedata pid="570" name="S30" tags="" position="1750,500" size="100,100">NoDeadline. (drain)
 
 
-[[Done|S31]]</tw-passagedata><tw-passagedata pid="572" name="S31" tags="" position="1750,375" size="100,100">Inquiry. (drain)
+[[Done|S31]]</tw-passagedata><tw-passagedata pid="571" name="S31" tags="" position="1750,375" size="100,100">Inquiry. (drain)
 
 
-[[Done|S32]]</tw-passagedata><tw-passagedata pid="573" name="S32" tags="" position="1750,250" size="100,100">Oikos!
+[[Done|S32]]</tw-passagedata><tw-passagedata pid="572" name="S32" tags="" position="1750,250" size="100,100">Oikos!
 
 
-(end of line)</tw-passagedata><tw-passagedata pid="574" name="415" tags="" position="925,2200" size="100,100">&#39;Time Recording&#39; category is now &#39;B - Triage&#39;.
+(end of line)</tw-passagedata><tw-passagedata pid="573" name="415" tags="" position="925,2200" size="100,100">&#39;Time Recording&#39; category is now &#39;B - Triage&#39;.
 
 Update &#39;Felix&#39;s Bane&#39;.
 
 
-[[Done|302]] </tw-passagedata><tw-passagedata pid="575" name="411" tags="" position="150,5000" size="100,100">Update Felix&#39;s Bane.
+[[Done|302]] </tw-passagedata><tw-passagedata pid="574" name="411" tags="" position="150,5000" size="100,100">Update Felix&#39;s Bane.
 
 
-[[Done|Consider placing orders from &#39;Order supplies&#39;]]</tw-passagedata><tw-passagedata pid="576" name="412" tags="" position="25,6125" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
+[[Done|Consider placing orders from &#39;Order supplies&#39;]]</tw-passagedata><tw-passagedata pid="575" name="412" tags="" position="25,6125" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
   &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;B - Navigator&#39;.
 
 
-[[Understood|115]]</tw-passagedata><tw-passagedata pid="577" name="413" tags="" position="150,5825" size="100,100">&#39;Time Recording&#39; category is now &#39;B - Mobility&#39;.
+[[Understood|115]]</tw-passagedata><tw-passagedata pid="576" name="413" tags="" position="150,5825" size="100,100">&#39;Time Recording&#39; category is now &#39;B - Mobility&#39;.
 
 
-[[Understood|Warm-up decision 1]]</tw-passagedata><tw-passagedata pid="578" name="414" tags="" position="775,4250" size="100,100">&#39;Time Recording&#39; category is now &#39;B - Navigator&#39;.
+[[Understood|Warm-up decision 1]]</tw-passagedata><tw-passagedata pid="577" name="414" tags="" position="775,4250" size="100,100">&#39;Time Recording&#39; category is now &#39;B - Navigator&#39;.
 
 
-&lt;&lt;if $dayOfWeek === 1 &gt;&gt;[[Understood|410]]&lt;&lt;else&gt;&gt;[[Understood|411]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="579" name="425" tags="" position="50,6450" size="100,100">&#39;Time Recording&#39; category is now &#39;B - Triage&#39;.
+&lt;&lt;if $dayOfWeek === 1 &gt;&gt;[[Understood|410]]&lt;&lt;else&gt;&gt;[[Understood|411]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="578" name="425" tags="" position="50,6450" size="100,100">&#39;Time Recording&#39; category is now &#39;B - Triage&#39;.
 
 
-[[Understood|950]]</tw-passagedata><tw-passagedata pid="580" name="849" tags="" position="1200,12225" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;B - Triage&#39;.
+[[Understood|950]]</tw-passagedata><tw-passagedata pid="579" name="849" tags="" position="1200,12225" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;B - Triage&#39;.
 
 
-[[Understood|850]]</tw-passagedata><tw-passagedata pid="581" name="850" tags="" position="1200,12350" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open iCloud.
+[[Understood|850]]</tw-passagedata><tw-passagedata pid="580" name="850" tags="" position="1200,12350" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open iCloud.
 
 
-[[Done|851]]</tw-passagedata><tw-passagedata pid="582" name="851" tags="" position="1200,12475" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Ascertain last timestamp on index card.
+[[Done|851]]</tw-passagedata><tw-passagedata pid="581" name="851" tags="" position="1200,12475" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Ascertain last timestamp on index card.
 
 
-[[Done|852]]</tw-passagedata><tw-passagedata pid="583" name="852" tags="" position="1200,12600" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Sort photos into relevant categories.
+[[Done|852]]</tw-passagedata><tw-passagedata pid="582" name="852" tags="" position="1200,12600" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Sort photos into relevant categories.
 
 
-[[Done|853]]</tw-passagedata><tw-passagedata pid="584" name="853" tags="" position="1200,12725" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Note timestamp on index card.
+[[Done|853]]</tw-passagedata><tw-passagedata pid="583" name="853" tags="" position="1200,12725" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Note timestamp on index card.
 
 
-[[Done|854]]</tw-passagedata><tw-passagedata pid="585" name="854" tags="" position="875,12425" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Update &#39;Time Recording&#39; data now.
+[[Done|854]]</tw-passagedata><tw-passagedata pid="584" name="854" tags="" position="875,12425" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Update &#39;Time Recording&#39; data now.
 
 
-[[Done|848]]</tw-passagedata><tw-passagedata pid="586" name="993" tags="" position="5125,5800" size="100,100">Is there a cable trailing from the van?
+[[Done|848]]</tw-passagedata><tw-passagedata pid="585" name="993" tags="" position="5125,5800" size="100,100">Is there a cable trailing from the van?
 
 
 [[Yes|Test980]] 
-[[No|Test994]] </tw-passagedata><tw-passagedata pid="587" name="576" tags="" position="975,3525" size="100,100">Report back to action partners what happened the previous day.
+[[No|Test994]] </tw-passagedata><tw-passagedata pid="586" name="576" tags="" position="975,3525" size="100,100">Report back to action partners what happened the previous day.
 
 
-[[Done|577]] </tw-passagedata><tw-passagedata pid="588" name="577" tags="" position="800,3525" size="100,100">Decide on three items to send to &#39;Action partners&#39; WhatsApp chat.
+[[Done|577]] </tw-passagedata><tw-passagedata pid="587" name="577" tags="" position="800,3525" size="100,100">Decide on three items to send to &#39;Action partners&#39; WhatsApp chat.
 
 Sources:
 *JARVIS &quot;form_PromptGenerator&quot;.
@@ -2475,138 +2472,138 @@ Sources:
 WhatsApp these three things.
 
 
-[[Done|908]]</tw-passagedata><tw-passagedata pid="589" name="872" tags="" position="900,11200" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;B - Navigator&#39;.
+[[Done|908]]</tw-passagedata><tw-passagedata pid="588" name="872" tags="" position="900,11200" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;B - Navigator&#39;.
 
 
-[[Understood|310]]</tw-passagedata><tw-passagedata pid="590" name="869" tags="" position="750,6525" size="100,100">RR is complete.
+[[Understood|310]]</tw-passagedata><tw-passagedata pid="589" name="869" tags="" position="750,6525" size="100,100">RR is complete.
 
 
-&lt;&lt;link &quot;Understood&quot;$interruptedPassage&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="591" name="267" tags="" position="1200,7325" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is there a page in &#39;+Capture =&gt; Define&#39;?
+&lt;&lt;link &quot;Understood&quot;$interruptedPassage&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="590" name="267" tags="" position="1200,7325" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Is there a page in &#39;+Capture =&gt; Define&#39;?
 
 
 [[Yes|268]] 
 &lt;&lt;link &quot;There are no pages at all&quot;&gt;&gt;&lt;&lt;goto &quot;270&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-</tw-passagedata><tw-passagedata pid="592" name="268" tags="" position="1300,7575" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Are there any non-ACE tasks in &#39;+Capture =&gt; Define&#39;?
+</tw-passagedata><tw-passagedata pid="591" name="268" tags="" position="1300,7575" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Are there any non-ACE tasks in &#39;+Capture =&gt; Define&#39;?
 
 
 [[Yes|269]]
-[[No|211]]</tw-passagedata><tw-passagedata pid="593" name="269" tags="" position="1050,7650" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete all the non-ACE tasks.
+[[No|211]]</tw-passagedata><tw-passagedata pid="592" name="269" tags="" position="1050,7650" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete all the non-ACE tasks.
 
 Time record as &#39;B - Little Tasks&#39;.
 
 
-[[Done|267]]</tw-passagedata><tw-passagedata pid="594" name="270" tags="" position="775,10975" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;B - Navigator&#39;.
+[[Done|267]]</tw-passagedata><tw-passagedata pid="593" name="270" tags="" position="775,10975" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;&#39;Time Recording&#39; category is now &#39;B - Navigator&#39;.
 
 
-[[Understood|310]]</tw-passagedata><tw-passagedata pid="595" name="271" tags="" position="675,11850" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open view &#39;Urgent task&#39; in &#39;Normaliser&#39;.
+[[Understood|310]]</tw-passagedata><tw-passagedata pid="594" name="271" tags="" position="675,11850" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open view &#39;Urgent task&#39; in &#39;Normaliser&#39;.
 
 
-[[Done|272]]</tw-passagedata><tw-passagedata pid="596" name="272" tags="" position="875,11850" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete the next task.
+[[Done|272]]</tw-passagedata><tw-passagedata pid="595" name="272" tags="" position="875,11850" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Complete the next task.
 
 Time record as listed.
 
 
-[[There are no tasks left|n76]]</tw-passagedata><tw-passagedata pid="597" name="176" tags="" position="200,11800" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open JARVIS &quot;form_PromptGenerator&quot;.
+[[There are no tasks left|n76]]</tw-passagedata><tw-passagedata pid="596" name="176" tags="" position="200,11800" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt; &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt; &lt;&lt;/if&gt;&gt;Open JARVIS &quot;form_PromptGenerator&quot;.
 
 
-[[Done|301]] </tw-passagedata><tw-passagedata pid="598" name="RR warm-up routine 9" tags="" position="600,5825" size="100,100">Do &#39;Banded external rotation&#39; x 12 each side.
+[[Done|301]] </tw-passagedata><tw-passagedata pid="597" name="RR warm-up routine 9" tags="" position="600,5825" size="100,100">Do &#39;Banded external rotation&#39; x 12 each side.
 
 
-[[Done|RR warm-up routine 2]]</tw-passagedata><tw-passagedata pid="599" name="RR Warm-up routine 10" tags="" position="1350,5975" size="100,100">Do &#39;Banded external rotation&#39; x 12 each side.
+[[Done|RR warm-up routine 2]]</tw-passagedata><tw-passagedata pid="598" name="RR Warm-up routine 10" tags="" position="1350,5975" size="100,100">Do &#39;Banded external rotation&#39; x 12 each side.
 
 
-[[Done|RR Warm-up routine 8]]</tw-passagedata><tw-passagedata pid="600" name="315" tags="" position="150,6275" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
+[[Done|RR Warm-up routine 8]]</tw-passagedata><tw-passagedata pid="599" name="315" tags="" position="150,6275" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
   &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;Is there a page in the &quot;Jidoka&quot; view of the &quot;Whole&quot; database in &#39;Normaliser&#39;?
 
 
 [[Yes|316]]
-[[No|425]] </tw-passagedata><tw-passagedata pid="601" name="316" tags="" position="200,6425" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
+[[No|425]] </tw-passagedata><tw-passagedata pid="600" name="316" tags="" position="200,6425" size="100,100">&lt;&lt;if $timerElapsed&gt;&gt;
   &lt;&lt;goto &quot;(Timer-driven) - Time for next RR set&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;Resolve the page until it is gone from the view.
 
 
-[[Done|315]]</tw-passagedata><tw-passagedata pid="602" name="150" tags="" position="700,1000" size="100,100">Selectively remove necessary items from dishwasher.
+[[Done|315]]</tw-passagedata><tw-passagedata pid="601" name="150" tags="" position="700,1000" size="100,100">Selectively remove necessary items from dishwasher.
 
 
-[[Done|151]] </tw-passagedata><tw-passagedata pid="603" name="151" tags="" position="875,1150" size="100,100">Free-flow prepare the following:
+[[Done|151]] </tw-passagedata><tw-passagedata pid="602" name="151" tags="" position="875,1150" size="100,100">Free-flow prepare the following:
 
 [[Aidan&#39;s breakfast - 6 items|Prepare Aidan&#39;s breakfast items]]
 [[Daytime meals - as per paper (if necessary)|711]]
 [[My breakfast + Joanie&#39;s capsules|Prepare my cereal]]
 
-[[Done|Ensure &#39;wake-up&#39; alarm is on]]</tw-passagedata><tw-passagedata pid="604" name="Test810" tags="" position="1825,5275" size="100,100">Am I confident that I&#39;ll have good WiFi on-site?
+[[Done|Ensure &#39;wake-up&#39; alarm is on]]</tw-passagedata><tw-passagedata pid="603" name="Test810" tags="" position="1825,5275" size="100,100">Am I confident that I&#39;ll have good WiFi on-site?
 
 
 [[Yes|Test813]] 
-[[No|Test809]] </tw-passagedata><tw-passagedata pid="605" name="Test811" tags="" position="1450,5275" size="100,100">Are there any &#39;tool requirements&#39; on &quot;form_BringList&quot;?
+[[No|Test809]] </tw-passagedata><tw-passagedata pid="604" name="Test811" tags="" position="1450,5275" size="100,100">Are there any &#39;tool requirements&#39; on &quot;form_BringList&quot;?
 
 
 [[Yes|567]]
-[[No|Test810]] </tw-passagedata><tw-passagedata pid="606" name="567" tags="" position="1625,5325" size="100,100">Note down &#39;tool requirements&#39; from &quot;form_BringList&quot; on index card.
+[[No|Test810]] </tw-passagedata><tw-passagedata pid="605" name="567" tags="" position="1625,5325" size="100,100">Note down &#39;tool requirements&#39; from &quot;form_BringList&quot; on index card.
 
 Place index card in programme folder.
 
 
-[[Done|Test810]] </tw-passagedata><tw-passagedata pid="607" name="568" tags="" position="425,5425" size="100,100">Get on with something else in the meantime. Time-record as appropriate.
+[[Done|Test810]] </tw-passagedata><tw-passagedata pid="606" name="568" tags="" position="425,5425" size="100,100">Get on with something else in the meantime. Time-record as appropriate.
 
 
-[[Breakfast is complete|T59]]</tw-passagedata><tw-passagedata pid="608" name="569" tags="" position="4025,5125" size="100,100">Place &quot;report_BringListForMaterials&quot; &#39;under&#39; (as best as I can) the stack in &#39;category 1&#39;.
+[[Breakfast is complete|T59]]</tw-passagedata><tw-passagedata pid="607" name="569" tags="" position="4025,5125" size="100,100">Place &quot;report_BringListForMaterials&quot; &#39;under&#39; (as best as I can) the stack in &#39;category 1&#39;.
 
 
-[[Done|571]]</tw-passagedata><tw-passagedata pid="609" name="570" tags="" position="4175,4950" size="100,100">Is there a &quot;report_BringListForMaterials&quot; in programme folder?
+[[Done|571]]</tw-passagedata><tw-passagedata pid="608" name="570" tags="" position="4175,4950" size="100,100">Is there a &quot;report_BringListForMaterials&quot; in programme folder?
 
 
 [[Yes|Test834]] 
-[[No|Test836]] </tw-passagedata><tw-passagedata pid="610" name="571" tags="" position="4175,5100" size="100,100">(The big idea is that once the stack in &#39;category 1&#39; is emptied use &quot;report_BringListForMaterials&quot; as a kanban to pull in the next stack - this is achieved by putting &quot;report_BringListForMaterials&quot;back in the programme folder)
+[[No|Test836]] </tw-passagedata><tw-passagedata pid="609" name="571" tags="" position="4175,5100" size="100,100">(The big idea is that once the stack in &#39;category 1&#39; is emptied use &quot;report_BringListForMaterials&quot; as a kanban to pull in the next stack - this is achieved by putting &quot;report_BringListForMaterials&quot;back in the programme folder)
 
 
-[[Understood|Test836]]</tw-passagedata><tw-passagedata pid="611" name="572" tags="" position="3725,5475" size="100,100">Load the next category that has not been crossed off.
+[[Understood|Test836]]</tw-passagedata><tw-passagedata pid="610" name="572" tags="" position="3725,5475" size="100,100">Load the next category that has not been crossed off.
 
 
-[[Done|573]]</tw-passagedata><tw-passagedata pid="612" name="573" tags="" position="3925,5500" size="100,100">Cross off the category I just loaded.
+[[Done|573]]</tw-passagedata><tw-passagedata pid="611" name="573" tags="" position="3925,5500" size="100,100">Cross off the category I just loaded.
 
 
-[[Done|574]]</tw-passagedata><tw-passagedata pid="613" name="574" tags="" position="3700,5350" size="100,100">Is there a category left?
+[[Done|574]]</tw-passagedata><tw-passagedata pid="612" name="574" tags="" position="3700,5350" size="100,100">Is there a category left?
 
 
 [[Yes|575]]
-[[No|579]]</tw-passagedata><tw-passagedata pid="614" name="575" tags="" position="4125,5475" size="100,100">Place &quot;report_BringListForMaterials&quot; &#39;under&#39; (as best as I can) the stack I just loaded.
+[[No|579]]</tw-passagedata><tw-passagedata pid="613" name="575" tags="" position="4125,5475" size="100,100">Place &quot;report_BringListForMaterials&quot; &#39;under&#39; (as best as I can) the stack I just loaded.
 
 
-[[Done|T28]]</tw-passagedata><tw-passagedata pid="615" name="579" tags="" position="4250,5375" size="100,100">Recycle &quot;report_BringListForMaterials&quot;.
+[[Done|T28]]</tw-passagedata><tw-passagedata pid="614" name="579" tags="" position="4250,5375" size="100,100">Recycle &quot;report_BringListForMaterials&quot;.
 
 
-[[Done|T28]] </tw-passagedata><tw-passagedata pid="616" name="580" tags="" position="7900,4950" size="100,100">Cross off categories 1 and 2.
+[[Done|T28]] </tw-passagedata><tw-passagedata pid="615" name="580" tags="" position="7900,4950" size="100,100">Cross off categories 1 and 2.
 
 
-[[Done|584]]</tw-passagedata><tw-passagedata pid="617" name="581" tags="" position="3725,5225" size="100,100">Cross off categories 1 and 2.
+[[Done|584]]</tw-passagedata><tw-passagedata pid="616" name="581" tags="" position="3725,5225" size="100,100">Cross off categories 1 and 2.
 
 
-[[Done|582]]</tw-passagedata><tw-passagedata pid="618" name="582" tags="" position="3850,5250" size="100,100">Is there a category left?
+[[Done|582]]</tw-passagedata><tw-passagedata pid="617" name="582" tags="" position="3850,5250" size="100,100">Is there a category left?
 
 
 [[Yes|569]]
-[[No|583]]</tw-passagedata><tw-passagedata pid="619" name="583" tags="" position="4125,5250" size="100,100">Recycle &quot;report_BringListForMaterials&quot;.
+[[No|583]]</tw-passagedata><tw-passagedata pid="618" name="583" tags="" position="4125,5250" size="100,100">Recycle &quot;report_BringListForMaterials&quot;.
 
 
-[[Done|Test836]] </tw-passagedata><tw-passagedata pid="620" name="584" tags="" position="7800,5175" size="100,100">Is there a category left?
+[[Done|Test836]] </tw-passagedata><tw-passagedata pid="619" name="584" tags="" position="7800,5175" size="100,100">Is there a category left?
 
 
 [[Yes|585]]
-[[No|586]]</tw-passagedata><tw-passagedata pid="621" name="585" tags="" position="7950,5075" size="100,100">Place &quot;report_InternalTaskPartSequence&quot; under &quot;report_BringListForMaterials&quot;, which will be under the &#39;category 1&#39; stack.
+[[No|586]]</tw-passagedata><tw-passagedata pid="620" name="585" tags="" position="7950,5075" size="100,100">Place &quot;report_InternalTaskPartSequence&quot; under &quot;report_BringListForMaterials&quot;, which will be under the &#39;category 1&#39; stack.
 
 
-[[Done|587]]</tw-passagedata><tw-passagedata pid="622" name="586" tags="" position="8250,5200" size="100,100">Recycle &quot;report_InternalTaskPartSequence&quot;.
+[[Done|587]]</tw-passagedata><tw-passagedata pid="621" name="586" tags="" position="8250,5200" size="100,100">Recycle &quot;report_InternalTaskPartSequence&quot;.
 
-[[Done|Test875]]</tw-passagedata><tw-passagedata pid="623" name="587" tags="" position="8275,5075" size="100,100">(The big idea is that once the stack in &#39;category 1&#39; is emptied &quot;report_InternalTaskPartSequence&quot; will be returned to the programme folder)
+[[Done|Test875]]</tw-passagedata><tw-passagedata pid="622" name="587" tags="" position="8275,5075" size="100,100">(The big idea is that once the stack in &#39;category 1&#39; is emptied &quot;report_InternalTaskPartSequence&quot; will be returned to the programme folder)
 
 
-[[Understood|Test875]]</tw-passagedata><tw-passagedata pid="624" name="588" tags="" position="7550,5325" size="100,100">Is &quot;report_InternalTaskPartSequence&quot; in the programme folder?
+[[Understood|Test875]]</tw-passagedata><tw-passagedata pid="623" name="588" tags="" position="7550,5325" size="100,100">Is &quot;report_InternalTaskPartSequence&quot; in the programme folder?
 
 
 [[Yes|590]]
-[[No|Test875]]</tw-passagedata><tw-passagedata pid="625" name="590" tags="" position="7525,5175" size="100,100">Identify the next category that has not been crossed off.
+[[No|Test875]]</tw-passagedata><tw-passagedata pid="624" name="590" tags="" position="7525,5175" size="100,100">Identify the next category that has not been crossed off.
 
 Stack these TaskParts vertically at a suitable location in order of &quot;report_InternalTaskPartSequence&quot;.
 
@@ -2614,10 +2611,10 @@ Stack these TaskParts vertically at a suitable location in order of &quot;report
 
 
 [[Done|589]]
-</tw-passagedata><tw-passagedata pid="626" name="589" tags="" position="7675,5150" size="100,100">Cross off the category I just stacked.
+</tw-passagedata><tw-passagedata pid="625" name="589" tags="" position="7675,5150" size="100,100">Cross off the category I just stacked.
 
 
-[[Done|584]]</tw-passagedata><tw-passagedata pid="627" name="593" tags="" position="650,5100" size="100,100">Does &quot;report_InternalTaskPartSequence&quot; have any records?
+[[Done|584]]</tw-passagedata><tw-passagedata pid="626" name="593" tags="" position="650,5100" size="100,100">Does &quot;report_InternalTaskPartSequence&quot; have any records?
 
 
 [[Yes|Test803]]
