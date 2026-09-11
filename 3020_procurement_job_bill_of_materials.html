@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="3020_procurement_job_bill_of_materials" startnode="50" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="8b3955af-2be1-42eb-8502-91498d00c624" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage > p {
+	<tw-storydata name="3020_procurement_job_bill_of_materials" startnode="49" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="8b3955af-2be1-42eb-8502-91498d00c624" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.passage > p {
     margin-bottom: 1em;
 }
 .passage > p:last-of-type {
@@ -177,7 +177,7 @@ Ensure that it&#39;s the final design, not a sketch.
 [[Done|Test132]]</tw-passagedata><tw-passagedata pid="15" name="Test137" tags="" position="1775,250" size="100,100">&lt;&lt;unset $is_invisible_TaskPart&gt;&gt;Ensure the correct task is open on &quot;form_ProgrammeManager&quot;.
 
 
-&lt;&lt;if $is_movento_runner_task is true&gt;&gt;[[Done|Test162]]&lt;&lt;else&gt;&gt;[[Done|Test160]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Test138" tags="" position="2225,900" size="100,100">&lt;&lt;unset $is_taskpart_card&gt;&gt;Is the stage complete?
+&lt;&lt;if $is_movento_runner_task is true&gt;&gt;[[Done|Test162]]&lt;&lt;else&gt;&gt;[[Done|Test160]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Test138" tags="" position="2225,900" size="100,100">Is the stage complete?
 
 
 [[Yes|Test156]]
@@ -241,14 +241,14 @@ Then press the &#39;down arrow key&#39; to move on to the next record.
 [[No|Test149]]</tw-passagedata><tw-passagedata pid="26" name="Test148" tags="" position="2750,625" size="100,100">Mark &#39;Wet&#39; as true.
 
 
-[[Done|Test155][$is_taskpart_card to true]] </tw-passagedata><tw-passagedata pid="27" name="Test149" tags="" position="2400,725" size="100,100">Does TaskPart require any &#39;dry&#39; manufacture beyond sanding?
+[[Done|Test152]] </tw-passagedata><tw-passagedata pid="27" name="Test149" tags="" position="2400,725" size="100,100">Does TaskPart require any &#39;dry&#39; manufacture beyond sanding?
 
 
 [[Yes|Test150]]
-[[No|Test155]]</tw-passagedata><tw-passagedata pid="28" name="Test150" tags="" position="2600,675" size="100,100">Mark &#39;Card&#39; as true&#39;
+[[No|Test138]]</tw-passagedata><tw-passagedata pid="28" name="Test150" tags="" position="2600,675" size="100,100">Mark &#39;Card&#39; as true&#39;
 
 
-[[Done|Test155][$is_taskpart_card to true]]</tw-passagedata><tw-passagedata pid="29" name="Test152" tags="" position="2425,975" size="100,100">Write index card detailing specifics.
+[[Done|Test152]]</tw-passagedata><tw-passagedata pid="29" name="Test152" tags="" position="2650,850" size="100,100">Write index card detailing specifics.
 
 Note &#39;TP (TP#)&#39;in top-right corner of index card.
 
@@ -259,35 +259,32 @@ Note &#39;TP (TP#)&#39;in top-right corner of index card.
 [[Done|Test154]]</tw-passagedata><tw-passagedata pid="31" name="Test154" tags="" position="1575,900" size="100,100">Place index card &#39;card&#39; stack into programme folder in sequential order.
 
 
-[[Done|Test157]]</tw-passagedata><tw-passagedata pid="32" name="Test155" tags="" position="2625,900" size="100,100">Select &#39;Length&#39; for next TaskPart record.
-
-
-&lt;&lt;if $is_taskpart_card is true&gt;&gt;[[Done|Test152]]&lt;&lt;else&gt;&gt;[[Done|Test138]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Test156" tags="" position="2050,1000" size="100,100">Is the job complete?
+[[Done|Test157]]</tw-passagedata><tw-passagedata pid="32" name="Test156" tags="" position="2050,1000" size="100,100">Is the job complete?
 
 
 [[Yes|Test139]]
-[[No|Test136]]</tw-passagedata><tw-passagedata pid="34" name="Test158" tags="" position="2025,475" size="100,100">Mentally select the earliest &lt;&lt;if $is_invisible_TaskPart is true&gt;&gt;non-kanban invisible &lt;&lt;/if&gt;&gt; TaskPart not yet processed in this stage.
+[[No|Test136]]</tw-passagedata><tw-passagedata pid="33" name="Test158" tags="" position="2025,475" size="100,100">Mentally select the earliest &lt;&lt;if $is_invisible_TaskPart is true&gt;&gt;non-kanban invisible &lt;&lt;/if&gt;&gt; TaskPart not yet processed in this stage.
 
 
-[[Done|Test142]]</tw-passagedata><tw-passagedata pid="35" name="Test160" tags="" position="1875,425" size="100,100">Does this stage have non-kanban TaskParts that I&#39;ve not drawn in the SketchUp drawing?
+[[Done|Test142]]</tw-passagedata><tw-passagedata pid="34" name="Test160" tags="" position="1875,425" size="100,100">Does this stage have non-kanban TaskParts that I&#39;ve not drawn in the SketchUp drawing?
 
 Could be door hinges, hardware etc..
 
 
 [[Yes|Test161]]
-[[No|Test158]]</tw-passagedata><tw-passagedata pid="36" name="Test161" tags="" position="2000,750" size="100,100">Is there a remaining non-kanban invisible TaskPart in this stage?
+[[No|Test158]]</tw-passagedata><tw-passagedata pid="35" name="Test161" tags="" position="2000,750" size="100,100">Is there a remaining non-kanban invisible TaskPart in this stage?
 
 
 [[Yes|Test158][$is_invisible_TaskPart to true]]
-[[No|Test158][$is_invisible_TaskPart to false]]</tw-passagedata><tw-passagedata pid="37" name="Test162" tags="" position="2150,350" size="100,100">Does this task contain at least one &#39;Movento runner&#39; TaskPart?
+[[No|Test158][$is_invisible_TaskPart to false]]</tw-passagedata><tw-passagedata pid="36" name="Test162" tags="" position="2150,350" size="100,100">Does this task contain at least one &#39;Movento runner&#39; TaskPart?
 
 
 [[Yes|Test164][$is_task_containing_movento_runner is true]]
-[[No|Test160]]</tw-passagedata><tw-passagedata pid="38" name="Test163" tags="" position="500,375" size="100,100">Does this job contain any &#39;Movento runner&#39; TaskParts?
+[[No|Test160]]</tw-passagedata><tw-passagedata pid="37" name="Test163" tags="" position="500,375" size="100,100">Does this job contain any &#39;Movento runner&#39; TaskParts?
 
 
 [[Yes|Test126][$is_movento_runner_task to true]]
-[[No|Test126]]</tw-passagedata><tw-passagedata pid="39" name="Test164" tags="" position="2700,200" size="100,100">(The following sequence is all for the non-kanban invisible TaskParts of Movento drawers - i.e. Movento runners, Movento locking devices, side stabiisation kits, drawer-boxes from Interfit.)
+[[No|Test126]]</tw-passagedata><tw-passagedata pid="38" name="Test164" tags="" position="2700,200" size="100,100">(The following sequence is all for the non-kanban invisible TaskParts of Movento drawers - i.e. Movento runners, Movento locking devices, side stabiisation kits, drawer-boxes from Interfit.)
 
 Log an unlogged model of Movento runner in this task.
 
@@ -299,7 +296,7 @@ Log an unlogged model of Movento runner in this task.
 * Leave &#39;Sanding&#39; as &#39;null&#39;
 
 
-[[Done|Test144]]</tw-passagedata><tw-passagedata pid="40" name="Test166" tags="" position="2275,425" size="100,100">Aggregate and log all the Movento locking device(s) (pair) that I need for the Movento runner(s) in this task.
+[[Done|Test144]]</tw-passagedata><tw-passagedata pid="39" name="Test166" tags="" position="2275,425" size="100,100">Aggregate and log all the Movento locking device(s) (pair) that I need for the Movento runner(s) in this task.
 
 * Set &#39;Length&#39; to 0
 * Set &#39;Width&#39; to 0
@@ -309,11 +306,11 @@ Log an unlogged model of Movento runner in this task.
 * Leave &#39;Sanding&#39; as &#39;null&#39;
 
 
-[[Done|Test158]]</tw-passagedata><tw-passagedata pid="41" name="Test167" tags="" position="3075,400" size="100,100">Is there at least one remaining size of Interfit drawerbox for this particular model of Movento runner?
+[[Done|Test158]]</tw-passagedata><tw-passagedata pid="40" name="Test167" tags="" position="3075,400" size="100,100">Is there at least one remaining size of Interfit drawerbox for this particular model of Movento runner?
 
 
 [[Yes|Test141]]
-[[No|Test140]]</tw-passagedata><tw-passagedata pid="42" name="Test168" tags="" position="3275,850" size="100,100">Log required side-stabilisation kit(s).
+[[No|Test140]]</tw-passagedata><tw-passagedata pid="41" name="Test168" tags="" position="3275,850" size="100,100">Log required side-stabilisation kit(s).
 
 * Set &#39;Length&#39; to 0
 * Set &#39;Width&#39; to 0
@@ -323,21 +320,21 @@ Log an unlogged model of Movento runner in this task.
 * Leave &#39;Sanding&#39; as &#39;null&#39;
 
 
-[[Done|Test169]]</tw-passagedata><tw-passagedata pid="43" name="Test169" tags="" position="3000,975" size="100,100">Do any of the remaining pull-outs (no centralised hand-holds) have an ICW/drawer depth ratio &gt; 1.3?
+[[Done|Test169]]</tw-passagedata><tw-passagedata pid="42" name="Test169" tags="" position="3000,975" size="100,100">Do any of the remaining pull-outs (no centralised hand-holds) have an ICW/drawer depth ratio &gt; 1.3?
 
 
 [[Yes|Test146]]
-[[No|Test167]]</tw-passagedata><tw-passagedata pid="44" name="Test157" tags="" position="1525,750" size="100,100">Refresh &quot;form_ProgrammeManager&quot;.
+[[No|Test167]]</tw-passagedata><tw-passagedata pid="43" name="Test157" tags="" position="1525,750" size="100,100">Refresh &quot;form_ProgrammeManager&quot;.
 
 
-[[Done|Final passage]]</tw-passagedata><tw-passagedata pid="45" name="Test170" tags="" position="600,100" size="100,100">Do they belong to more than one task?
+[[Done|Final passage]]</tw-passagedata><tw-passagedata pid="44" name="Test170" tags="" position="600,100" size="100,100">Do they belong to more than one task?
 
 
 [[Yes|Test171]]
-[[No|Test123]]</tw-passagedata><tw-passagedata pid="46" name="Test171" tags="" position="750,175" size="100,100">Use intuition to determine which of the &#39;task groupings&#39; I should &#39;scoot&#39; first.
+[[No|Test123]]</tw-passagedata><tw-passagedata pid="45" name="Test171" tags="" position="750,175" size="100,100">Use intuition to determine which of the &#39;task groupings&#39; I should &#39;scoot&#39; first.
 
 
-[[Done|Test123]]</tw-passagedata><tw-passagedata pid="47" name="StoryInit" tags="" position="25,25" size="100,100">&lt;!-- Human-friendly day of the week: Monday=1 ... Sunday=7 --&gt;
+[[Done|Test123]]</tw-passagedata><tw-passagedata pid="46" name="StoryInit" tags="" position="25,25" size="100,100">&lt;!-- Human-friendly day of the week: Monday=1 ... Sunday=7 --&gt;
     &lt;&lt;set $dayOfWeek to ((new Date()).getDay() + 6) % 7 + 1&gt;&gt;
 
     &lt;!-- Human-friendly month: January=1 ... December=12 --&gt;
@@ -362,18 +359,18 @@ Log an unlogged model of Movento runner in this task.
 		&lt;/span&gt;
 	&lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;&lt;&lt;/widget&gt;&gt;
-</tw-passagedata><tw-passagedata pid="48" name="Variables in this SOP" tags="" position="25,150" size="100,100"></tw-passagedata><tw-passagedata pid="49" name="Final passage" tags="" position="1050,1200" size="100,100">END OF LINE
+</tw-passagedata><tw-passagedata pid="47" name="Variables in this SOP" tags="" position="25,150" size="100,100"></tw-passagedata><tw-passagedata pid="48" name="Final passage" tags="" position="1050,1200" size="100,100">END OF LINE
 
 
-[[Understood|Landing page]]</tw-passagedata><tw-passagedata pid="50" name="Landing page" tags="" position="150,1200" size="100,100">Have I just completed this SOP?
+[[Understood|Landing page]]</tw-passagedata><tw-passagedata pid="49" name="Landing page" tags="" position="150,1200" size="100,100">Have I just completed this SOP?
 
 
 Yes - close this file
-[[No - I&#39;ve just opened it|Bill of Materials]]</tw-passagedata><tw-passagedata pid="51" name="1" tags="" position="400,800" size="100,100">Press Ctrl + Shift + R.
+[[No - I&#39;ve just opened it|Bill of Materials]]</tw-passagedata><tw-passagedata pid="50" name="1" tags="" position="400,800" size="100,100">Press Ctrl + Shift + R.
 
 
 [[It worked|Test135]]
-[[Still not working|2]]</tw-passagedata><tw-passagedata pid="52" name="2" tags="" position="500,625" size="100,100">Troubleshoot with ChatGPT.
+[[Still not working|2]]</tw-passagedata><tw-passagedata pid="51" name="2" tags="" position="500,625" size="100,100">Troubleshoot with ChatGPT.
 
 
 [[Fixed|Test135]]</tw-passagedata></tw-storydata>
